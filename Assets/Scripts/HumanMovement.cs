@@ -11,8 +11,8 @@ public class HumanMovement : MonoBehaviour {
     private float verticalMovement = 0f;
     private bool intendsToRun = false;
 
-    public float walkVelocity = 2f;
-    public float runVelocity = 5f;
+    public float walkSpeed = 2f;
+    public float runSpeed = 5f;
 
     void Awake() {
         animator = GetComponent<Animator>();
@@ -29,10 +29,12 @@ public class HumanMovement : MonoBehaviour {
         Vector3 direction = new Vector3(horizontalMovement, 0, verticalMovement);
         direction.Normalize();
 
-        float velocity = (intendsToRun) ? runVelocity : walkVelocity;
-        Vector3 movement = transform.TransformDirection(direction) * velocity;
+        Vector3 transformDirection = transform.TransformDirection(direction);
 
-        characterController.SimpleMove(movement);
+        float speed = (intendsToRun) ? runSpeed : walkSpeed;
+        Vector3 movement = speed * Time.deltaTime * transformDirection;
+
+        characterController.Move(movement);
 
         float factor = (intendsToRun) ? 2f : 1f;
         animator.SetFloat("VelocityX", horizontalMovement * factor, 0.1f, Time.deltaTime);
