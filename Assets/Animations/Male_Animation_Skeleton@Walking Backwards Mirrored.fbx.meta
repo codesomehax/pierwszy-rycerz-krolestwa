@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 3fe8142272575dd3d9e03ca5cd85b584
+guid: 14c05cd65d7b0a07fa1c68651b357ecf
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: Idle Sword
+    second: Walking Backwards Mirrored
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -35,11 +35,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Idle Sword
+      name: Walking Backwards Mirrored
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
-      lastFrame: 59
+      lastFrame: 36
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
