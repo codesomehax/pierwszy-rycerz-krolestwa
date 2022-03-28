@@ -2,7 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
+/**
+* There isn't a class called Monster or anything like that; we can consider something a monster
+* maybe if it wants to attack us, which we can detect using IsAggresiveTowardsPlayer() method
+* which is based on the reputation of the player.
+*/
 public class NPC : Entity
 {
     public Alliance Alignment;

@@ -2,14 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class Entity : MonoBehaviour
+/**
+* Entity class provides typical properties for living creatures like HP or Attack, but it
+* can obviously be used as well for the undead.
+*/
+public class Entity : InteractableObject
 {
-    public string EntityName;
     public float MaxHP;
     public float Attack;
     public float Defense;
-
+    public Object Inventory; // TODO unless we decide to not implement any kind of inventory
     
 
     protected float _currentHP;
