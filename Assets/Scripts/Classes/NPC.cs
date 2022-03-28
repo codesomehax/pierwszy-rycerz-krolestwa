@@ -6,7 +6,6 @@ using UnityEngine;
 public class NPC : Entity
 {
     public Alliance Alignment;
-    public HashSet<Quest> QuestList;
     
     public bool IsAggressiveTowardsPlayer() { // TODO
         return true;
