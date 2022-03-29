@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /**
-* Entity class provides typical properties for living creatures like HP or Attack, but it
+* Entity class provides typical properties for alive creatures like HP or Attack, but it
 * can obviously be used as well for the undead.
 */
 public class Entity : InteractableObject
