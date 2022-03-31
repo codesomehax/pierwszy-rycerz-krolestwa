@@ -14,6 +14,7 @@ public class HumanMovement : MonoBehaviour {
     public float WalkSpeed = 2f;
     public float RunSpeed = 5f;
     public float FallSpeed = 2f;
+    public Transform CameraTransform;
 
     void Awake() {
         _animator = GetComponent<Animator>();
@@ -27,6 +28,8 @@ public class HumanMovement : MonoBehaviour {
     }
 
     void FixedUpdate() {
+        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, CameraTransform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
+        
         if (_horizontalMovement != 0f || _verticalMovement != 0f || !_characterController.isGrounded) {
             Vector3 direction = new Vector3(_horizontalMovement, 0, _verticalMovement);
             direction.Normalize();
@@ -45,6 +48,14 @@ public class HumanMovement : MonoBehaviour {
             float factor = (_intendsToRun) ? 2f : 1f;
             _animator.SetFloat("VelocityX", _horizontalMovement * factor, 0.1f, Time.deltaTime);
             _animator.SetFloat("VelocityZ", _verticalMovement * factor, 0.1f, Time.deltaTime);
+        }
+    }
+
+    private void OnApplicationFocus(bool focus) {
+        if (focus) {
+            Cursor.lockState = CursorLockMode.Locked;
+        } else {
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 }
