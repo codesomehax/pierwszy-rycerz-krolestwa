@@ -4,40 +4,47 @@ using UnityEngine;
 
 public class HumanMovement : MonoBehaviour {
 
-    private Animator animator;
-    private CharacterController characterController;
+    private Animator _animator;
+    private CharacterController _characterController;
     
-    private float horizontalMovement = 0f;
-    private float verticalMovement = 0f;
-    private bool intendsToRun = false;
+    private float _horizontalMovement = 0f;
+    private float _verticalMovement = 0f;
+    private bool _intendsToRun = false;
 
-    public float walkSpeed = 2f;
-    public float runSpeed = 5f;
+    public float WalkSpeed = 2f;
+    public float RunSpeed = 5f;
+    public float FallSpeed = 2f;
 
     void Awake() {
-        animator = GetComponent<Animator>();
-        characterController = GetComponent<CharacterController>();
+        _animator = GetComponent<Animator>();
+        _characterController = GetComponent<CharacterController>();
     }
    
     void Update() {
-        horizontalMovement = Input.GetAxis("Horizontal");
-        verticalMovement = Input.GetAxis("Vertical");
-        intendsToRun = Input.GetKey(KeyCode.LeftShift);
+        _horizontalMovement = Input.GetAxis("Horizontal");
+        _verticalMovement = Input.GetAxis("Vertical");
+        _intendsToRun = Input.GetKey(KeyCode.LeftShift);
     }
 
     void FixedUpdate() {
-        Vector3 direction = new Vector3(horizontalMovement, 0, verticalMovement);
-        direction.Normalize();
+        if (_horizontalMovement != 0f || _verticalMovement != 0f || !_characterController.isGrounded) {
+            Vector3 direction = new Vector3(_horizontalMovement, 0, _verticalMovement);
+            direction.Normalize();
 
-        Vector3 transformDirection = transform.TransformDirection(direction);
+            Vector3 transformDirection = transform.TransformDirection(direction);
 
-        float speed = (intendsToRun) ? runSpeed : walkSpeed;
-        Vector3 movement = speed * Time.deltaTime * transformDirection;
+            float speed = (_intendsToRun) ? RunSpeed : WalkSpeed;
+            if (!_characterController.isGrounded) {
+                transformDirection.y = -FallSpeed;
+            }
 
-        characterController.Move(movement);
+            Vector3 movement = speed * Time.deltaTime * transformDirection;
 
-        float factor = (intendsToRun) ? 2f : 1f;
-        animator.SetFloat("VelocityX", horizontalMovement * factor, 0.1f, Time.deltaTime);
-        animator.SetFloat("VelocityZ", verticalMovement * factor, 0.1f, Time.deltaTime);
+            _characterController.Move(movement);
+
+            float factor = (_intendsToRun) ? 2f : 1f;
+            _animator.SetFloat("VelocityX", _horizontalMovement * factor, 0.1f, Time.deltaTime);
+            _animator.SetFloat("VelocityZ", _verticalMovement * factor, 0.1f, Time.deltaTime);
+        }
     }
 }
