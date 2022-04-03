@@ -7,9 +7,3 @@ public enum Alliance {
     Good,
     Evil
 }
-
-public enum NPCAnimationState {
-    Idle,
-    Walking,
-    BasicAttack
-}

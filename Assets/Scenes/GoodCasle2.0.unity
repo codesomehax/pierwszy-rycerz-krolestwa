@@ -3408,12 +3408,16 @@ MonoBehaviour:
   Name: Skeleton Warrior
   ID: 2
   MaxHP: 100
-  Attack: 10
+  Attack: 30
   Defense: 5
   Inventory: {fileID: 0}
   Alignment: 1
   AggressivenessBorder: 50
-  AggressivenessDistance: 0
+  AggressivenessDistance: 20
+  IdleAnimation: {fileID: 7400000, guid: f15c07c4bb03eeb48a7d2f8bfc519969, type: 3}
+  WalkingAnimation: {fileID: 0}
+  BasicAttackAnimation: {fileID: 7400000, guid: 68e3a50f30bb0c54e8ca5cfae6eea48d, type: 3}
+  RunningAnimation: {fileID: 7400000, guid: 272e84c6ff8fea340b19da71308f0475, type: 3}
 --- !u!1001 &551045985
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4552,8 +4556,8 @@ MonoBehaviour:
   Name: Player
   ID: 1
   MaxHP: 100
-  Attack: 10
-  Defense: 5
+  Attack: 40
+  Defense: 20
   Inventory: {fileID: 0}
 --- !u!1001 &695190333
 PrefabInstance:
@@ -6909,7 +6913,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1052043125}
-  m_LocalRotation: {x: -0.011528881, y: 0.98083144, z: -0.061248805, w: -0.18462221}
+  m_LocalRotation: {x: -0.011528879, y: 0.98083144, z: -0.061248805, w: -0.18462217}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

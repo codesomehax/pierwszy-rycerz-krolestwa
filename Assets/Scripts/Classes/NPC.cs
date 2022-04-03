@@ -8,7 +8,15 @@ using UnityEngine;
 * maybe if it wants to attack us, which we can detect using IsAggresiveTowardsPlayer() method
 * which is based on the reputation of the player.
 *
-* * If a monster has special traits, like unique animations, create new class inheriting NPC
+* * Adding new animations for NPCs
+* If you want to add a new animation, for example talking, you have to do as follows:
+*   In the NPC script:
+*   - add a new public AnimationClip and select this animation in the editor
+*   - if your animation is for example Talking, write additional line in Awake() function:
+*     overrides["Talking"] = TalkingAnimation;
+*   In the editor:
+*   - search for the NPC animator and add a new AnimationState (wherever) with a new, EMPTY (no animation) AnimationClip called for example Talking
+*   NOTE: the name of overrides["Talking"] and the AnimationClip name HAVE TO match
 */
 public class NPC : Entity
 {
@@ -18,6 +26,7 @@ public class NPC : Entity
     public AnimationClip IdleAnimation;    
     public AnimationClip WalkingAnimation;
     public AnimationClip BasicAttackAnimation;
+    public AnimationClip RunningAnimation;
 
 
 
@@ -46,6 +55,7 @@ public class NPC : Entity
         overrides["Idle"] = IdleAnimation;
         overrides["Walking"] = WalkingAnimation;
         overrides["Basic Attack"] = BasicAttackAnimation;
+        overrides["Running"] = RunningAnimation;
 
         _animatorOverrideController.ApplyOverrides(overrides);
 
@@ -54,6 +64,8 @@ public class NPC : Entity
     }
 }
 
+
+// Help class
 public class AnimationClipOverrides : List<KeyValuePair<AnimationClip, AnimationClip>>
 {
     public AnimationClipOverrides(int capacity) : base(capacity) {}
