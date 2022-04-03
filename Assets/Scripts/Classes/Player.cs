@@ -8,5 +8,9 @@ using UnityEngine;
 public class Player : Entity
 {
     private Dictionary<Alliance, float> _reputation;
+
+    public float GetReputation(Alliance alliance) {
+        return _reputation[alliance];
+    }
 }
 

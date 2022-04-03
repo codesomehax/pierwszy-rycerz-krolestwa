@@ -8,3 +8,8 @@ public enum Alliance {
     Evil
 }
 
+public enum NPCAnimationState {
+    Idle,
+    Walking,
+    BasicAttack
+}
