@@ -3414,10 +3414,32 @@ MonoBehaviour:
   Alignment: 1
   AggressivenessBorder: 50
   AggressivenessDistance: 20
+  WalkSpeed: 0
+  RunSpeed: 0
+  FallSpeed: 0
+  EnableIdleWalking: 0
   IdleAnimation: {fileID: 7400000, guid: f15c07c4bb03eeb48a7d2f8bfc519969, type: 3}
   WalkingAnimation: {fileID: 0}
   BasicAttackAnimation: {fileID: 7400000, guid: 68e3a50f30bb0c54e8ca5cfae6eea48d, type: 3}
   RunningAnimation: {fileID: 7400000, guid: 272e84c6ff8fea340b19da71308f0475, type: 3}
+--- !u!143 &549982722
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549982718}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2.45
+  m_Radius: 0.4
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1.27, z: 0}
 --- !u!1001 &551045985
 PrefabInstance:
   m_ObjectHideFlags: 0

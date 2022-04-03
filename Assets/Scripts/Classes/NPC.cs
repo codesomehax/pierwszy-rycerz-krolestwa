@@ -23,6 +23,13 @@ public class NPC : Entity
     public Alliance Alignment;
     public float AggressivenessBorder; // aggressive if reputation is lower than this value
     public float AggressivenessDistance; // distance from where the NPC will start chasing the player (if aggressive)
+    public float WalkSpeed;
+    public float RunSpeed;
+    public float FallSpeed;
+    public bool EnableIdleWalking;
+
+
+
     public AnimationClip IdleAnimation;    
     public AnimationClip WalkingAnimation;
     public AnimationClip BasicAttackAnimation;
@@ -33,6 +40,8 @@ public class NPC : Entity
     protected Animator _animator;
     protected Player _player;
     protected AnimatorOverrideController _animatorOverrideController;
+    protected CharacterController _characterController;
+    protected bool _isChasing;
 
 
 
@@ -58,8 +67,9 @@ public class NPC : Entity
         overrides["Running"] = RunningAnimation;
 
         _animatorOverrideController.ApplyOverrides(overrides);
+    }
 
-
+    void Update() {
 
     }
 }
