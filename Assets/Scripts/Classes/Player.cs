@@ -12,5 +12,14 @@ public class Player : Entity
     public float GetReputation(Alliance alliance) {
         return _reputation[alliance];
     }
+
+    protected override void Awake() {
+        base.Awake();
+
+        _reputation = new Dictionary<Alliance, float>();
+
+        _reputation[Alliance.Good] = 0;
+        _reputation[Alliance.Evil] = 0;
+    }
 }
 

@@ -55,7 +55,6 @@ public class NPC : Entity
     protected Player _player;
     protected AnimatorOverrideController _animatorOverrideController;
     protected NavMeshAgent _agent;
-    protected Vector3 _patrolDestinationPoint;
     protected State _state;
     protected IEnumerator _patrolCoroutine;
 
@@ -70,6 +69,7 @@ public class NPC : Entity
         base.Awake();
         _animator = GetComponent<Animator>();
         _player = FindObjectOfType<Player>();
+        _agent = GetComponent<NavMeshAgent>();
         _state = State.Idle;
 
         _animatorOverrideController = new AnimatorOverrideController(_animator.runtimeAnimatorController);
@@ -88,6 +88,7 @@ public class NPC : Entity
         _patrolCoroutine = Patrol();
 
         if (EnablePatroling) {
+            _state = State.Patroling;
             StartCoroutine(_patrolCoroutine);
         }
 
@@ -100,11 +101,18 @@ public class NPC : Entity
         if (playerInAttackRange && playerInSightRange && IsAggressiveTowardsPlayer()) {
             StopCoroutine(_patrolCoroutine);
             _state = State.Attacking;
+            _agent.isStopped = true;
             AttackPlayer();
         } else if (!playerInAttackRange && playerInSightRange && IsAggressiveTowardsPlayer()) {
             StopCoroutine(_patrolCoroutine);
             _state = State.Chasing;
+            _agent.isStopped = true;
             ChasePlayer();
+        } else if (EnablePatroling && _state != State.Patroling) {
+            _state = State.Patroling;
+            StartCoroutine(_patrolCoroutine);
+        } else if (!EnablePatroling) {
+            _state = State.Idle;
         }
     }
 
@@ -130,13 +138,11 @@ public class NPC : Entity
 
             while (distanceToDestination.magnitude > 1f) {
                 _agent.SetDestination(destination);
+                _agent.isStopped = false;   
+                distanceToDestination = transform.position - destination;
                 yield return null;
             }
-
-            _state = State.Idle;
         }
-        
-
     }
 
     private void AttackPlayer() {
