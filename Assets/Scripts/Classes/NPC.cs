@@ -23,15 +23,13 @@ public class NPC : Entity
 {
     public Alliance Alignment;
     public float AggressivenessBorder; // aggressive if reputation is lower than this value
-    public float WalkSpeed;
-    public float RunSpeed;
-    public float FallSpeed;
     public bool EnablePatroling;
     public LayerMask PlayerLayer;
     public LayerMask TerrainLayer;
     public float SightRange;
     public float AttackRange;
     public float PatrolRange;
+    public float AttackSpeed;
 
 
 
@@ -57,6 +55,8 @@ public class NPC : Entity
     protected NavMeshAgent _agent;
     protected State _state;
     protected IEnumerator _patrolCoroutine;
+    protected bool _alreadyAttacked;
+    protected bool _attackingRightNow;
 
 
 
@@ -71,6 +71,8 @@ public class NPC : Entity
         _player = FindObjectOfType<Player>();
         _agent = GetComponent<NavMeshAgent>();
         _state = State.Idle;
+        _alreadyAttacked = false;
+        _attackingRightNow = false;
 
         _animatorOverrideController = new AnimatorOverrideController(_animator.runtimeAnimatorController);
         _animator.runtimeAnimatorController = _animatorOverrideController;
@@ -99,28 +101,32 @@ public class NPC : Entity
         bool playerInAttackRange = Physics.CheckSphere(transform.position, AttackRange, PlayerLayer);
 
         if (playerInAttackRange && playerInSightRange && IsAggressiveTowardsPlayer()) {
-            StopCoroutine(_patrolCoroutine);
+            // StopCoroutine(_patrolCoroutine);
             _state = State.Attacking;
-            _agent.isStopped = true;
+            // _agent.isStopped = true;
             AttackPlayer();
-        } else if (!playerInAttackRange && playerInSightRange && IsAggressiveTowardsPlayer()) {
+        }
+        else if (!playerInAttackRange && playerInSightRange && IsAggressiveTowardsPlayer()) {
             StopCoroutine(_patrolCoroutine);
             _state = State.Chasing;
-            _agent.isStopped = true;
+            // _agent.isStopped = true;
+            if (_attackingRightNow) return;
             ChasePlayer();
-        } else if (EnablePatroling && _state != State.Patroling) {
+        }
+        else if (EnablePatroling && _state != State.Patroling) {
             _state = State.Patroling;
             StartCoroutine(_patrolCoroutine);
-        } else if (!EnablePatroling) {
+        }
+        else if (!EnablePatroling) {
             _state = State.Idle;
         }
     }
 
     private IEnumerator Patrol() {
         while (true) {
+            _animator.Play("Idle");
             yield return new WaitForSeconds(10f);
 
-            _state = State.Patroling;
             bool destinationSet = false;
             Vector3 destination = new Vector3();
             while (!destinationSet) {
@@ -136,9 +142,10 @@ public class NPC : Entity
 
             Vector3 distanceToDestination = transform.position - destination;
 
+            _animator.Play("Walking");
             while (distanceToDestination.magnitude > 1f) {
                 _agent.SetDestination(destination);
-                _agent.isStopped = false;   
+                // _agent.isStopped = false;   
                 distanceToDestination = transform.position - destination;
                 yield return null;
             }
@@ -146,11 +153,33 @@ public class NPC : Entity
     }
 
     private void AttackPlayer() {
-        
+        _agent.SetDestination(transform.position); // make sure enemy doesn't move
+        // _agent.isStopped = false;
+
+        transform.LookAt(_player.transform);
+        float timeBetweenAttacks = 1f / AttackSpeed;
+
+        if (!_alreadyAttacked) {
+            _animator.Play("Basic Attack");
+            _attackingRightNow = true;
+            Invoke(nameof(ResetAttackingRightNowState), BasicAttackAnimation.length);
+            _alreadyAttacked = true;
+            Invoke(nameof(ResetAlreadyAttackedState), timeBetweenAttacks);
+        }    
+    }
+
+    private void ResetAlreadyAttackedState() {
+        _alreadyAttacked = false;
+    }
+
+    private void ResetAttackingRightNowState() {
+        _attackingRightNow = false;
     }
 
     private void ChasePlayer() {
-
+        _animator.Play("Running");
+        _agent.SetDestination(_player.transform.position);
+        // _agent.isStopped = false;
     }
 
 

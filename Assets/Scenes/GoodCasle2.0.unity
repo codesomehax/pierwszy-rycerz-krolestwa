@@ -903,7 +903,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143848153}
-  m_LocalRotation: {x: 0.04239429, y: 0.9033231, z: -0.09186764, w: 0.41685784}
+  m_LocalRotation: {x: 0.0423943, y: 0.9033231, z: -0.09186764, w: 0.41685787}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3435,9 +3435,6 @@ MonoBehaviour:
   Inventory: {fileID: 0}
   Alignment: 1
   AggressivenessBorder: 50
-  WalkSpeed: 2
-  RunSpeed: 4
-  FallSpeed: 2
   EnablePatroling: 1
   PlayerLayer:
     serializedVersion: 2
@@ -3448,8 +3445,9 @@ MonoBehaviour:
   SightRange: 5
   AttackRange: 1
   PatrolRange: 5
+  AttackSpeed: 1
   IdleAnimation: {fileID: 7400000, guid: f15c07c4bb03eeb48a7d2f8bfc519969, type: 3}
-  WalkingAnimation: {fileID: 0}
+  WalkingAnimation: {fileID: 7400000, guid: 272e84c6ff8fea340b19da71308f0475, type: 3}
   BasicAttackAnimation: {fileID: 7400000, guid: 68e3a50f30bb0c54e8ca5cfae6eea48d, type: 3}
   RunningAnimation: {fileID: 7400000, guid: 272e84c6ff8fea340b19da71308f0475, type: 3}
 --- !u!1001 &551045985
@@ -5865,7 +5863,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796271654}
-  m_LocalRotation: {x: 0.03480485, y: 0.9048447, z: -0.07542147, w: 0.41755992}
+  m_LocalRotation: {x: 0.03480485, y: 0.9048447, z: -0.075421475, w: 0.41755992}
   m_LocalPosition: {x: 10, y: 3.4412236, z: 6.790786}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -15418,7 +15416,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2056536794}
-  m_LocalRotation: {x: 0.03480485, y: 0.9048447, z: -0.07542146, w: 0.41755998}
+  m_LocalRotation: {x: 0.03480485, y: 0.9048447, z: -0.07542147, w: 0.41755998}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
