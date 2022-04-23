@@ -16,7 +16,8 @@ public class Entity : InteractableObject
 
     protected float _currentHP;
 
-    protected virtual void Awake() {
+    protected virtual void Awake()
+    {
         _currentHP = MaxHP;
     }
 }

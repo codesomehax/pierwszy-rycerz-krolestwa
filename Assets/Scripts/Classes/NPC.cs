@@ -33,7 +33,8 @@ public class NPC : Entity
 
 
 
-    public enum State {
+    public enum State
+    {
         Idle,
         Patroling,
         Attacking,
@@ -60,7 +61,8 @@ public class NPC : Entity
 
 
 
-    public bool IsAggressiveTowardsPlayer() {
+    public bool IsAggressiveTowardsPlayer()
+    {
         return _player.GetReputation(Alignment) < AggressivenessBorder;
     }
 
@@ -89,53 +91,63 @@ public class NPC : Entity
 
         _patrolCoroutine = Patrol();
 
-        if (EnablePatroling) {
+        if (EnablePatroling)
+        {
             _state = State.Patroling;
             StartCoroutine(_patrolCoroutine);
         }
 
     }
 
-    void Update() {
+    void Update()
+    {
         bool playerInSightRange = Physics.CheckSphere(transform.position, SightRange, PlayerLayer);
         bool playerInAttackRange = Physics.CheckSphere(transform.position, AttackRange, PlayerLayer);
 
-        if (playerInAttackRange && playerInSightRange && IsAggressiveTowardsPlayer()) {
+        if (playerInAttackRange && playerInSightRange && IsAggressiveTowardsPlayer())
+        {
             // StopCoroutine(_patrolCoroutine);
             _state = State.Attacking;
             // _agent.isStopped = true;
             AttackPlayer();
         }
-        else if (!playerInAttackRange && playerInSightRange && IsAggressiveTowardsPlayer()) {
+        else if (!playerInAttackRange && playerInSightRange && IsAggressiveTowardsPlayer())
+        {
             StopCoroutine(_patrolCoroutine);
             _state = State.Chasing;
             // _agent.isStopped = true;
             if (_attackingRightNow) return;
             ChasePlayer();
         }
-        else if (EnablePatroling && _state != State.Patroling) {
+        else if (EnablePatroling && _state != State.Patroling)
+        {
             _state = State.Patroling;
             StartCoroutine(_patrolCoroutine);
         }
-        else if (!EnablePatroling) {
+        else if (!EnablePatroling)
+        {
             _state = State.Idle;
         }
     }
 
-    private IEnumerator Patrol() {
-        while (true) {
+    private IEnumerator Patrol()
+    {
+        while (true)
+        {
             _animator.Play("Idle");
             yield return new WaitForSeconds(10f);
 
             bool destinationSet = false;
             Vector3 destination = new Vector3();
-            while (!destinationSet) {
+            while (!destinationSet)
+            {
                 float x = Random.Range(-PatrolRange, PatrolRange);
                 float z = Random.Range(-PatrolRange, PatrolRange);
 
                 destination = new Vector3(transform.position.x + x, transform.position.y, transform.position.z + z);
 
-                if (Physics.Raycast(destination, -transform.up, PatrolRange, TerrainLayer)) {
+                if (Physics.Raycast(destination, -transform.up, PatrolRange, TerrainLayer))
+                {
                     destinationSet = true;
                 }
             }
@@ -143,7 +155,8 @@ public class NPC : Entity
             Vector3 distanceToDestination = transform.position - destination;
 
             _animator.Play("Walking");
-            while (distanceToDestination.magnitude > 1f) {
+            while (distanceToDestination.magnitude > 1f)
+            {
                 _agent.SetDestination(destination);
                 // _agent.isStopped = false;   
                 distanceToDestination = transform.position - destination;
@@ -152,14 +165,16 @@ public class NPC : Entity
         }
     }
 
-    private void AttackPlayer() {
+    private void AttackPlayer()
+    {
         _agent.SetDestination(transform.position); // make sure enemy doesn't move
         // _agent.isStopped = false;
 
         transform.LookAt(_player.transform);
         float timeBetweenAttacks = 1f / AttackSpeed;
 
-        if (!_alreadyAttacked) {
+        if (!_alreadyAttacked)
+        {
             _animator.Play("Basic Attack");
             _attackingRightNow = true;
             Invoke(nameof(ResetAttackingRightNowState), BasicAttackAnimation.length);
@@ -168,15 +183,18 @@ public class NPC : Entity
         }    
     }
 
-    private void ResetAlreadyAttackedState() {
+    private void ResetAlreadyAttackedState()
+    {
         _alreadyAttacked = false;
     }
 
-    private void ResetAttackingRightNowState() {
+    private void ResetAttackingRightNowState()
+    {
         _attackingRightNow = false;
     }
 
-    private void ChasePlayer() {
+    private void ChasePlayer()
+    {
         _animator.Play("Running");
         _agent.SetDestination(_player.transform.position);
         // _agent.isStopped = false;

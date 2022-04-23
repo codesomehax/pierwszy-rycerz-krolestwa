@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public enum Alliance {
+public enum Alliance
+{
     Good,
     Evil
 }

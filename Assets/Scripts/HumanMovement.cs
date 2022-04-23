@@ -16,28 +16,33 @@ public class HumanMovement : MonoBehaviour {
     public float FallSpeed = 2f;
     public Transform CameraTransform;
 
-    void Awake() {
+    void Awake()
+    {
         _animator = GetComponent<Animator>();
         _characterController = GetComponent<CharacterController>();
     }
    
-    void Update() {
+    void Update()
+    {
         _horizontalMovement = Input.GetAxis("Horizontal");
         _verticalMovement = Input.GetAxis("Vertical");
         _intendsToRun = Input.GetKey(KeyCode.LeftShift);
     }
 
-    void FixedUpdate() {
+    void FixedUpdate()
+    {
         transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, CameraTransform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
         
-        if (_horizontalMovement != 0f || _verticalMovement != 0f || !_characterController.isGrounded) {
+        if (_horizontalMovement != 0f || _verticalMovement != 0f || !_characterController.isGrounded)
+        {
             Vector3 direction = new Vector3(_horizontalMovement, 0, _verticalMovement);
             direction.Normalize();
 
             Vector3 transformDirection = transform.TransformDirection(direction);
 
             float speed = (_intendsToRun) ? RunSpeed : WalkSpeed;
-            if (!_characterController.isGrounded) {
+            if (!_characterController.isGrounded)
+            {
                 transformDirection.y = -FallSpeed;
             }
 
@@ -51,10 +56,14 @@ public class HumanMovement : MonoBehaviour {
         }
     }
 
-    private void OnApplicationFocus(bool focus) {
-        if (focus) {
+    private void OnApplicationFocus(bool focus)
+    {
+        if (focus)
+        {
             Cursor.lockState = CursorLockMode.Locked;
-        } else {
+        } 
+        else
+        {
             Cursor.lockState = CursorLockMode.None;
         }
     }
