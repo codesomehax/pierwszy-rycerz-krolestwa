@@ -37,6 +37,7 @@ public class NPC : Entity
     {
         Idle,
         Patroling,
+        PatrolingWalking,
         Attacking,
         Chasing
     }
@@ -55,9 +56,10 @@ public class NPC : Entity
     protected AnimatorOverrideController _animatorOverrideController;
     protected NavMeshAgent _agent;
     protected State _state;
-    protected IEnumerator _patrolCoroutine;
     protected bool _alreadyAttacked;
     protected bool _attackingRightNow;
+    protected bool _destinationSet;
+    protected Vector3 _destination;
 
 
 
@@ -75,6 +77,10 @@ public class NPC : Entity
         _state = State.Idle;
         _alreadyAttacked = false;
         _attackingRightNow = false;
+        _destinationSet = false;
+        _destination = new Vector3();
+
+        // animatorOverrider
 
         _animatorOverrideController = new AnimatorOverrideController(_animator.runtimeAnimatorController);
         _animator.runtimeAnimatorController = _animatorOverrideController;
@@ -89,14 +95,6 @@ public class NPC : Entity
 
         _animatorOverrideController.ApplyOverrides(overrides);
 
-        _patrolCoroutine = Patrol();
-
-        if (EnablePatroling)
-        {
-            _state = State.Patroling;
-            StartCoroutine(_patrolCoroutine);
-        }
-
     }
 
     void Update()
@@ -104,25 +102,30 @@ public class NPC : Entity
         bool playerInSightRange = Physics.CheckSphere(transform.position, SightRange, PlayerLayer);
         bool playerInAttackRange = Physics.CheckSphere(transform.position, AttackRange, PlayerLayer);
 
-        if (playerInAttackRange && playerInSightRange && IsAggressiveTowardsPlayer())
+        if (playerInAttackRange && /* playerInSightRange && */ IsAggressiveTowardsPlayer())
         {
-            // StopCoroutine(_patrolCoroutine);
             _state = State.Attacking;
-            // _agent.isStopped = true;
+            CancelInvoke(nameof(Patrol));
             AttackPlayer();
         }
         else if (!playerInAttackRange && playerInSightRange && IsAggressiveTowardsPlayer())
         {
-            StopCoroutine(_patrolCoroutine);
             _state = State.Chasing;
-            // _agent.isStopped = true;
+            CancelInvoke(nameof(Patrol));
             if (_attackingRightNow) return;
             ChasePlayer();
         }
-        else if (EnablePatroling && _state != State.Patroling)
+        else if (EnablePatroling && _state != State.Patroling && !_destinationSet)
         {
+            _agent.SetDestination(transform.position);
+            _animator.Play("Idle");
             _state = State.Patroling;
-            StartCoroutine(_patrolCoroutine);
+            Invoke(nameof(Patrol), 10f);
+        }
+        else if (EnablePatroling && _destinationSet)
+        {
+            _state = State.PatrolingWalking;
+            PatrolWalk();
         }
         else if (!EnablePatroling)
         {
@@ -130,45 +133,39 @@ public class NPC : Entity
         }
     }
 
-    private IEnumerator Patrol()
+    private void Patrol()
     {
-        while (true)
+        while (!_destinationSet)
         {
-            _animator.Play("Idle");
-            yield return new WaitForSeconds(10f);
+            float x = Random.Range(-PatrolRange, PatrolRange);
+            float z = Random.Range(-PatrolRange, PatrolRange);
 
-            bool destinationSet = false;
-            Vector3 destination = new Vector3();
-            while (!destinationSet)
-            {
-                float x = Random.Range(-PatrolRange, PatrolRange);
-                float z = Random.Range(-PatrolRange, PatrolRange);
+            _destination = new Vector3(transform.position.x + x, transform.position.y, transform.position.z + z);
 
-                destination = new Vector3(transform.position.x + x, transform.position.y, transform.position.z + z);
+            if (Physics.Raycast(_destination, -transform.up, PatrolRange, TerrainLayer))
+                _destinationSet = true;
+        }
 
-                if (Physics.Raycast(destination, -transform.up, PatrolRange, TerrainLayer))
-                {
-                    destinationSet = true;
-                }
-            }
+        _animator.Play("Walking");
+    }
 
-            Vector3 distanceToDestination = transform.position - destination;
+    private void PatrolWalk()
+    {
+        _agent.SetDestination(_destination);
 
-            _animator.Play("Walking");
-            while (distanceToDestination.magnitude > 1f)
-            {
-                _agent.SetDestination(destination);
-                // _agent.isStopped = false;   
-                distanceToDestination = transform.position - destination;
-                yield return null;
-            }
+        Vector3 distanceToDestination = transform.position - _destination;
+
+        // destination reached
+        if (distanceToDestination.magnitude < 1f)
+        {
+            _destinationSet = false;
+            _state = State.Idle;
         }
     }
 
     private void AttackPlayer()
     {
         _agent.SetDestination(transform.position); // make sure enemy doesn't move
-        // _agent.isStopped = false;
 
         transform.LookAt(_player.transform);
         float timeBetweenAttacks = 1f / AttackSpeed;
@@ -197,7 +194,6 @@ public class NPC : Entity
     {
         _animator.Play("Running");
         _agent.SetDestination(_player.transform.position);
-        // _agent.isStopped = false;
     }
 
 
