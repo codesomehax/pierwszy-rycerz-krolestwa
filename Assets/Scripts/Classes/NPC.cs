@@ -42,6 +42,13 @@ public class NPC : Entity
         Chasing
     }
 
+    public enum MovementBlendTreeAnimatorState
+    {
+        Idle = 0,
+        Walking,
+        Running
+    }
+
 
 
     public AnimationClip IdleAnimation;    
@@ -60,6 +67,7 @@ public class NPC : Entity
     protected bool _attackingRightNow;
     protected bool _destinationSet;
     protected Vector3 _destination;
+    protected float _timeBetweenAttacks;
 
 
 
@@ -79,6 +87,7 @@ public class NPC : Entity
         _attackingRightNow = false;
         _destinationSet = false;
         _destination = new Vector3();
+        _timeBetweenAttacks = 1f / AttackSpeed;
 
         // animatorOverrider
 
@@ -88,10 +97,10 @@ public class NPC : Entity
         AnimationClipOverrides overrides = new AnimationClipOverrides(_animatorOverrideController.overridesCount);
         _animatorOverrideController.GetOverrides(overrides);
 
-        overrides["Idle"] = IdleAnimation;
-        overrides["Walking"] = WalkingAnimation;
-        overrides["Basic Attack"] = BasicAttackAnimation;
-        overrides["Running"] = RunningAnimation;
+        overrides["Base Idle"] = IdleAnimation;
+        overrides["Base Walking"] = WalkingAnimation;
+        overrides["Base Basic Attack"] = BasicAttackAnimation;
+        overrides["Base Running"] = RunningAnimation;
 
         _animatorOverrideController.ApplyOverrides(overrides);
 
@@ -118,7 +127,7 @@ public class NPC : Entity
         else if (EnablePatroling && _state != State.Patroling && !_destinationSet)
         {
             _agent.SetDestination(transform.position);
-            _animator.Play("Idle");
+            _animator.SetFloat("State", (float) MovementBlendTreeAnimatorState.Idle);
             _state = State.Patroling;
             Invoke(nameof(Patrol), 10f);
         }
@@ -146,7 +155,7 @@ public class NPC : Entity
                 _destinationSet = true;
         }
 
-        _animator.Play("Walking");
+        _animator.SetFloat("State", (float) MovementBlendTreeAnimatorState.Walking);
     }
 
     private void PatrolWalk()
@@ -168,15 +177,15 @@ public class NPC : Entity
         _agent.SetDestination(transform.position); // make sure enemy doesn't move
 
         transform.LookAt(_player.transform);
-        float timeBetweenAttacks = 1f / AttackSpeed;
 
         if (!_alreadyAttacked)
         {
-            _animator.Play("Basic Attack");
+            _animator.Play("Base Basic Attack");
+            _animator.SetFloat("State", (float) MovementBlendTreeAnimatorState.Idle);
             _attackingRightNow = true;
             Invoke(nameof(ResetAttackingRightNowState), BasicAttackAnimation.length);
             _alreadyAttacked = true;
-            Invoke(nameof(ResetAlreadyAttackedState), timeBetweenAttacks);
+            Invoke(nameof(ResetAlreadyAttackedState), _timeBetweenAttacks);
         }    
     }
 
@@ -188,11 +197,12 @@ public class NPC : Entity
     private void ResetAttackingRightNowState()
     {
         _attackingRightNow = false;
+        _animator.Play("Movement");
     }
 
     private void ChasePlayer()
     {
-        _animator.Play("Running");
+        _animator.SetFloat("State", (float) MovementBlendTreeAnimatorState.Running);
         _agent.SetDestination(_player.transform.position);
     }
 
