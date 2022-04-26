@@ -177,6 +177,7 @@ public class NPC : Entity
         _agent.SetDestination(transform.position); // make sure enemy doesn't move
 
         transform.LookAt(_player.transform);
+        _animator.SetFloat("State", (float) MovementBlendTreeAnimatorState.Idle);
 
         if (!_alreadyAttacked)
         {
