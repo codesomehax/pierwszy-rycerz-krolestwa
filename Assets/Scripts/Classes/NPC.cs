@@ -119,33 +119,35 @@ public class NPC : Entity
             SetDestination();
         }
 
-        if (playerInAttackRange && /* playerInSightRange && */ IsAggressiveTowardsPlayer())
+        if (playerInAttackRange && /* playerInSightRange && */ IsAggressiveTowardsPlayer()) // continously executed, Attacking
         {
             _state = State.Attacking;
             CancelInvoke(nameof(Patrol));
             AttackPlayer();
         }
-        else if (!playerInAttackRange && playerInSightRange && IsAggressiveTowardsPlayer())
+        else if (!playerInAttackRange && playerInSightRange && IsAggressiveTowardsPlayer()) // continously executed, Chasing
         {
             _state = State.Chasing;
             CancelInvoke(nameof(Patrol));
             if (_attackingRightNow) return;
             ChasePlayer();
         }
-        else if (EnablePatroling && _state != State.Patroling && !_destinationSet)
+        else if (EnablePatroling && _state != State.Patroling && !_destinationSet) // executed only once, Patroling
         {
             _agent.SetDestination(transform.position);
             _animator.SetFloat("State", (float) MovementBlendTreeAnimatorState.Idle);
             _state = State.Patroling;
             Invoke(nameof(Patrol), PatrolTimeInterval);
         }
-        else if (EnablePatroling && _destinationSet && _patrolTimeIntervalPassed)
+        else if (EnablePatroling && _destinationSet && _patrolTimeIntervalPassed) // continously executed, Patroling Walking
         {
             _state = State.PatrolingWalking;
             PatrolWalk();
         }
         else if (!EnablePatroling)
         {
+            _agent.SetDestination(transform.position);
+            _animator.SetFloat("State", (float) MovementBlendTreeAnimatorState.Idle, 0.1f, Time.deltaTime);
             _state = State.Idle;
         }
     }
@@ -170,7 +172,7 @@ public class NPC : Entity
 
     private void PatrolWalk()
     {
-        _animator.SetFloat("State", (float) MovementBlendTreeAnimatorState.Walking);
+        _animator.SetFloat("State", (float) MovementBlendTreeAnimatorState.Walking, 0.1f, Time.deltaTime);
         _agent.SetDestination(_destination);
 
         Vector3 distanceToDestination = transform.position - _destination;
@@ -189,12 +191,12 @@ public class NPC : Entity
         _agent.SetDestination(transform.position); // make sure enemy doesn't move
 
         transform.LookAt(_player.transform);
-        _animator.SetFloat("State", (float) MovementBlendTreeAnimatorState.Idle);
+        _animator.SetFloat("State", (float) MovementBlendTreeAnimatorState.Idle, 0.1f, Time.deltaTime);
 
         if (!_alreadyAttacked)
         {
             _animator.Play("Base Basic Attack");
-            _animator.SetFloat("State", (float) MovementBlendTreeAnimatorState.Idle);
+            _animator.SetFloat("State", (float) MovementBlendTreeAnimatorState.Idle, 0.1f, Time.deltaTime);
             _attackingRightNow = true;
             Invoke(nameof(ResetAttackingRightNowState), BasicAttackAnimation.length);
             _alreadyAttacked = true;
@@ -216,7 +218,7 @@ public class NPC : Entity
     private void ChasePlayer()
     {
         _destinationSet = false;
-        _animator.SetFloat("State", (float) MovementBlendTreeAnimatorState.Running);
+        _animator.SetFloat("State", (float) MovementBlendTreeAnimatorState.Running, 0.1f, Time.deltaTime);
         _agent.SetDestination(_player.transform.position);
     }
 
