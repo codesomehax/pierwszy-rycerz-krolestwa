@@ -29,7 +29,7 @@ public class NPC : Entity
     public float SightRange;
     public float AttackRange;
     public float PatrolRange;
-    public float AttackSpeed;
+    public float TimeBetweenAttacks;
     public float PatrolTimeInterval;
 
 
@@ -68,7 +68,6 @@ public class NPC : Entity
     protected bool _attackingRightNow;
     protected bool _destinationSet;
     protected Vector3 _destination;
-    protected float _timeBetweenAttacks;
     protected bool _patrolTimeIntervalPassed;
 
 
@@ -89,7 +88,6 @@ public class NPC : Entity
         _attackingRightNow = false;
         _destinationSet = false;
         _destination = new Vector3();
-        _timeBetweenAttacks = 1f / AttackSpeed;
         _patrolTimeIntervalPassed = false;
 
         // animatorOverrider
@@ -200,7 +198,7 @@ public class NPC : Entity
             _attackingRightNow = true;
             Invoke(nameof(ResetAttackingRightNowState), BasicAttackAnimation.length);
             _alreadyAttacked = true;
-            Invoke(nameof(ResetAlreadyAttackedState), _timeBetweenAttacks);
+            Invoke(nameof(ResetAlreadyAttackedState), TimeBetweenAttacks);
         }    
     }
 
