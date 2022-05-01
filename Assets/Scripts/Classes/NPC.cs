@@ -30,6 +30,7 @@ public class NPC : Entity
     public float AttackRange;
     public float PatrolRange;
     public float AttackSpeed;
+    public float PatrolTimeInterval;
 
 
 
@@ -68,6 +69,7 @@ public class NPC : Entity
     protected bool _destinationSet;
     protected Vector3 _destination;
     protected float _timeBetweenAttacks;
+    protected bool _patrolTimeIntervalPassed;
 
 
 
@@ -88,6 +90,7 @@ public class NPC : Entity
         _destinationSet = false;
         _destination = new Vector3();
         _timeBetweenAttacks = 1f / AttackSpeed;
+        _patrolTimeIntervalPassed = false;
 
         // animatorOverrider
 
@@ -111,6 +114,11 @@ public class NPC : Entity
         bool playerInSightRange = Physics.CheckSphere(transform.position, SightRange, PlayerLayer);
         bool playerInAttackRange = Physics.CheckSphere(transform.position, AttackRange, PlayerLayer);
 
+        if (!_destinationSet && _state == State.Patroling)
+        {
+            SetDestination();
+        }
+
         if (playerInAttackRange && /* playerInSightRange && */ IsAggressiveTowardsPlayer())
         {
             _state = State.Attacking;
@@ -129,9 +137,9 @@ public class NPC : Entity
             _agent.SetDestination(transform.position);
             _animator.SetFloat("State", (float) MovementBlendTreeAnimatorState.Idle);
             _state = State.Patroling;
-            Invoke(nameof(Patrol), 10f);
+            Invoke(nameof(Patrol), PatrolTimeInterval);
         }
-        else if (EnablePatroling && _destinationSet)
+        else if (EnablePatroling && _destinationSet && _patrolTimeIntervalPassed)
         {
             _state = State.PatrolingWalking;
             PatrolWalk();
@@ -142,24 +150,27 @@ public class NPC : Entity
         }
     }
 
+
+    private void SetDestination()
+    {
+        float x = Random.Range(-PatrolRange, PatrolRange);
+        float z = Random.Range(-PatrolRange, PatrolRange);
+
+        _destination = new Vector3(transform.position.x + x, transform.position.y, transform.position.z + z);
+
+        if (Physics.Raycast(_destination, -transform.up, 2f, TerrainLayer))
+        {
+            _destinationSet = true;
+        }
+    }
     private void Patrol()
     {
-        while (!_destinationSet)
-        {
-            float x = Random.Range(-PatrolRange, PatrolRange);
-            float z = Random.Range(-PatrolRange, PatrolRange);
-
-            _destination = new Vector3(transform.position.x + x, transform.position.y, transform.position.z + z);
-
-            if (Physics.Raycast(_destination, -transform.up, PatrolRange, TerrainLayer))
-                _destinationSet = true;
-        }
-
-        _animator.SetFloat("State", (float) MovementBlendTreeAnimatorState.Walking);
+        _patrolTimeIntervalPassed = true;
     }
 
     private void PatrolWalk()
     {
+        _animator.SetFloat("State", (float) MovementBlendTreeAnimatorState.Walking);
         _agent.SetDestination(_destination);
 
         Vector3 distanceToDestination = transform.position - _destination;
@@ -168,6 +179,7 @@ public class NPC : Entity
         if (distanceToDestination.magnitude < 1f)
         {
             _destinationSet = false;
+            _patrolTimeIntervalPassed = false;
             _state = State.Idle;
         }
     }
@@ -203,6 +215,7 @@ public class NPC : Entity
 
     private void ChasePlayer()
     {
+        _destinationSet = false;
         _animator.SetFloat("State", (float) MovementBlendTreeAnimatorState.Running);
         _agent.SetDestination(_player.transform.position);
     }
