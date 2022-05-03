@@ -6,20 +6,25 @@ public class HumanMovement : MonoBehaviour {
 
     private Animator _animator;
     private CharacterController _characterController;
+    private Player _player;
     
     private float _horizontalMovement = 0f;
     private float _verticalMovement = 0f;
     private bool _intendsToRun = false;
+    private float _walkSpeed;
+    private float _runSpeed;
+    private float _fallSpeed;
 
-    public float WalkSpeed = 2f;
-    public float RunSpeed = 5f;
-    public float FallSpeed = 2f;
     public Transform CameraTransform;
 
     void Awake()
     {
         _animator = GetComponent<Animator>();
         _characterController = GetComponent<CharacterController>();
+        _player = GetComponent<Player>();
+        _walkSpeed = _player.WalkSpeed;
+        _runSpeed = _player.RunSpeed;
+        _fallSpeed = _player.FallSpeed;
     }
    
     void Update()
@@ -40,10 +45,10 @@ public class HumanMovement : MonoBehaviour {
 
             Vector3 transformDirection = transform.TransformDirection(direction);
 
-            float speed = (_intendsToRun) ? RunSpeed : WalkSpeed;
+            float speed = (_intendsToRun) ? _runSpeed : _walkSpeed;
             if (!_characterController.isGrounded)
             {
-                transformDirection.y = -FallSpeed;
+                transformDirection.y = -_fallSpeed;
             }
 
             Vector3 movement = speed * Time.deltaTime * transformDirection;

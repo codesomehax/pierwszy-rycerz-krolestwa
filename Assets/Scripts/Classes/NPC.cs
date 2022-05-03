@@ -27,9 +27,8 @@ public class NPC : Entity
     public LayerMask PlayerLayer;
     public LayerMask TerrainLayer;
     public float SightRange;
-    public float AttackRange;
     public float PatrolRange;
-    public float TimeBetweenAttacks;
+    public float AttackRange;
     public float PatrolTimeInterval;
 
 
@@ -59,13 +58,10 @@ public class NPC : Entity
 
 
 
-    protected Animator _animator;
     protected Player _player;
     protected AnimatorOverrideController _animatorOverrideController;
     protected NavMeshAgent _agent;
     protected State _state;
-    protected bool _alreadyAttacked;
-    protected bool _attackingRightNow;
     protected bool _destinationSet;
     protected Vector3 _destination;
     protected bool _patrolTimeIntervalPassed;
@@ -80,12 +76,9 @@ public class NPC : Entity
     protected override void Awake()
     {
         base.Awake();
-        _animator = GetComponent<Animator>();
         _player = FindObjectOfType<Player>();
         _agent = GetComponent<NavMeshAgent>();
         _state = State.Idle;
-        _alreadyAttacked = false;
-        _attackingRightNow = false;
         _destinationSet = false;
         _destination = new Vector3();
         _patrolTimeIntervalPassed = false;
@@ -121,7 +114,7 @@ public class NPC : Entity
         {
             _state = State.Attacking;
             CancelInvoke(nameof(Patrol));
-            AttackPlayer();
+            Attack();
         }
         else if (!playerInAttackRange && playerInSightRange && IsAggressiveTowardsPlayer()) // continously executed, Chasing
         {
@@ -184,7 +177,7 @@ public class NPC : Entity
         }
     }
 
-    private void AttackPlayer()
+    protected override void Attack()
     {
         _agent.SetDestination(transform.position); // make sure enemy doesn't move
 
@@ -202,16 +195,7 @@ public class NPC : Entity
         }    
     }
 
-    private void ResetAlreadyAttackedState()
-    {
-        _alreadyAttacked = false;
-    }
-
-    private void ResetAttackingRightNowState()
-    {
-        _attackingRightNow = false;
-        _animator.Play("Movement");
-    }
+    
 
     private void ChasePlayer()
     {
