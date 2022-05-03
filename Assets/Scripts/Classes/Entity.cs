@@ -24,6 +24,7 @@ public class Entity : InteractableObject
     protected bool _alreadyAttacked;
     protected bool _attackingRightNow;
     protected float _currentHP;
+    protected bool _isAlive;
 
 
 
@@ -48,6 +49,13 @@ public class Entity : InteractableObject
         _animator = GetComponent<Animator>();
         _alreadyAttacked = false;
         _attackingRightNow = false;
+        _isAlive = true;
+        _animator.SetBool("IsAlive", true);
+    }
+
+    public bool IsAlive()
+    {
+        return _isAlive;
     }
 
     public float GetCurrentHP()
@@ -58,5 +66,40 @@ public class Entity : InteractableObject
     public void SetCurrentHP(float hp)
     {
         _currentHP = (hp < 0f) ? 0f : hp;
+    }
+
+    public void TakeDamage(float attackDamage)
+    {
+        float dmg = attackDamage - Defense;
+        if (dmg > 0)
+        {
+            _currentHP -= dmg;
+            _animator.SetTrigger("Hurt");
+            if (_currentHP <= 0f)
+            {
+                _currentHP = 0f;
+                Die();
+            }
+        }
+    }
+
+    public void Heal(float hp)
+    {
+        if (_currentHP + hp > MaxHP)
+        {
+            _currentHP = MaxHP;
+        }
+        else
+        {
+            _currentHP += hp;
+        }
+    }
+
+    public virtual void Die()
+    {
+        _isAlive = false;
+        _animator.SetBool("IsAlive", false);
+        GetComponent<Collider>().enabled = false;
+        this.enabled = false;
     }
 }

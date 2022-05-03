@@ -110,13 +110,13 @@ public class NPC : Entity
             SetDestination();
         }
 
-        if (playerInAttackRange && /* playerInSightRange && */ IsAggressiveTowardsPlayer()) // continously executed, Attacking
+        if (playerInAttackRange && /* playerInSightRange && */ IsAggressiveTowardsPlayer() && _player.IsAlive()) // continously executed, Attacking
         {
             _state = State.Attacking;
             CancelInvoke(nameof(Patrol));
             Attack();
         }
-        else if (!playerInAttackRange && playerInSightRange && IsAggressiveTowardsPlayer()) // continously executed, Chasing
+        else if (!playerInAttackRange && playerInSightRange && IsAggressiveTowardsPlayer() && _player.IsAlive()) // continously executed, Chasing
         {
             _state = State.Chasing;
             CancelInvoke(nameof(Patrol));
@@ -135,7 +135,7 @@ public class NPC : Entity
             _state = State.PatrolingWalking;
             PatrolWalk();
         }
-        else if (!EnablePatroling)
+        else if (!EnablePatroling) // idle
         {
             _agent.SetDestination(transform.position);
             _animator.SetFloat("State", (float) MovementBlendTreeAnimatorState.Idle, 0.1f, Time.deltaTime);
@@ -192,6 +192,8 @@ public class NPC : Entity
             Invoke(nameof(ResetAttackingRightNowState), BasicAttackAnimation.length);
             _alreadyAttacked = true;
             Invoke(nameof(ResetAlreadyAttackedState), TimeBetweenAttacks);
+
+            _player.TakeDamage(AttackDamage);
         }    
     }
 

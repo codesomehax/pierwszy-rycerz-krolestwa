@@ -23,5 +23,11 @@ public class Player : Entity
         _reputation[Alliance.Good] = 0;
         _reputation[Alliance.Evil] = 0;
     }
+
+    public override void Die()
+    {
+        base.Die();
+        GetComponent<HumanMovement>().enabled = false;
+    }
 }
 
