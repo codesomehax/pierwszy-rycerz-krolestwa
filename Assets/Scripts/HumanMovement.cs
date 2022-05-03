@@ -60,16 +60,4 @@ public class HumanMovement : MonoBehaviour {
             _animator.SetFloat("VelocityZ", _verticalMovement * factor, 0.1f, Time.deltaTime);
         }
     }
-
-    private void OnApplicationFocus(bool focus)
-    {
-        if (focus)
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-        } 
-        else
-        {
-            Cursor.lockState = CursorLockMode.None;
-        }
-    }
 }

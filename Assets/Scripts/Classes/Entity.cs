@@ -32,12 +32,12 @@ public class Entity : InteractableObject
     protected virtual void Attack() {}
 
 
-    protected void ResetAlreadyAttackedState()
+    protected virtual void ResetAlreadyAttackedState()
     {
         _alreadyAttacked = false;
     }
 
-    protected void ResetAttackingRightNowState()
+    protected virtual void ResetAttackingRightNowState()
     {
         _attackingRightNow = false;
         _animator.Play("Movement");
@@ -74,7 +74,10 @@ public class Entity : InteractableObject
         if (dmg > 0)
         {
             _currentHP -= dmg;
-            _animator.SetTrigger("Hurt");
+            if (!_attackingRightNow)
+            {
+                _animator.SetTrigger("Hurt");
+            }
             if (_currentHP <= 0f)
             {
                 _currentHP = 0f;
