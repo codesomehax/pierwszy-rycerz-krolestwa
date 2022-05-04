@@ -55,7 +55,8 @@ public class NPC : Entity
     public AnimationClip WalkingAnimation;
     public AnimationClip BasicAttackAnimation;
     public AnimationClip RunningAnimation;
-
+    public AnimationClip HurtAnimation;    
+    public AnimationClip DeathAnimation;
 
 
     protected Player _player;
@@ -118,6 +119,8 @@ public class NPC : Entity
         overrides["Base Walking"] = WalkingAnimation;
         overrides["Base Basic Attack"] = BasicAttackAnimation;
         overrides["Base Running"] = RunningAnimation;
+        overrides["Base Hurt"] = HurtAnimation;
+        overrides["Base Death"] = DeathAnimation;
 
         _animatorOverrideController.ApplyOverrides(overrides);
 
@@ -214,9 +217,9 @@ public class NPC : Entity
 
         if (!_alreadyAttacked)
         {
-            _animator.Play("Base Basic Attack");
             _animator.SetFloat("State", (float) MovementBlendTreeAnimatorState.Idle, 0.1f, Time.deltaTime);
             _attackingRightNow = true;
+            _animator.SetBool("AttackingRightNow", true);
             Invoke(nameof(ResetAttackingRightNowState), BasicAttackAnimation.length);
             _alreadyAttacked = true;
             Invoke(nameof(ResetAlreadyAttackedState), TimeBetweenAttacks);
@@ -225,7 +228,11 @@ public class NPC : Entity
         }    
     }
 
-    
+    protected override void ResetAttackingRightNowState()
+    {
+        _attackingRightNow = false;
+        _animator.SetBool("AttackingRightNow", false);
+    }
 
     private void ChasePlayer()
     {

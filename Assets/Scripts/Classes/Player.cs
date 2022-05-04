@@ -71,8 +71,8 @@ public class Player : Entity
 
     protected override void Attack()
     {
-        _animator.SetFloat("VelocityX", 0f, 0.1f, Time.deltaTime);
-        _animator.SetFloat("VelocityZ", 0f, 0.1f, Time.deltaTime);
+        _animator.SetFloat("VelocityX", 0f);
+        _animator.SetFloat("VelocityZ", 0f);
 
         _attackingRightNow = true;
         _animator.SetBool("AttackingRightNow", true);

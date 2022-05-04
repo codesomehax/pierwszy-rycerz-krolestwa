@@ -40,7 +40,6 @@ public class Entity : InteractableObject
     protected virtual void ResetAttackingRightNowState()
     {
         _attackingRightNow = false;
-        _animator.Play("Movement");
     }
 
     protected virtual void Awake()
@@ -107,7 +106,10 @@ public class Entity : InteractableObject
     {
         _isAlive = false;
         _animator.SetBool("IsAlive", false);
-        GetComponent<Collider>().enabled = false;
+        foreach(Collider collider in GetComponents<Collider>())
+        {
+            collider.enabled = false;
+        }
         this.enabled = false;
     }
 }
