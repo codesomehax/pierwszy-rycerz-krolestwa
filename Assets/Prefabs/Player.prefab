@@ -1430,8 +1430,12 @@ MonoBehaviour:
   FallSpeed: 2
   TimeBetweenAttacks: 2
   Inventory: {fileID: 0}
-  BasicAttack1: {fileID: -203655887218126122, guid: e8486ca4aff5906c5bbacdc84372327e, type: 3}
-  BasicAttack2: {fileID: -203655887218126122, guid: d00e070e48e84dbba99e8065edacf17d, type: 3}
+  BasicAttack1: {fileID: -203655887218126122, guid: 2c7f04419082b337998944154a3b80ed, type: 3}
+  BasicAttack2: {fileID: -203655887218126122, guid: a45fa12a20a9c3bc69ed3d4df4439a9b, type: 3}
+  EnemyLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  Sword: {fileID: 5365625435002247179}
 --- !u!1 &5135358660747561348
 GameObject:
   m_ObjectHideFlags: 0
@@ -4779,5 +4783,10 @@ PrefabInstance:
 --- !u!4 &4701009566646420145 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2869413995942106812, guid: 5676bdababfc9c144824b1050aa60674, type: 3}
+  m_PrefabInstance: {fileID: 7417256618674721805}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5365625435002247179 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3213851043470871558, guid: 5676bdababfc9c144824b1050aa60674, type: 3}
   m_PrefabInstance: {fileID: 7417256618674721805}
   m_PrefabAsset: {fileID: 0}
