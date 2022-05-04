@@ -65,12 +65,34 @@ public class NPC : Entity
     protected bool _destinationSet;
     protected Vector3 _destination;
     protected bool _patrolTimeIntervalPassed;
+    protected bool _alreadyTookDamage;
 
 
 
     public bool IsAggressiveTowardsPlayer()
     {
         return _player.GetReputation(Alignment) < AggressivenessBorder;
+    }
+
+    public override void TakeDamage(float attackDamage)
+    {
+        if (_alreadyTookDamage) return;
+
+        float dmg = attackDamage - Defense;
+        if (dmg > 0)
+        {
+            _currentHP -= dmg;
+            _alreadyTookDamage = true;
+            if (!_attackingRightNow)
+            {
+                _animator.SetTrigger("Hurt");
+            }
+            if (_currentHP <= 0f)
+            {
+                _currentHP = 0f;
+                Die();
+            }
+        }
     }
 
     protected override void Awake()
@@ -82,6 +104,7 @@ public class NPC : Entity
         _destinationSet = false;
         _destination = new Vector3();
         _patrolTimeIntervalPassed = false;
+        _alreadyTookDamage = false;
 
         // animatorOverrider
 
@@ -102,6 +125,11 @@ public class NPC : Entity
 
     void Update()
     {
+        if (_alreadyTookDamage && !_player.IsAttackingRightNow())
+        {
+            _alreadyTookDamage = false;
+        }
+
         bool playerInSightRange = Physics.CheckSphere(transform.position, SightRange, PlayerLayer);
         bool playerInAttackRange = Physics.CheckSphere(transform.position, AttackRange, PlayerLayer);
 

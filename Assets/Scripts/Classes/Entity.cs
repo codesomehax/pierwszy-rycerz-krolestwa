@@ -53,6 +53,11 @@ public class Entity : InteractableObject
         _animator.SetBool("IsAlive", true);
     }
 
+    public bool IsAttackingRightNow()
+    {
+        return _attackingRightNow;
+    }
+
     public bool IsAlive()
     {
         return _isAlive;
@@ -68,7 +73,7 @@ public class Entity : InteractableObject
         _currentHP = (hp < 0f) ? 0f : hp;
     }
 
-    public void TakeDamage(float attackDamage)
+    public virtual void TakeDamage(float attackDamage)
     {
         float dmg = attackDamage - Defense;
         if (dmg > 0)

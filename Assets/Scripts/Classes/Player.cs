@@ -9,6 +9,8 @@ public class Player : Entity
 {
     public AnimationClip BasicAttack1;
     public AnimationClip BasicAttack2;
+    public LayerMask EnemyLayer;
+    public GameObject Sword;
 
 
     private int _currentAttackType;
@@ -38,12 +40,33 @@ public class Player : Entity
         {
             Attack();
         }
+
+        if (_attackingRightNow)
+        {
+            HitEnemy();
+        }
     }
 
     public override void Die()
     {
         base.Die();
         GetComponent<HumanMovement>().enabled = false;
+    }
+
+    private void HitEnemy()
+    {
+        // I have got these vectors in the editor and they are based on the sword's position
+        Vector3 center = new Vector3(0f, 0.9f, 0f);
+        Vector3 halfExtents = new Vector3(0.1f, 0.81f, 0.04f);
+
+        center += Sword.transform.position;
+
+        Collider[] enemiesHit = Physics.OverlapBox(center, halfExtents, Sword.transform.rotation, EnemyLayer);
+
+        foreach(Collider enemy in enemiesHit)
+        {
+            enemy.GetComponent<NPC>().TakeDamage(AttackDamage);
+        }
     }
 
     protected override void Attack()
