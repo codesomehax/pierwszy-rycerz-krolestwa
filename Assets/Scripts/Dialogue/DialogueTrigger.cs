@@ -1,9 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 // Attached to every single talkable NPC
-public class DialogueTrigger : MonoBehaviour
+public class DialogueTrigger : MonoBehaviour, IComparer<DialogueTrigger>
 {
     public DialogueMessage[] Messages;
     public int DialogueOrder = 1;
@@ -41,4 +40,8 @@ public class DialogueTrigger : MonoBehaviour
         return false;
     }
 
+    public int Compare(DialogueTrigger x, DialogueTrigger y)
+    {
+        throw new System.NotImplementedException();
+    }
 }
