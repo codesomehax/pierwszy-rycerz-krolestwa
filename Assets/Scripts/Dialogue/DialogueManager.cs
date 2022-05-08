@@ -1,41 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DialogueEditor;
 
 public class DialogueManager : MonoBehaviour
 {
-    private Queue<DialogueMessage> _dialogueMessages;
-
-    void Awake()
+    private void Update()
     {
-        _dialogueMessages = new Queue<DialogueMessage>();
-    }
-
-    public void StartDialogue(DialogueMessage[] dialogueMessages)
-    {
-        foreach(DialogueMessage m in dialogueMessages)
+        if (ConversationManager.Instance.IsConversationActive)
         {
-            _dialogueMessages.Enqueue(m);
+            if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                ConversationManager.Instance.SelectNextOption();
+            }
+            if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                ConversationManager.Instance.SelectPreviousOption();
+            }
+            if (Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.Return))
+            {
+                ConversationManager.Instance.PressSelectedOption();
+            }
         }
-
-        // TODO show UI
-    }
-
-    public void DisplayNextDialogueMessage()
-    {
-        if (_dialogueMessages.Count == 0)
-        {
-            EndDialogue();
-            return;
-        }
-
-        DialogueMessage message = _dialogueMessages.Dequeue();
-
-        // TODO display
-    }
-
-    public void EndDialogue()
-    {
-        // TODO hide UI
     }
 }

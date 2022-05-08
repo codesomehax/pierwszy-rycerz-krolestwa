@@ -1,47 +1,36 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DialogueEditor;
 
-// Attached to every single talkable NPC
-public class DialogueTrigger : MonoBehaviour, IComparer<DialogueTrigger>
+// Attached to a talkable NPC
+public class DialogueTrigger : MonoBehaviour
 {
-    public DialogueMessage[] Messages;
-    public int DialogueOrder = 1;
+    public NPCConversation Conversation;
 
-
-
-    private DialogueManager _dialagueManager;
+    private NPC _npc;
     private Player _player;
-    private bool _hasAlreadySpoken;
 
-
-
-    void Awake()
+    private void Awake()
     {
-        _dialagueManager = FindObjectOfType<DialogueManager>();
+        _npc = GetComponent<NPC>();
         _player = FindObjectOfType<Player>();
-        _hasAlreadySpoken = false;
+        EventManager.OnReputationChange += UpdatePlayerReputation;
     }
 
-    void Update()
+    private void Update()
     {
-        if (Input.GetKey(KeyCode.F) && CanTalkRightNow())
+        bool isInRange = Physics.CheckSphere(transform.position, _npc.TalkRange, _npc.PlayerLayer);
+
+        if (Input.GetKeyDown(KeyCode.F) && isInRange && !ConversationManager.Instance.IsConversationActive)
         {
-            transform.LookAt(_player.transform);
-            _dialagueManager.StartDialogue(Messages);
+            ConversationManager.Instance.StartConversation(Conversation);
         }
     }
 
-    public bool CanTalkRightNow()
+    private void UpdatePlayerReputation()
     {
-        if (!_hasAlreadySpoken)
-        {
-            DialogueTrigger[] triggers = GetComponents<DialogueTrigger>();
-        }
-        return false;
-    }
-
-    public int Compare(DialogueTrigger x, DialogueTrigger y)
-    {
-        throw new System.NotImplementedException();
+        ConversationManager.Instance.SetInt("ReputationGood", _player.GetReputation(Alliance.Good));
+        ConversationManager.Instance.SetInt("ReputationEvil", _player.GetReputation(Alliance.Evil));
     }
 }

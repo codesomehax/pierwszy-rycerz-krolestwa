@@ -14,18 +14,24 @@ public class Player : Entity
 
 
     private int _currentAttackType;
-    private Dictionary<Alliance, float> _reputation;
+    private Dictionary<Alliance, int> _reputation;
 
-    public float GetReputation(Alliance alliance)
+    public int GetReputation(Alliance alliance)
     {
         return _reputation[alliance];
+    }
+
+    public void SetReputation(Alliance alliance, int reputation)
+    {
+        _reputation[alliance] = reputation;
+        EventManager.StartEventOnReputationChange();
     }
 
     protected override void Awake()
     {
         base.Awake();
 
-        _reputation = new Dictionary<Alliance, float>();
+        _reputation = new Dictionary<Alliance, int>();
 
         _reputation[Alliance.Good] = 0;
         _reputation[Alliance.Evil] = 0;
@@ -52,6 +58,8 @@ public class Player : Entity
         base.Die();
         GetComponent<HumanMovement>().enabled = false;
     }
+
+    
 
     private void HitEnemy()
     {

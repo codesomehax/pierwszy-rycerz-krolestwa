@@ -29,6 +29,7 @@ public class NPC : Entity
     public float SightRange;
     public float PatrolRange;
     public float AttackRange;
+    public float TalkRange;
     public float PatrolTimeInterval;
 
 
