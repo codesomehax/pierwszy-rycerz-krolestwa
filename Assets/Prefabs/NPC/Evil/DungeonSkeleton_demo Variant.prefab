@@ -241,13 +241,12 @@ MonoBehaviour:
   Name: Skeleton Warrior
   ID: 2
   MaxHP: 100
-  AttackDamage: 20
+  AttackDamage: 10
   Defense: 5
   WalkSpeed: 2
   RunSpeed: 2
   FallSpeed: 2
   TimeBetweenAttacks: 2
-  Inventory: {fileID: 0}
   Alignment: 1
   AggressivenessBorder: 50
   EnablePatroling: 1
@@ -260,7 +259,9 @@ MonoBehaviour:
   SightRange: 10
   PatrolRange: 10
   AttackRange: 1.5
+  TalkRange: 0
   PatrolTimeInterval: 5
+  MaxGold: 0
   IdleAnimation: {fileID: 7400000, guid: f15c07c4bb03eeb48a7d2f8bfc519969, type: 3}
   WalkingAnimation: {fileID: 7400000, guid: 272e84c6ff8fea340b19da71308f0475, type: 3}
   BasicAttackAnimation: {fileID: 7400000, guid: 68e3a50f30bb0c54e8ca5cfae6eea48d, type: 3}

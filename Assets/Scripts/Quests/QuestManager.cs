@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DialogueEditor;
 
 public class QuestManager : MonoBehaviour
 {
@@ -35,8 +36,6 @@ public class QuestManager : MonoBehaviour
     {
         CompletedQuests.Remove(quest);
         FinishedQuests.Add(quest);
+        quest.Finish();
     }
-
-
-
 }

@@ -23,4 +23,20 @@ public class DialogueManager : MonoBehaviour
             }
         }
     }
+
+    public void UpdateConversationAccordingToQuestState(Quest quest)
+    {
+        if (quest.IsActive())
+        {
+            ConversationManager.Instance.SetBool(quest.name + "Active", true);
+        }
+        if (quest.IsCompleted())
+        {
+            ConversationManager.Instance.SetBool(quest.name + "Completed", true);
+        }
+        if (quest.IsFinished())
+        {
+            ConversationManager.Instance.SetBool(quest.name + "Finished", true);
+        }
+    }
 }

@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class KillGoal : Goal
 {
-    public int EnemyID;
+    public NPC Enemy;
 
     private void TryUpdateProgress(NPC enemy)
     {
-        if (enemy.ID == EnemyID)
+        if (enemy.ID == Enemy.ID)
         {
             _currentProgress++;
             EvaluateIsCompleted();

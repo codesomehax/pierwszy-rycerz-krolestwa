@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Goal
+public abstract class Goal : MonoBehaviour
 {
     public string Description;
     public int RequiredProgress;
