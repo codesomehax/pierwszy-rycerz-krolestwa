@@ -36,7 +36,7 @@ public class HumanMovement : MonoBehaviour {
 
     void FixedUpdate()
     {
-        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, CameraTransform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(transform.rotation.eulerAngles.x, CameraTransform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z), Time.deltaTime * 10f); 
         
         if (_horizontalMovement != 0f || _verticalMovement != 0f || !_characterController.isGrounded)
         {
@@ -59,5 +59,11 @@ public class HumanMovement : MonoBehaviour {
             _animator.SetFloat("VelocityX", _horizontalMovement * factor, 0.1f, Time.deltaTime);
             _animator.SetFloat("VelocityZ", _verticalMovement * factor, 0.1f, Time.deltaTime);
         }
+    }
+
+    void OnDisable()
+    {
+        _animator.SetFloat("VelocityX", 0f);
+        _animator.SetFloat("VelocityZ", 0f);
     }
 }

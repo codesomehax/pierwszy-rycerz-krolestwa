@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DialogueEditor;
 
 /**
 * Object supposed to hold player related properties and methods.
@@ -42,7 +43,7 @@ public class Player : Entity
 
     void Update()
     {
-        if (Input.GetMouseButton(0) && !_alreadyAttacked)
+        if (Input.GetMouseButton(0) && !_alreadyAttacked && !ConversationManager.Instance.IsConversationActive)
         {
             Attack();
         }
