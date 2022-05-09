@@ -31,6 +31,7 @@ public class NPC : Entity
     public float AttackRange;
     public float TalkRange;
     public float PatrolTimeInterval;
+    public int MaxGold;
 
 
 
@@ -97,6 +98,12 @@ public class NPC : Entity
         }
     }
 
+    public override void Die()
+    {
+        base.Die();
+        EventManager.StartEventOnNpcDeath(this);
+    }
+
     protected override void Awake()
     {
         base.Awake();
@@ -107,6 +114,7 @@ public class NPC : Entity
         _destination = new Vector3();
         _patrolTimeIntervalPassed = false;
         _alreadyTookDamage = false;
+        _gold = Random.Range(0, MaxGold + 1);
 
         // animatorOverrider
 

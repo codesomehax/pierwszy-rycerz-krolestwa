@@ -54,8 +54,8 @@ public class DialogueTrigger : MonoBehaviour
 
         while (true)
         {
-            _player.transform.rotation = Quaternion.Slerp(_player.transform.rotation, playerAtNPC, Time.deltaTime);
-            transform.rotation = Quaternion.Slerp(transform.rotation, npcAtPlayer, Time.deltaTime);
+            _player.transform.rotation = Quaternion.Slerp(_player.transform.rotation, playerAtNPC, Time.deltaTime * 2f);
+            transform.rotation = Quaternion.Slerp(transform.rotation, npcAtPlayer, Time.deltaTime * 2f);
             yield return null;
         }
     }

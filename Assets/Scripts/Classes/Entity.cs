@@ -15,8 +15,6 @@ public class Entity : InteractableObject
     public float RunSpeed;
     public float FallSpeed;
     public float TimeBetweenAttacks;
-
-    public Object Inventory; // TODO unless we decide to not implement any kind of inventory
     
 
 
@@ -25,6 +23,7 @@ public class Entity : InteractableObject
     protected bool _attackingRightNow;
     protected float _currentHP;
     protected bool _isAlive;
+    protected int _gold;
 
 
 
@@ -49,6 +48,7 @@ public class Entity : InteractableObject
         _alreadyAttacked = false;
         _attackingRightNow = false;
         _isAlive = true;
+        _gold = 0;
         _animator.SetBool("IsAlive", true);
     }
 
@@ -70,6 +70,21 @@ public class Entity : InteractableObject
     public void SetCurrentHP(float hp)
     {
         _currentHP = (hp < 0f) ? 0f : hp;
+    }
+
+    public void AddGold(int gold)
+    {
+        _gold += gold;
+    }
+
+    public void SubstractGold(int gold)
+    {
+        _gold -= gold;
+    }
+
+    public int GetGold()
+    {
+        return _gold;
     }
 
     public virtual void TakeDamage(float attackDamage)

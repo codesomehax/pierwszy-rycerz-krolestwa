@@ -17,6 +17,8 @@ public class Player : Entity
     private int _currentAttackType;
     private Dictionary<Alliance, int> _reputation;
 
+
+
     public int GetReputation(Alliance alliance)
     {
         return _reputation[alliance];
