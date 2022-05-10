@@ -17,14 +17,13 @@ public class DialogueTrigger : MonoBehaviour
         _npc = GetComponent<NPC>();
         _player = FindObjectOfType<Player>();
         _playerStoppedDueToConversation = false;
-        EventManager.OnReputationChange += UpdatePlayerReputation;
     }
 
     private void Update()
     {
         bool isInRange = Physics.CheckSphere(transform.position, _npc.TalkRange, _npc.PlayerLayer);
 
-        if (Input.GetKeyDown(KeyCode.F) && isInRange && !ConversationManager.Instance.IsConversationActive)
+        if (Input.GetKeyDown(KeyCode.F) && isInRange && !ConversationManager.Instance.IsConversationActive && !_npc.IsAggressiveTowardsPlayer())
         {
             _player.GetComponent<HumanMovement>().enabled = false;
             _playerStoppedDueToConversation = true;
@@ -39,12 +38,6 @@ public class DialogueTrigger : MonoBehaviour
             StopCoroutine(nameof(SmoothTurnToEachother));
             _playerStoppedDueToConversation = false;
         }
-    }
-
-    private void UpdatePlayerReputation()
-    {
-        ConversationManager.Instance.SetInt("ReputationGood", _player.GetReputation(Alliance.Good));
-        ConversationManager.Instance.SetInt("ReputationEvil", _player.GetReputation(Alliance.Evil));
     }
 
     private IEnumerator SmoothTurnToEachother()

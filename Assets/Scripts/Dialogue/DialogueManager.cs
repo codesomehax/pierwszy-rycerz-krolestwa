@@ -5,6 +5,16 @@ using DialogueEditor;
 
 public class DialogueManager : MonoBehaviour
 {
+    private Player _player;
+
+
+
+    private void Awake()
+    {
+        _player = FindObjectOfType<Player>();
+    }
+
+
     private void Update()
     {
         if (ConversationManager.Instance.IsConversationActive)
@@ -24,6 +34,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    // called only during conversation!!!
     public void UpdateConversationAccordingToQuestState(Quest quest)
     {
         if (quest.IsActive())
@@ -38,5 +49,11 @@ public class DialogueManager : MonoBehaviour
         {
             ConversationManager.Instance.SetBool(quest.name + "Finished", true);
         }
+    }
+
+    public void UpdateConversationReputation()
+    {
+        ConversationManager.Instance.SetInt("ReputationGood", _player.GetReputation(Alliance.Good));
+        ConversationManager.Instance.SetInt("ReputationEvil", _player.GetReputation(Alliance.Evil));
     }
 }

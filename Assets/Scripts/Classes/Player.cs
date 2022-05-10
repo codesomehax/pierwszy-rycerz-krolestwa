@@ -27,7 +27,16 @@ public class Player : Entity
     public void SetReputation(Alliance alliance, int reputation)
     {
         _reputation[alliance] = reputation;
-        EventManager.StartEventOnReputationChange();
+    }
+
+    public void IncreaseReputation(Alliance alliance, int reputation)
+    {
+        _reputation[alliance] += reputation;
+    }
+
+    public void DecreaseReputation(Alliance alliance, int reputation)
+    {
+        _reputation[alliance] -= reputation;
     }
 
     protected override void Awake()

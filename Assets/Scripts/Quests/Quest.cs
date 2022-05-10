@@ -8,6 +8,11 @@ public class Quest : MonoBehaviour
     public string Name;
     public string Description;
     public int GoldReward;
+    public NPC QuestGiver;
+    public int ReputationIncrease;
+    public Alliance ReputationIncreaseAlliance;
+    public int ReputationDecrease;
+    public Alliance ReputationDecreaseAlliance;
     public List<Goal> Goals {get; private set;}
 
 
@@ -15,6 +20,7 @@ public class Quest : MonoBehaviour
     private bool _completed;
     private bool _active;
     private bool _finished;
+    private Player _player;
 
     
 
@@ -22,6 +28,7 @@ public class Quest : MonoBehaviour
     {
         Goals = new List<Goal>();
         _completed = _active = _finished;
+        _player = FindObjectOfType<Player>();
     }
 
 
@@ -49,6 +56,10 @@ public class Quest : MonoBehaviour
     {
         _completed = false;
         _finished = true;
+
+        _player.AddGold(GoldReward);
+        _player.IncreaseReputation(ReputationIncreaseAlliance, ReputationIncrease);
+        _player.DecreaseReputation(ReputationDecreaseAlliance, ReputationDecrease);
     }
 
 

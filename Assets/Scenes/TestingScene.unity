@@ -1047,7 +1047,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143848153}
-  m_LocalRotation: {x: 0.04239429, y: 0.9033231, z: -0.09186764, w: 0.41685784}
+  m_LocalRotation: {x: 0.04239429, y: 0.9033231, z: -0.09186765, w: 0.41685784}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -19728,6 +19728,11 @@ MonoBehaviour:
   Name: Ugly skeletons
   Description: They're so ugly that I can't watch them
   GoldReward: 0
+  QuestGiver: {fileID: 8303146635624915982}
+  ReputationIncrease: 0
+  ReputationIncreaseAlliance: 0
+  ReputationDecrease: 0
+  ReputationDecreaseAlliance: 0
 --- !u!114 &1658378715203041358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20148,6 +20153,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conversation: {fileID: 5305771829373334145}
+--- !u!114 &8303146635624915982 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+  m_PrefabInstance: {fileID: 8303146635624915978}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8303146635624915979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38240c9a80c728fdba85fb5a1c5af766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8623997210001468924
 PrefabInstance:
   m_ObjectHideFlags: 0
