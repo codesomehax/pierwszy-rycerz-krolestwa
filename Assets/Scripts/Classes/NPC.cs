@@ -101,7 +101,11 @@ public class NPC : Entity
     public override void Die()
     {
         base.Die();
-        GetComponent<DialogueTrigger>().enabled = false;
+        DialogueTrigger t;
+        if (TryGetComponent<DialogueTrigger>(out t))
+        {
+            t.enabled = false;
+        }
         EventManager.StartEventOnNpcDeath(this);
     }
 
