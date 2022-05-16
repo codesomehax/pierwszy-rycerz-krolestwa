@@ -266,7 +266,7 @@ MonoBehaviour:
   WalkingAnimation: {fileID: 7400000, guid: 272e84c6ff8fea340b19da71308f0475, type: 3}
   BasicAttackAnimation: {fileID: 7400000, guid: 68e3a50f30bb0c54e8ca5cfae6eea48d, type: 3}
   RunningAnimation: {fileID: 7400000, guid: 272e84c6ff8fea340b19da71308f0475, type: 3}
-  HurtAnimation: {fileID: 7400000, guid: 9f8205d8a813fcd54afdb4f0d2fb71fb, type: 2}
+  HurtAnimation: {fileID: -203655887218126122, guid: 1486fe6e95dbe5e499253554581b516e, type: 3}
   DeathAnimation: {fileID: -203655887218126122, guid: bd385255d22b2b1f5a0b8f5374d0d6fb, type: 3}
 --- !u!195 &549982723
 NavMeshAgent:
