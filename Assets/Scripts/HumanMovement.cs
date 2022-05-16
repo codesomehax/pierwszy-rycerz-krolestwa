@@ -59,6 +59,22 @@ public class HumanMovement : MonoBehaviour {
             _animator.SetFloat("VelocityX", _horizontalMovement * factor, 0.1f, Time.deltaTime);
             _animator.SetFloat("VelocityZ", _verticalMovement * factor, 0.1f, Time.deltaTime);
         }
+
+        if (
+            (_animator.GetFloat("VelocityX") > 0f && _animator.GetFloat("VelocityX") < 0.05f) ||
+            (_animator.GetFloat("VelocityX") < 0f && _animator.GetFloat("VelocityX") > -0.05f)
+        )
+        {
+            _animator.SetFloat("VelocityX", 0f);
+        }
+
+        if (
+            (_animator.GetFloat("VelocityZ") > 0f && _animator.GetFloat("VelocityZ") < 0.05f) ||
+            (_animator.GetFloat("VelocityZ") < 0f && _animator.GetFloat("VelocityZ") > -0.05f)
+        )
+        {
+            _animator.SetFloat("VelocityZ", 0f);
+        }
     }
 
     void OnDisable()
