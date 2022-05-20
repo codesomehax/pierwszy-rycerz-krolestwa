@@ -13,7 +13,7 @@ public class spin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(1f, 1f, 1f, Space.Self); //krecenie smiglem
+        transform.Rotate(0f, 0f, 10f*Time.deltaTime, Space.Self); //krecenie smiglem
         //transform.Rotate(0f,0f,10f )
 
     }
