@@ -120,6 +120,7 @@ public class NPC : Entity
         _patrolTimeIntervalPassed = false;
         _alreadyTookDamage = false;
         _gold = Random.Range(0, MaxGold + 1);
+        _agent.speed = WalkSpeed;
 
         // animatorOverrider
 
@@ -209,6 +210,7 @@ public class NPC : Entity
     private void PatrolWalk()
     {
         _animator.SetFloat("State", (float) MovementBlendTreeAnimatorState.Walking, 0.1f, Time.deltaTime);
+        _agent.speed = WalkSpeed;
         _agent.SetDestination(_destination);
 
         Vector3 distanceToDestination = transform.position - _destination;
@@ -252,6 +254,7 @@ public class NPC : Entity
     {
         _destinationSet = false;
         _animator.SetFloat("State", (float) MovementBlendTreeAnimatorState.Running, 0.1f, Time.deltaTime);
+        _agent.speed = RunSpeed;
         _agent.SetDestination(_player.transform.position);
     }
 
