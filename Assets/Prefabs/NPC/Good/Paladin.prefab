@@ -2027,7 +2027,7 @@ MonoBehaviour:
   IdleAnimation: {fileID: 7400000, guid: 0a8d4c4e21190b54282e492a97ac517a, type: 2}
   WalkingAnimation: {fileID: 7400000, guid: 23d9bc7ec1db3824baea7127f5cfcb54, type: 2}
   BasicAttackAnimation: {fileID: 7400000, guid: 863eb730fff703446b77a8aa2dab83f4, type: 2}
-  RunningAnimation: {fileID: 7400000, guid: 23d9bc7ec1db3824baea7127f5cfcb54, type: 2}
+  RunningAnimation: {fileID: 7400000, guid: a56b93c8dbba04440ae552ac74cf0a52, type: 2}
   HurtAnimation: {fileID: 7400000, guid: 0a8d4c4e21190b54282e492a97ac517a, type: 2}
   DeathAnimation: {fileID: 7400000, guid: d253bece367eaa44b825692df9872f78, type: 2}
 --- !u!1 &6483057871550075564
