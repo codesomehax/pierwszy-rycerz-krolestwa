@@ -2141,6 +2141,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 623081015074530967, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: PrefabSetTime
+      value: 1653251014
+      objectReference: {fileID: 0}
+    - target: {fileID: 623081015074530967, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: Private_prefabId
+      value: 1046424352
+      objectReference: {fileID: 0}
     - target: {fileID: 1578193216439038675, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_Name
       value: Training Knight 2
@@ -3275,12 +3283,12 @@ MonoBehaviour:
     PasswordKey: 
     PasswordKey16Bytes: 
   Config:
-    FileName: DefaultLevelName
+    FileName: GoodCastle2.0.game
     autoSaving: 0
     autoLoadOnPlay: 0
     onExitSave: 0
     duplicateSaveFile: 0
-    exclusiveFiles: 0
+    exclusiveFiles: 1
     encrypt: 0
     autoSavingRunInThread: 0
     autoSavingInterval: 300
@@ -3289,6 +3297,8 @@ MonoBehaviour:
   Load_Prefabs:
   - {fileID: -517401599140152859, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
   - {fileID: -912721616928802218, guid: a23cc4a60e34c10b9bda0f72a874b68e, type: 3}
+  - {fileID: 623081015074530967, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+  - {fileID: -5568418330487667169, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
 --- !u!4 &615328748
 Transform:
   m_ObjectHideFlags: 0
@@ -4255,6 +4265,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 623081015074530967, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: PrefabSetTime
+      value: 1653251014
+      objectReference: {fileID: 0}
+    - target: {fileID: 623081015074530967, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: Private_prefabId
+      value: 632249968
+      objectReference: {fileID: 0}
     - target: {fileID: 1578193216439038675, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_Name
       value: Talking Knight 2
@@ -7167,6 +7185,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 623081015074530967, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: PrefabSetTime
+      value: 1653251014
+      objectReference: {fileID: 0}
+    - target: {fileID: 623081015074530967, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: Private_prefabId
+      value: 1614827708
+      objectReference: {fileID: 0}
     - target: {fileID: 1578193216439038675, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_Name
       value: Talking Knight
@@ -7981,6 +8007,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 623081015074530967, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: PrefabSetTime
+      value: 1653251014
+      objectReference: {fileID: 0}
+    - target: {fileID: 623081015074530967, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: Private_prefabId
+      value: 387556780
+      objectReference: {fileID: 0}
     - target: {fileID: 1578193216439038675, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_Name
       value: Training Knight
@@ -9624,6 +9658,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5568418330487667169, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: PrefabSetTime
+      value: 1653251014
+      objectReference: {fileID: 0}
+    - target: {fileID: -5568418330487667169, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: Private_prefabId
+      value: 860993035
+      objectReference: {fileID: 0}
     - target: {fileID: 6279769829131857339, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: m_Name
       value: Food Guard Paladin 2
@@ -11098,6 +11140,173 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4952169766312098, guid: 8eafcc918e340be40bc7b04cc52d4740, type: 3}
   m_PrefabInstance: {fileID: 1953043023}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1752470236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1752470239}
+  - component: {fileID: 1752470238}
+  - component: {fileID: 1752470237}
+  m_Layer: 0
+  m_Name: SaveStats
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1752470237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752470236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -476227674, guid: c3ab396f3f53d1c4ebc7bae03391b186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalTimeInSeconds: 0
+  loads: 0
+  creationDate: 0
+  saveScreenshot: 1
+  width: 0
+  height: 0
+  screenshot: 
+--- !u!114 &1752470238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752470236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -499960783, guid: c3ab396f3f53d1c4ebc7bae03391b186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FieldsEnable:
+    Version: 2
+    PathsEnabled:
+    - SaveIsEasyStatistics/totalTimeInSeconds
+    - SaveIsEasyStatistics/loads
+    - SaveIsEasyStatistics/creationDate
+    - SaveIsEasyStatistics/width
+    - SaveIsEasyStatistics/height
+    - SaveIsEasyStatistics/screenshot
+    - SaveIsEasyStatistics/hasSaveIsEasyStatistics
+    ModificationVersion: 1
+    ComponentsEnabled: []
+    HashFieldsEnabled: []
+    ObjectsEnabled: 
+    HashSetFieldsEnabled:
+      m_buckets: 03000000070000000200000000000000040000000500000000000000
+      m_slots:
+      - hashCode: 570102275
+        next: -1
+        value:
+          HashCodePath: 680392364
+          HashCodeMember: 58121859
+      - hashCode: 1869868891
+        next: -1
+        value:
+          HashCodePath: 680392364
+          HashCodeMember: 1357888475
+      - hashCode: 916471395
+        next: -1
+        value:
+          HashCodePath: 680392364
+          HashCodeMember: 404490979
+      - hashCode: 1673895318
+        next: -1
+        value:
+          HashCodePath: 680392364
+          HashCodeMember: -985568746
+      - hashCode: 883445953
+        next: -1
+        value:
+          HashCodePath: 680392364
+          HashCodeMember: -1776018111
+      - hashCode: 1612750658
+        next: 0
+        value:
+          HashCodePath: 680392364
+          HashCodeMember: -1046713406
+      - hashCode: 1093682486
+        next: 5
+        value:
+          HashCodePath: 680392364
+          HashCodeMember: 581702070
+      m_count: 7
+      m_lastIndex: 7
+      m_freeList: -1
+      m_version: 8
+    HashSetObjectsEnabled:
+      m_buckets: 000000000000000001000000
+      m_slots:
+      - hashCode: 680392364
+        next: -1
+        value: 680392364
+      - hashCode: 0
+        next: 0
+        value: 0
+      - hashCode: 0
+        next: 0
+        value: 0
+      m_count: 1
+      m_lastIndex: 1
+      m_freeList: -1
+      m_version: 2
+    HashSetComponentsEnabled:
+      m_buckets: 000000000000000001000000
+      m_slots:
+      - hashCode: 546781607
+        next: -1
+        value: SaveIsEasy.SaveIsEasyStatistics
+      - hashCode: 0
+        next: 0
+        value: 
+      - hashCode: 0
+        next: 0
+        value: 
+      m_count: 1
+      m_lastIndex: 1
+      m_freeList: -1
+      m_version: 2
+    AreValidSavedHashs: 1
+  Position: 0
+  Rotation: 0
+  Scale: 0
+  Name: 0
+  Tag: 0
+  Active: 0
+  Static: 0
+  Layer: 0
+  GAMEOBJECT_STATIC_ID: 0
+  GAMEOBJECT_PATH: 
+  Private_prefabId: 1530592160
+  PrefabSetTime: 1653251014
+  CreateInRuntime: 0
+  onLoad: 0
+--- !u!4 &1752470239
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752470236}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.678146, y: 303.75635, z: 27.35152}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1760099412 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5557548376407664100, guid: d78188a04ae94fb418ca4acc157a8c3a, type: 3}
@@ -11809,6 +12018,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 623081015074530967, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: PrefabSetTime
+      value: 1653251014
+      objectReference: {fileID: 0}
+    - target: {fileID: 623081015074530967, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: Private_prefabId
+      value: 347844491
+      objectReference: {fileID: 0}
     - target: {fileID: 1578193216439038675, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_Name
       value: Talking Knight 4
@@ -13024,6 +13241,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5568418330487667169, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: PrefabSetTime
+      value: 1653251014
+      objectReference: {fileID: 0}
+    - target: {fileID: -5568418330487667169, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: Private_prefabId
+      value: 285738986
+      objectReference: {fileID: 0}
     - target: {fileID: 6279769829131857339, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: m_Name
       value: 'Trainer Paladin '

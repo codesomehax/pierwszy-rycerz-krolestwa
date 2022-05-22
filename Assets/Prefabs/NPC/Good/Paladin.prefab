@@ -2055,7 +2055,7 @@ MonoBehaviour:
     - NPC/_isAlive
     - NPC/_gold
     - NPC/enabled
-    ModificationVersion: 9
+    ModificationVersion: 10
     ComponentsEnabled: []
     HashFieldsEnabled: []
     ObjectsEnabled: 
@@ -2150,7 +2150,7 @@ MonoBehaviour:
       m_count: 9
       m_lastIndex: 9
       m_freeList: -1
-      m_version: 66
+      m_version: 76
     HashSetObjectsEnabled:
       m_buckets: 04000000000000000200000000000000000000000300000000000000
       m_slots:
@@ -2178,7 +2178,7 @@ MonoBehaviour:
       m_count: 4
       m_lastIndex: 4
       m_freeList: -1
-      m_version: 36
+      m_version: 41
     HashSetComponentsEnabled:
       m_buckets: 030000000200000000000000
       m_slots:
@@ -2194,7 +2194,7 @@ MonoBehaviour:
       m_count: 3
       m_lastIndex: 3
       m_freeList: -1
-      m_version: 26
+      m_version: 30
     AreValidSavedHashs: 1
   Position: 0
   Rotation: 0
@@ -2209,7 +2209,7 @@ MonoBehaviour:
   Private_prefabId: 1625998016
   PrefabSetTime: 1653246538
   CreateInRuntime: 1
-  onLoad: 0
+  onLoad: 3
 --- !u!1 &6483057871550075564
 GameObject:
   m_ObjectHideFlags: 0
