@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/GoodCastle2.0.unity
+    guid: 41821898da510064aa8fb57ee1804c29
+  - enabled: 1
+    path: Assets/Scenes/Woods.unity
+    guid: 696f87aba1a8c4f4588fd4a4632809fa
   m_configObjects: {}

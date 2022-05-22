@@ -489,7 +489,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7773585, y: 1}
+    m_SensorSize: {x: 1.6913183, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1208,7 +1208,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7773585, y: 1}
+    m_SensorSize: {x: 1.6913183, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3240,6 +3240,70 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4952169766312098, guid: 8eafcc918e340be40bc7b04cc52d4740, type: 3}
   m_PrefabInstance: {fileID: 2088443696}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &615328745
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 615328748}
+  - component: {fileID: 615328747}
+  m_Layer: 0
+  m_Name: SaveManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &615328747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615328745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 562379847, guid: c3ab396f3f53d1c4ebc7bae03391b186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLoaded: 0
+  isSaved: 0
+  saveIsEasyConfig:
+    PasswordKey: 
+    PasswordKey16Bytes: 
+  Config:
+    FileName: DefaultLevelName
+    autoSaving: 0
+    autoLoadOnPlay: 0
+    onExitSave: 0
+    duplicateSaveFile: 0
+    exclusiveFiles: 0
+    encrypt: 0
+    autoSavingRunInThread: 0
+    autoSavingInterval: 300
+    currentTimeToSave: 0
+    encryptionConfig: 0
+  Load_Prefabs:
+  - {fileID: -517401599140152859, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
+  - {fileID: -912721616928802218, guid: a23cc4a60e34c10b9bda0f72a874b68e, type: 3}
+--- !u!4 &615328748
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615328745}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &619650059 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 346370766788171976, guid: d78188a04ae94fb418ca4acc157a8c3a, type: 3}
@@ -4916,13 +4980,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -517401599140152859, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
+      propertyPath: PrefabSetTime
+      value: 1653244415
+      objectReference: {fileID: 0}
+    - target: {fileID: -517401599140152859, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
+      propertyPath: CreateInRuntime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -517401599140152859, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
+      propertyPath: Private_prefabId
+      value: 1105263494
+      objectReference: {fileID: 0}
+    - target: {fileID: -517401599140152859, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -517401599140152859, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 74
+      objectReference: {fileID: 0}
+    - target: {fileID: -517401599140152859, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 46
+      objectReference: {fileID: 0}
+    - target: {fileID: -517401599140152859, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 38
+      objectReference: {fileID: 0}
     - target: {fileID: 7257695528074951591, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
       propertyPath: m_Name
       value: Commander Good Giving Quests
       objectReference: {fileID: 0}
     - target: {fileID: 7528306022362976452, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
       propertyPath: AggressivenessBorder
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8066882675608740125, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
       propertyPath: m_RootOrder
@@ -6016,7 +6108,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7773585, y: 1}
+    m_SensorSize: {x: 1.6913183, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -9174,6 +9266,65 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8eafcc918e340be40bc7b04cc52d4740, type: 3}
+--- !u!1 &1575811663
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1575811666}
+  - component: {fileID: 1575811665}
+  - component: {fileID: 1575811664}
+  m_Layer: 0
+  m_Name: WoodsEntrance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1575811664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575811663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 716380c1537396a4f8df9cfc5a5ee32c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GotoScene: {fileID: 102900000, guid: 696f87aba1a8c4f4588fd4a4632809fa, type: 3}
+--- !u!65 &1575811665
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575811663}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1575811666
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575811663}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.68, y: 3.108, z: 45.05}
+  m_LocalScale: {x: 1.56, y: 6.29, z: 3.96}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1578490535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10301,6 +10452,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -912721616928802218, guid: a23cc4a60e34c10b9bda0f72a874b68e, type: 3}
+      propertyPath: onLoad
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -912721616928802218, guid: a23cc4a60e34c10b9bda0f72a874b68e, type: 3}
+      propertyPath: CreateInRuntime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -912721616928802218, guid: a23cc4a60e34c10b9bda0f72a874b68e, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -912721616928802218, guid: a23cc4a60e34c10b9bda0f72a874b68e, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -912721616928802218, guid: a23cc4a60e34c10b9bda0f72a874b68e, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: -912721616928802218, guid: a23cc4a60e34c10b9bda0f72a874b68e, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -912721616928802218, guid: a23cc4a60e34c10b9bda0f72a874b68e, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5134134728528563371, guid: a23cc4a60e34c10b9bda0f72a874b68e, type: 3}
       propertyPath: CameraTransform
       value: 
@@ -12584,6 +12763,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -517401599140152859, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
+      propertyPath: PrefabSetTime
+      value: 1653244415
+      objectReference: {fileID: 0}
+    - target: {fileID: -517401599140152859, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
+      propertyPath: Private_prefabId
+      value: 1382003583
+      objectReference: {fileID: 0}
     - target: {fileID: 7257695528074951591, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
       propertyPath: m_Name
       value: Commander Good 2
@@ -13161,7 +13348,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7773585, y: 1}
+    m_SensorSize: {x: 1.6913183, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

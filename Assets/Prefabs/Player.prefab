@@ -1286,6 +1286,7 @@ GameObject:
   - component: {fileID: 5134134728528563372}
   - component: {fileID: 5134134728528563371}
   - component: {fileID: 5134134728528563375}
+  - component: {fileID: -912721616928802218}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -1429,13 +1430,299 @@ MonoBehaviour:
   RunSpeed: 10
   FallSpeed: 2
   TimeBetweenAttacks: 2
-  Inventory: {fileID: 0}
   BasicAttack1: {fileID: -203655887218126122, guid: 2c7f04419082b337998944154a3b80ed, type: 3}
   BasicAttack2: {fileID: -203655887218126122, guid: a45fa12a20a9c3bc69ed3d4df4439a9b, type: 3}
   EnemyLayer:
     serializedVersion: 2
     m_Bits: 128
   Sword: {fileID: 5365625435002247179}
+--- !u!114 &-912721616928802218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5135352588121081536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -499960783, guid: c3ab396f3f53d1c4ebc7bae03391b186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FieldsEnable:
+    Version: 2
+    PathsEnabled:
+    - Transform/rotation/x
+    - Transform/rotation/y
+    - Transform/rotation/z
+    - Transform/rotation/w
+    - Transform/rotation
+    - Player/_reputation
+    - Player/MaxHP
+    - Player/AttackDamage
+    - Player/Defense
+    - Player/_currentHP
+    - Player/_isAlive
+    - Player/_gold
+    - Player/enabled
+    - Transform/localPosition/x
+    - Transform/localPosition/y
+    - Transform/localPosition/z
+    - Transform/localPosition
+    ModificationVersion: 17
+    ComponentsEnabled: []
+    HashFieldsEnabled: []
+    ObjectsEnabled: 
+    HashSetFieldsEnabled:
+      m_buckets: 0000000000000000020000000000000006000000000000000000000000000000000000000000000000000000100000001100000001000000070000000000000000000000000000000c0000000000000009000000000000000f00000000000000080000000000000000000000050000000a00000000000000000000000d000000000000000e000000000000000000000000000000
+      m_slots:
+      - hashCode: 1958172584
+        next: -1
+        value:
+          HashCodePath: -533480314
+          HashCodeMember: -2094178328
+      - hashCode: 1958616795
+        next: -1
+        value:
+          HashCodePath: -533480314
+          HashCodeMember: -2093734117
+      - hashCode: 1959061006
+        next: -1
+        value:
+          HashCodePath: -533480314
+          HashCodeMember: -2093289906
+      - hashCode: 1957728373
+        next: -1
+        value:
+          HashCodePath: -533480314
+          HashCodeMember: -2094622539
+      - hashCode: 1614003334
+        next: -1
+        value:
+          HashCodePath: 289311300
+          HashCodeMember: -763774458
+      - hashCode: 1206268380
+        next: -1
+        value:
+          HashCodePath: -1047369029
+          HashCodeMember: 1036688124
+      - hashCode: 546504888
+        next: -1
+        value:
+          HashCodePath: -1047369029
+          HashCodeMember: -1770559016
+      - hashCode: 647375149
+        next: 3
+        value:
+          HashCodePath: -1047369029
+          HashCodeMember: 477794893
+      - hashCode: 1411002420
+        next: -1
+        value:
+          HashCodePath: -1047369029
+          HashCodeMember: -906061484
+      - hashCode: 1017566110
+        next: 2
+        value:
+          HashCodePath: -1047369029
+          HashCodeMember: 847985854
+      - hashCode: 1790219908
+        next: -1
+        value:
+          HashCodePath: -1047369029
+          HashCodeMember: 1620639652
+      - hashCode: 1475648337
+        next: -1
+        value:
+          HashCodePath: -1047369029
+          HashCodeMember: -841415567
+      - hashCode: 184199943
+        next: 10
+        value:
+          HashCodePath: -1047369029
+          HashCodeMember: 14619687
+      - hashCode: 1411678312
+        next: -1
+        value:
+          HashCodePath: -1346007692
+          HashCodeMember: -2094178328
+      - hashCode: 1412122523
+        next: -1
+        value:
+          HashCodePath: -1346007692
+          HashCodeMember: -2093734117
+      - hashCode: 1412566734
+        next: -1
+        value:
+          HashCodePath: -1346007692
+          HashCodeMember: -2093289906
+      - hashCode: 801475956
+        next: -1
+        value:
+          HashCodePath: 289311300
+          HashCodeMember: -1576301836
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      m_count: 17
+      m_lastIndex: 17
+      m_freeList: -1
+      m_version: 227
+    HashSetObjectsEnabled:
+      m_buckets: 00000000040000000300000000000000000000000100000002000000
+      m_slots:
+      - hashCode: 289311300
+        next: -1
+        value: 289311300
+      - hashCode: 1614003334
+        next: -1
+        value: -533480314
+      - hashCode: 1100114619
+        next: -1
+        value: -1047369029
+      - hashCode: 801475956
+        next: -1
+        value: -1346007692
+      - hashCode: 0
+        next: 0
+        value: 0
+      - hashCode: 0
+        next: 0
+        value: 0
+      - hashCode: 0
+        next: 0
+        value: 0
+      m_count: 4
+      m_lastIndex: 4
+      m_freeList: -1
+      m_version: 75
+    HashSetComponentsEnabled:
+      m_buckets: 020000000000000000000000
+      m_slots:
+      - hashCode: 1321165359
+        next: -1
+        value: UnityEngine.Transform
+      - hashCode: 1100114619
+        next: 0
+        value: Player
+      - hashCode: 0
+        next: 0
+        value: 
+      m_count: 2
+      m_lastIndex: 2
+      m_freeList: -1
+      m_version: 45
+    AreValidSavedHashs: 1
+  Position: 0
+  Rotation: 0
+  Scale: 0
+  Name: 0
+  Tag: 0
+  Active: 0
+  Static: 0
+  Layer: 0
+  GAMEOBJECT_STATIC_ID: 0
+  GAMEOBJECT_PATH: 
+  Private_prefabId: 1246398663
+  PrefabSetTime: 1653244626
+  CreateInRuntime: 1
+  onLoad: 0
 --- !u!1 &5135358660747561348
 GameObject:
   m_ObjectHideFlags: 0

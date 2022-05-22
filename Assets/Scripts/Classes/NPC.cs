@@ -141,6 +141,15 @@ public class NPC : Entity
 
     }
 
+    private void Start()
+    {
+        if (!_isAlive)
+        {
+            _animator.Play("Base Death", _animator.GetLayerIndex("Base Layer"), 1f);
+            _agent.SetDestination(transform.position);
+        }
+    }
+
     void Update()
     {
         if (_alreadyTookDamage && !_player.IsAttackingRightNow())
