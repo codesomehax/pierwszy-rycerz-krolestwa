@@ -14,6 +14,9 @@ public class Player : Entity
     public GameObject Sword;
 
 
+    public static Player PlayerInstance;
+
+
     private int _currentAttackType;
     private Dictionary<Alliance, int> _reputation;
 

@@ -9,11 +9,15 @@ public class SceneSwapper : MonoBehaviour
 {
     public SceneAsset GotoScene;
 
+    private Player _player;
     private bool _canEnter;
+
+    
 
     private void Awake()
     {
         _canEnter = false;
+        _player = FindObjectOfType<Player>();
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
@@ -49,5 +53,7 @@ public class SceneSwapper : MonoBehaviour
         {
             SaveIsEasyAPI.LoadAll(scene.name + ".game");
         }
+
+        PlayerPrefs.SetInt("Last scene", SceneManager.GetActiveScene().buildIndex);
     }
 }
