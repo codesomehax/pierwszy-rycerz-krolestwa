@@ -53,7 +53,5 @@ public class SceneSwapper : MonoBehaviour
         {
             SaveIsEasyAPI.LoadAll(scene.name + ".game");
         }
-
-        PlayerPrefs.SetInt("Last scene", SceneManager.GetActiveScene().buildIndex);
     }
 }

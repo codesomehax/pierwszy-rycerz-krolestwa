@@ -23,6 +23,7 @@ public class GameMenu : MonoBehaviour
 
     public void NewGame()
     {
+        LockCursor();
         string[] fileNames = Directory.GetFiles(Application.persistentDataPath);
 
         Regex re = new Regex(@".game$");
@@ -40,16 +41,23 @@ public class GameMenu : MonoBehaviour
 
     public void Continue()
     {
+        LockCursor();
         SceneManager.LoadScene(PlayerPrefs.GetInt("Last scene", 0));
     }
 
     public void SaveGame()
     {
+        LockCursor();
         SaveIsEasyAPI.SaveAll(SceneManager.GetActiveScene().name + ".game");
     }
 
     public void Quit()
     {
         Application.Quit();
+    }
+
+    private void LockCursor()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }

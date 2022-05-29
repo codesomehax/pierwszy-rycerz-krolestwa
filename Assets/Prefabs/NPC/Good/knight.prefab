@@ -761,7 +761,7 @@ MonoBehaviour:
     - NPC/_gold
     - NPC/enabled
     - CapsuleCollider/enabled
-    ModificationVersion: 12
+    ModificationVersion: 17
     ComponentsEnabled: []
     HashFieldsEnabled: []
     ObjectsEnabled: 
@@ -856,7 +856,7 @@ MonoBehaviour:
       m_count: 9
       m_lastIndex: 9
       m_freeList: -1
-      m_version: 86
+      m_version: 138
     HashSetObjectsEnabled:
       m_buckets: 03000000000000000200000000000000000000000400000000000000
       m_slots:
@@ -884,7 +884,7 @@ MonoBehaviour:
       m_count: 4
       m_lastIndex: 4
       m_freeList: -1
-      m_version: 44
+      m_version: 69
     HashSetComponentsEnabled:
       m_buckets: 020000000300000000000000
       m_slots:
@@ -900,7 +900,7 @@ MonoBehaviour:
       m_count: 3
       m_lastIndex: 3
       m_freeList: -1
-      m_version: 33
+      m_version: 53
     AreValidSavedHashs: 1
   Position: 0
   Rotation: 0

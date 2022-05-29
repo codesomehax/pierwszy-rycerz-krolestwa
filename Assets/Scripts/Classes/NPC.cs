@@ -146,6 +146,9 @@ public class NPC : Entity, ISaveIsEasyEvents
 
     void Update()
     {
+        if (_player == null) _player = FindObjectOfType<Player>();
+        if (_player == null) return;
+
         if (_alreadyTookDamage && !_player.IsAttackingRightNow())
         {
             _alreadyTookDamage = false;
