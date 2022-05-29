@@ -91,6 +91,12 @@ public class Player : Entity
             PlayerPrefs.SetInt("Last scene", SceneManager.GetActiveScene().buildIndex);
         }
         GetComponent<CharacterController>().enabled = true;
+
+        // TODO
+        if (Input.GetKey(KeyCode.F2))
+        {
+            transform.position = new Vector3(179.570007f, 301.850006f, 179.979996f);
+        }
     }
 
     public override void Die()
@@ -148,7 +154,12 @@ public class Player : Entity
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        GetComponent<CharacterController>().enabled = false;
+
+        try
+        {
+            GetComponent<CharacterController>().enabled = false;
+        }
+        catch (System.Exception) {}
     }
 }
 

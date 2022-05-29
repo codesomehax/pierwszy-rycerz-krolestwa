@@ -17,13 +17,19 @@ public class GameMenu : MonoBehaviour
 
         if (fileNames.All<string>(fileName => !re.IsMatch(fileName)))
         {
-            GameObject.Find("Continue").SetActive(false);
+            GameObject.Find("Load Game").SetActive(false);
+        }
+
+        if (FindObjectOfType<Player>() == null)
+        {
+            GameObject.Find("Save Game").SetActive(false);
         }
     }
 
     public void NewGame()
     {
         LockCursor();
+        Debug.Log("XD");
         string[] fileNames = Directory.GetFiles(Application.persistentDataPath);
 
         Regex re = new Regex(@".game$");
@@ -36,23 +42,30 @@ public class GameMenu : MonoBehaviour
             }
         }
 
+        PauseController.gameIsPaused = false;
+
         SceneManager.LoadScene("Woods");
     }
 
-    public void Continue()
+    public void LoadGame()
     {
         LockCursor();
-        SceneManager.LoadScene(PlayerPrefs.GetInt("Last scene", 0));
+        Time.timeScale = 1f;
+        PauseController.gameIsPaused = false;
+        SceneManager.LoadScene(PlayerPrefs.GetInt("Last scene"), LoadSceneMode.Single);
     }
 
     public void SaveGame()
     {
         LockCursor();
-        SaveIsEasyAPI.SaveAll(SceneManager.GetActiveScene().name + ".game");
+        SaveIsEasyAPI.SaveAll(SceneManager.GetActiveScene().name + ".game", SceneManager.GetActiveScene());
+        PauseController.gameIsPaused = false;
+        FindObjectOfType<PauseController>().PauseGame();
     }
 
     public void Quit()
     {
+        SaveIsEasyAPI.SaveAll(SceneManager.GetActiveScene().name + ".game", SceneManager.GetActiveScene());
         Application.Quit();
     }
 
