@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using SaveIsEasy;
 
 /**
 * * There isn't a class called Monster or anything like that
@@ -19,7 +20,7 @@ using UnityEngine.AI;
 *   - search for the NPC animator and add a new AnimationState (wherever) with a new, EMPTY (no animation) AnimationClip called for example Talking
 *   NOTE: the name of overrides["Talking"] and the AnimationClip name HAVE TO match
 */
-public class NPC : Entity
+public class NPC : Entity, ISaveIsEasyEvents
 {
     public Alliance Alignment;
     public float AggressivenessBorder; // aggressive if reputation is lower than this value
@@ -61,14 +62,15 @@ public class NPC : Entity
     public AnimationClip DeathAnimation;
 
 
-    protected Player _player;
-    protected AnimatorOverrideController _animatorOverrideController;
-    protected NavMeshAgent _agent;
-    protected State _state;
-    protected bool _destinationSet;
-    protected Vector3 _destination;
-    protected bool _patrolTimeIntervalPassed;
-    protected bool _alreadyTookDamage;
+    private Player _player;
+    private AnimatorOverrideController _animatorOverrideController;
+    private NavMeshAgent _agent;
+    private State _state;
+    private bool _destinationSet;
+    private Vector3 _destination;
+    private bool _patrolTimeIntervalPassed;
+    private bool _alreadyTookDamage;
+    private Vector3 _awakePosition;
 
 
 
@@ -121,6 +123,7 @@ public class NPC : Entity
         _alreadyTookDamage = false;
         _gold = Random.Range(0, MaxGold + 1);
         _agent.speed = WalkSpeed;
+        _awakePosition = transform.position;
 
         // animatorOverrider
 
@@ -143,6 +146,9 @@ public class NPC : Entity
 
     void Update()
     {
+        if (_player == null) _player = FindObjectOfType<Player>();
+        if (_player == null) return;
+
         if (_alreadyTookDamage && !_player.IsAttackingRightNow())
         {
             _alreadyTookDamage = false;
@@ -259,7 +265,23 @@ public class NPC : Entity
     }
 
 
+    public void OnLoad()
+    {
+        if (!_isAlive)
+        {
+            _animator.Play("Base Death", _animator.GetLayerIndex("Base Layer"), 1f);
+            _agent.SetDestination(transform.position);
+        }
+        else
+        {
+            transform.position = _awakePosition;
+        }
+    }
 
+    public void OnSave()
+    {
+
+    }
 
 }
 

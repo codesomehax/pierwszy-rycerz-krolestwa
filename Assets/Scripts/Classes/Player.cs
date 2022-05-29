@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using DialogueEditor;
 
 /**
@@ -12,6 +13,9 @@ public class Player : Entity
     public AnimationClip BasicAttack2;
     public LayerMask EnemyLayer;
     public GameObject Sword;
+
+
+    public static Player PlayerInstance;
 
 
     private int _currentAttackType;
@@ -50,6 +54,8 @@ public class Player : Entity
 
         _currentAttackType = 1;
         _animator.SetInteger("AttackType", 1);
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     void Update()
@@ -62,6 +68,34 @@ public class Player : Entity
         if (_attackingRightNow)
         {
             HitEnemy();
+        }
+    }
+
+    void LateUpdate()
+    {
+        if (PlayerPrefs.GetInt("Last scene") == -1) PlayerPrefs.SetInt("Last scene", SceneManager.GetSceneByName("Woods").buildIndex);
+        
+        if (PlayerPrefs.GetInt("Last scene") != SceneManager.GetActiveScene().buildIndex)
+        {
+
+            SceneStartTransforms transforms = new SceneStartTransforms();
+            Scene from = SceneManager.GetSceneByBuildIndex(PlayerPrefs.GetInt("Last scene"));
+            Scene to = SceneManager.GetActiveScene();
+
+
+            transform.position = transforms.FindByScenes(from, to);
+
+            Debug.Log(transforms.FindByScenes(from, to));
+            Debug.Log(transform.position);
+
+            PlayerPrefs.SetInt("Last scene", SceneManager.GetActiveScene().buildIndex);
+        }
+        GetComponent<CharacterController>().enabled = true;
+
+        // TODO
+        if (Input.GetKey(KeyCode.F2))
+        {
+            transform.position = new Vector3(179.570007f, 301.850006f, 179.979996f);
         }
     }
 
@@ -118,16 +152,14 @@ public class Player : Entity
         _animator.SetInteger("AttackType", _currentAttackType);
     }
 
-    private void OnApplicationFocus(bool focus)
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (focus)
+
+        try
         {
-            Cursor.lockState = CursorLockMode.Locked;
-        } 
-        else
-        {
-            Cursor.lockState = CursorLockMode.None;
+            GetComponent<CharacterController>().enabled = false;
         }
+        catch (System.Exception) {}
     }
 }
 

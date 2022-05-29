@@ -1905,6 +1905,7 @@ GameObject:
   - component: {fileID: 6622350505546503657}
   - component: {fileID: 6622350505546503662}
   - component: {fileID: 6622350505546503656}
+  - component: {fileID: -5568418330487667169}
   m_Layer: 7
   m_Name: Paladin
   m_TagString: Untagged
@@ -2030,6 +2031,185 @@ MonoBehaviour:
   RunningAnimation: {fileID: 7400000, guid: a56b93c8dbba04440ae552ac74cf0a52, type: 2}
   HurtAnimation: {fileID: 7400000, guid: 0a8d4c4e21190b54282e492a97ac517a, type: 2}
   DeathAnimation: {fileID: 7400000, guid: d253bece367eaa44b825692df9872f78, type: 2}
+--- !u!114 &-5568418330487667169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6279769829131857339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -499960783, guid: c3ab396f3f53d1c4ebc7bae03391b186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FieldsEnable:
+    Version: 2
+    PathsEnabled:
+    - Transform/position/x
+    - Transform/position/y
+    - Transform/position/z
+    - Transform/position
+    - CapsuleCollider/enabled
+    - NPC/_currentHP
+    - NPC/_isAlive
+    - NPC/_gold
+    - NPC/enabled
+    ModificationVersion: 16
+    ComponentsEnabled: []
+    HashFieldsEnabled: []
+    ObjectsEnabled: 
+    HashSetFieldsEnabled:
+      m_buckets: 0000000000000000000000000000000006000000000000000000000000000000010000000900000008000000070000000400000000000000000000000500000000000000
+      m_slots:
+      - hashCode: 407537608
+        next: -1
+        value:
+          HashCodePath: -559544797
+          HashCodeMember: -2094178328
+      - hashCode: 407981819
+        next: -1
+        value:
+          HashCodePath: -559544797
+          HashCodeMember: -2093734117
+      - hashCode: 408426030
+        next: -1
+        value:
+          HashCodePath: -559544797
+          HashCodeMember: -2093289906
+      - hashCode: 1587938851
+        next: -1
+        value:
+          HashCodePath: 289311300
+          HashCodeMember: -789838941
+      - hashCode: 250648967
+        next: -1
+        value:
+          HashCodePath: 96961247
+          HashCodeMember: 14619687
+      - hashCode: 715995294
+        next: -1
+        value:
+          HashCodePath: 66463299
+          HashCodeMember: 847985854
+      - hashCode: 1488649092
+        next: -1
+        value:
+          HashCodePath: 66463299
+          HashCodeMember: 1620639652
+      - hashCode: 1174077521
+        next: 2
+        value:
+          HashCodePath: 66463299
+          HashCodeMember: -841415567
+      - hashCode: 2030112775
+        next: 1
+        value:
+          HashCodePath: 66463299
+          HashCodeMember: 14619687
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      m_count: 9
+      m_lastIndex: 9
+      m_freeList: -1
+      m_version: 140
+    HashSetObjectsEnabled:
+      m_buckets: 04000000000000000200000000000000000000000300000000000000
+      m_slots:
+      - hashCode: 289311300
+        next: -1
+        value: 289311300
+      - hashCode: 1587938851
+        next: -1
+        value: -559544797
+      - hashCode: 96961247
+        next: 0
+        value: 96961247
+      - hashCode: 66463299
+        next: -1
+        value: 66463299
+      - hashCode: 0
+        next: 0
+        value: 0
+      - hashCode: 0
+        next: 0
+        value: 0
+      - hashCode: 0
+        next: 0
+        value: 0
+      m_count: 4
+      m_lastIndex: 4
+      m_freeList: -1
+      m_version: 71
+    HashSetComponentsEnabled:
+      m_buckets: 030000000200000000000000
+      m_slots:
+      - hashCode: 1321165359
+        next: -1
+        value: UnityEngine.Transform
+      - hashCode: 1341135154
+        next: -1
+        value: UnityEngine.CapsuleCollider
+      - hashCode: 66463299
+        next: 0
+        value: NPC
+      m_count: 3
+      m_lastIndex: 3
+      m_freeList: -1
+      m_version: 54
+    AreValidSavedHashs: 1
+  Position: 0
+  Rotation: 0
+  Scale: 0
+  Name: 0
+  Tag: 0
+  Active: 0
+  Static: 0
+  Layer: 0
+  GAMEOBJECT_STATIC_ID: 0
+  GAMEOBJECT_PATH: 
+  Private_prefabId: 1625998016
+  PrefabSetTime: 1653246538
+  CreateInRuntime: 1
+  onLoad: 3
 --- !u!1 &6483057871550075564
 GameObject:
   m_ObjectHideFlags: 0
