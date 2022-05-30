@@ -51,7 +51,9 @@ public class SceneSwapper : MonoBehaviour
     {
         if (SaveIsEasyAPI.FileExists(scene.name + ".game"))
         {
+            Player playertemp = ObjectCopier.DeepCopy<Player>(_player);
             SaveIsEasyAPI.LoadAll(scene.name + ".game");
+            _player = playertemp;
         }
     }
 }
