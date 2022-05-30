@@ -79,8 +79,8 @@ public class Player : Entity
         if (PlayerPrefs.GetInt("Last scene") != SceneManager.GetActiveScene().buildIndex)
         {
             SceneStartTransforms transforms = new SceneStartTransforms();
-            int from = PlayerPrefs.GetInt("Last scene");
-            int to = SceneManager.GetActiveScene().buildIndex;
+            string from = SceneStartTransforms.SceneNames[PlayerPrefs.GetInt("Last scene")];
+            string to = SceneManager.GetActiveScene().name;
 
 
             transform.position = transforms.FindByScenes(from, to);
