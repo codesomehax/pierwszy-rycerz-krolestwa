@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using DialogueEditor;
+using SaveIsEasy;
 
 /**
 * Object supposed to hold player related properties and methods.
@@ -88,7 +89,9 @@ public class Player : Entity
             Debug.Log(transforms.FindByScenes(from, to));
             Debug.Log(transform.position);
 
-            PlayerPrefs.SetInt("Last scene", SceneManager.GetActiveScene().buildIndex);
+            if (SceneManager.GetActiveScene().buildIndex != 0) PlayerPrefs.SetInt("Last scene", SceneManager.GetActiveScene().buildIndex);
+
+            SaveIsEasyAPI.SaveAll(SceneManager.GetActiveScene().name + ".game", SceneManager.GetActiveScene());
         }
         GetComponent<CharacterController>().enabled = true;
 

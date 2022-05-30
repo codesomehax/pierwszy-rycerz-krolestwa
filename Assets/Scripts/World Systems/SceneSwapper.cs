@@ -10,6 +10,7 @@ public class SceneSwapper : MonoBehaviour
     public SceneAsset GotoScene;
 
     private Player _player;
+    private QuestManager _questManager;
     private bool _canEnter;
 
     
@@ -18,6 +19,7 @@ public class SceneSwapper : MonoBehaviour
     {
         _canEnter = false;
         _player = FindObjectOfType<Player>();
+        _questManager = FindObjectOfType<QuestManager>();
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
@@ -51,9 +53,24 @@ public class SceneSwapper : MonoBehaviour
     {
         if (SaveIsEasyAPI.FileExists(scene.name + ".game"))
         {
-            Player playertemp = ObjectCopier.DeepCopy<Player>(_player);
+            Player playertemp = null;
+            QuestManager questManagerTemp = null;
+
+            if (SceneManager.GetActiveScene().buildIndex != PlayerPrefs.GetInt("Last scene"))
+            {
+                playertemp = ObjectCopier.DeepCopy<Player>(_player);
+                questManagerTemp = ObjectCopier.DeepCopy<QuestManager>(_questManager);
+            }
+
             SaveIsEasyAPI.LoadAll(scene.name + ".game");
-            _player = playertemp;
+
+            if (SceneManager.GetActiveScene().buildIndex != PlayerPrefs.GetInt("Last scene"))
+            {
+                _player = playertemp;
+                _questManager = questManagerTemp;
+            }
+
+            SaveIsEasyAPI.SaveAll(SceneManager.GetActiveScene().name + ".game", SceneManager.GetActiveScene());
         }
     }
 }

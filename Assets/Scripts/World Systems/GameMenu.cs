@@ -52,7 +52,10 @@ public class GameMenu : MonoBehaviour
         LockCursor();
         Time.timeScale = 1f;
         PauseController.gameIsPaused = false;
-        SceneManager.LoadScene(PlayerPrefs.GetInt("Last scene"), LoadSceneMode.Single);
+
+        AsyncOperation sceneUnloaded = SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+
+        StartCoroutine(SceneUnloadedForLoading(sceneUnloaded));
     }
 
     public void SaveGame()
@@ -72,5 +75,15 @@ public class GameMenu : MonoBehaviour
     private void LockCursor()
     {
         Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    private IEnumerator SceneUnloadedForLoading(AsyncOperation sceneUnloaded)
+    {
+        while (!sceneUnloaded.isDone)
+        {
+            yield return null;
+        }
+        Debug.Log(PlayerPrefs.GetInt("Last scene"));
+        SceneManager.LoadScene(PlayerPrefs.GetInt("Last scene"), LoadSceneMode.Single);
     }
 }
