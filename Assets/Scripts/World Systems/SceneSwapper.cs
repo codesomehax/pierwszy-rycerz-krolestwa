@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 using UnityEngine.SceneManagement;
 using SaveIsEasy;
 
 public class SceneSwapper : MonoBehaviour
 {
-    public SceneAsset GotoScene;
+    public string GotoSceneName;
 
     private Player _player;
     private QuestManager _questManager;
@@ -33,7 +32,7 @@ public class SceneSwapper : MonoBehaviour
         if (Input.GetKey(KeyCode.F) && _canEnter)
         {
             SaveIsEasyAPI.SaveAll(SceneManager.GetActiveScene().name + ".game");
-            SceneManager.LoadScene(GotoScene.name);
+            SceneManager.LoadScene(GotoSceneName);
         }
     }
 

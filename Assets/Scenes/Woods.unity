@@ -662,7 +662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 716380c1537396a4f8df9cfc5a5ee32c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GotoScene: {fileID: 102900000, guid: 0613c7bd403c1854fa4686d0bc863e31, type: 3}
+  GotoSceneName: Evil_Camp
 --- !u!65 &172769363
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5706,7 +5706,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 867233896}
-  m_LocalRotation: {x: 0.080420345, y: 0.00000019009437, z: -0.000000015340776, w: 0.996761}
+  m_LocalRotation: {x: 0.080420345, y: 0.00000019009437, z: -0.000000015340815, w: 0.996761}
   m_LocalPosition: {x: 19.999998, y: 302.414, z: 165.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7211,7 +7211,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1191679024}
-  m_LocalRotation: {x: 0.062324416, y: 0.0000001730575, z: -0.000000010806716, w: 0.998056}
+  m_LocalRotation: {x: 0.062324416, y: 0.00000020767065, z: -0.000000012968162, w: 0.998056}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9944,7 +9944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 716380c1537396a4f8df9cfc5a5ee32c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GotoScene: {fileID: 102900000, guid: 41821898da510064aa8fb57ee1804c29, type: 3}
+  GotoSceneName: GoodCastle2.0
 --- !u!65 &1885946929
 BoxCollider:
   m_ObjectHideFlags: 0

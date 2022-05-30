@@ -29,7 +29,6 @@ public class GameMenu : MonoBehaviour
     public void NewGame()
     {
         LockCursor();
-        Debug.Log("XD");
         string[] fileNames = Directory.GetFiles(Application.persistentDataPath);
 
         Regex re = new Regex(@".game$");
@@ -43,6 +42,8 @@ public class GameMenu : MonoBehaviour
         }
 
         PauseController.gameIsPaused = false;
+
+        PlayerPrefs.SetInt("Last scene", -1);
 
         SceneManager.LoadScene("Woods");
     }
@@ -83,7 +84,6 @@ public class GameMenu : MonoBehaviour
         {
             yield return null;
         }
-        Debug.Log(PlayerPrefs.GetInt("Last scene"));
         SceneManager.LoadScene(PlayerPrefs.GetInt("Last scene"), LoadSceneMode.Single);
     }
 }
