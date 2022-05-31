@@ -43,9 +43,9 @@ public class GameMenu : MonoBehaviour
 
         PauseController.gameIsPaused = false;
 
-        PlayerPrefs.SetInt("Last scene", -1);
+        Time.timeScale = 1f;
 
-        SceneManager.LoadScene("Woods");
+        SceneManager.LoadScene("MAIN_SCENE", LoadSceneMode.Single);
     }
 
     public void LoadGame()
@@ -54,9 +54,19 @@ public class GameMenu : MonoBehaviour
         Time.timeScale = 1f;
         PauseController.gameIsPaused = false;
 
-        AsyncOperation sceneUnloaded = SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+        if (!SceneManager.GetSceneByName("MAIN_SCENE").isLoaded)
+        {
+            SceneSwapper.DataLoadRequest = true;
 
-        StartCoroutine(SceneUnloadedForLoading(sceneUnloaded));
+            SceneManager.LoadScene("MAIN_SCENE", LoadSceneMode.Single);
+        }
+        else
+        {
+            AsyncOperation sceneUnloaded = SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+
+            StartCoroutine(SceneUnloadedForLoading(sceneUnloaded));
+        }
+
     }
 
     public void SaveGame()
@@ -69,7 +79,6 @@ public class GameMenu : MonoBehaviour
 
     public void Quit()
     {
-        SaveIsEasyAPI.SaveAll(SceneManager.GetActiveScene().name + ".game", SceneManager.GetActiveScene());
         Application.Quit();
     }
 
@@ -84,6 +93,8 @@ public class GameMenu : MonoBehaviour
         {
             yield return null;
         }
-        SceneManager.LoadScene(PlayerPrefs.GetInt("Last scene"), LoadSceneMode.Single);
+        SceneSwapper.DataLoadRequest = true;
+
+        SceneManager.LoadScene("MAIN_SCENE", LoadSceneMode.Single);
     }
 }

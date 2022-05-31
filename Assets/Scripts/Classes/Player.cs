@@ -55,8 +55,6 @@ public class Player : Entity
 
         _currentAttackType = 1;
         _animator.SetInteger("AttackType", 1);
-
-        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     void Update()
@@ -72,29 +70,17 @@ public class Player : Entity
         }
     }
 
-    void LateUpdate()
+    private void LateUpdate()
     {
-        if (PlayerPrefs.GetInt("Last scene") == -1) PlayerPrefs.SetInt("Last scene", SceneManager.GetSceneByName("Woods").buildIndex);
-        
-        if (PlayerPrefs.GetInt("Last scene") != SceneManager.GetActiveScene().buildIndex)
+        if (SceneSwapper.DataLoadRequest)
         {
-            SceneStartTransforms transforms = new SceneStartTransforms();
-            string from = SceneStartTransforms.SceneNames[PlayerPrefs.GetInt("Last scene")];
-            string to = SceneManager.GetActiveScene().name;
-
-
-            transform.position = transforms.FindByScenes(from, to);
-
-            if (SceneManager.GetActiveScene().buildIndex != 0) PlayerPrefs.SetInt("Last scene", SceneManager.GetActiveScene().buildIndex);
-
-            SaveIsEasyAPI.SaveAll(SceneManager.GetActiveScene().name + ".game", SceneManager.GetActiveScene());
-        }
-        GetComponent<CharacterController>().enabled = true;
-
-        // TODO
-        if (Input.GetKey(KeyCode.F2))
-        {
-            transform.position = new Vector3(179.570007f, 301.850006f, 179.979996f);
+            if (SaveIsEasyAPI.FileExists(SceneManager.GetActiveScene().name + ".game"))
+            {
+                GetComponent<CharacterController>().enabled = false;
+                SaveIsEasyAPI.LoadAll(SceneManager.GetActiveScene().name + ".game");
+                GetComponent<CharacterController>().enabled = true;
+            }
+            SceneSwapper.DataLoadRequest = false;
         }
     }
 
@@ -149,16 +135,6 @@ public class Player : Entity
         _animator.SetBool("AttackingRightNow", false);
         _currentAttackType = (_currentAttackType == 1) ? 2 : 1;
         _animator.SetInteger("AttackType", _currentAttackType);
-    }
-
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-
-        try
-        {
-            GetComponent<CharacterController>().enabled = false;
-        }
-        catch (System.Exception) {}
     }
 }
 

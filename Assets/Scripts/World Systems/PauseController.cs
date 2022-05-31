@@ -41,6 +41,7 @@ public class PauseController : MonoBehaviour
 
         GameObject.Find("Player Camera").GetComponent<AudioListener>().enabled = true;
         GameObject.Find("EventSystem").GetComponent<EventSystem>().enabled = true;
+        Cursor.lockState = CursorLockMode.Locked;
         Time.timeScale = 1f;
     }
 }

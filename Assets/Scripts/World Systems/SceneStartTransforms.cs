@@ -9,10 +9,10 @@ public class SceneStartTransforms : List<(string from, string to, Vector3 positi
 
     public SceneStartTransforms()
     {
-        Add(("Woods", "GoodCastle2.0", new Vector3(4.29166365f, 0.0603375435f, 45.0141487f)));
-        Add(("GoodCastle2.0", "Woods", new Vector3(20f, 301f, 20f)));
-        Add(("Woods", "Evil_Camp", new Vector3(106.5f, 0.0500000007f, 153.869995f)));
-        Add(("Evil_Camp", "Woods", new Vector3(176.169113f, 300f, 178.277679f)));
+        Add(("Woods", "GoodCastle2.0", new Vector3(-219.6521f, 281.080627f, 311.82666f)));
+        Add(("GoodCastle2.0", "Woods", new Vector3(-232.563629f, 300f, 514.757996f)));
+        Add(("Woods", "Evil_Camp", new Vector3(104.738838f, 212.501831f, 495.661804f)));
+        Add(("Evil_Camp", "Woods", new Vector3(-85.7630005f, 300f, 658.416504f)));
     }
 
     public Vector3 FindByScenes(string from, string to)

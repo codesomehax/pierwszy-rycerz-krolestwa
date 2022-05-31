@@ -6,10 +6,13 @@ using SaveIsEasy;
 
 public class SceneSwapper : MonoBehaviour
 {
+    public static bool DataLoadRequest = true;
+
+    public string FromSceneName;
     public string GotoSceneName;
 
+    
     private Player _player;
-    private QuestManager _questManager;
     private bool _canEnter;
 
     
@@ -18,21 +21,17 @@ public class SceneSwapper : MonoBehaviour
     {
         _canEnter = false;
         _player = FindObjectOfType<Player>();
-        _questManager = FindObjectOfType<QuestManager>();
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
-
-    private void OnDisable()
-    {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.F) && _canEnter)
+        if (Input.GetKeyDown(KeyCode.F) && _canEnter)
         {
-            SaveIsEasyAPI.SaveAll(SceneManager.GetActiveScene().name + ".game");
-            SceneManager.LoadScene(GotoSceneName);
+            SceneStartTransforms transforms = new SceneStartTransforms();
+
+            _player.GetComponent<CharacterController>().enabled = false;
+            _player.transform.position = transforms.FindByScenes(FromSceneName, GotoSceneName);
+            _player.GetComponent<CharacterController>().enabled = true;
         }
     }
 
@@ -46,30 +45,5 @@ public class SceneSwapper : MonoBehaviour
     {
         if (other.gameObject.name == "Player")
             _canEnter = false;
-    }
-
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        if (SaveIsEasyAPI.FileExists(scene.name + ".game"))
-        {
-            Player playertemp = null;
-            QuestManager questManagerTemp = null;
-
-            if (SceneManager.GetActiveScene().buildIndex != PlayerPrefs.GetInt("Last scene"))
-            {
-                playertemp = ObjectCopier.DeepCopy<Player>(_player);
-                questManagerTemp = ObjectCopier.DeepCopy<QuestManager>(_questManager);
-            }
-
-            SaveIsEasyAPI.LoadAll(scene.name + ".game");
-
-            if (SceneManager.GetActiveScene().buildIndex != PlayerPrefs.GetInt("Last scene"))
-            {
-                _player = playertemp;
-                _questManager = questManagerTemp;
-            }
-
-            SaveIsEasyAPI.SaveAll(SceneManager.GetActiveScene().name + ".game", SceneManager.GetActiveScene());
-        }
     }
 }
