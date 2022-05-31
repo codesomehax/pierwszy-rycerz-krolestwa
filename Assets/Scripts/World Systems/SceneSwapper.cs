@@ -32,6 +32,8 @@ public class SceneSwapper : MonoBehaviour
             _player.GetComponent<CharacterController>().enabled = false;
             _player.transform.position = transforms.FindByScenes(FromSceneName, GotoSceneName);
             _player.GetComponent<CharacterController>().enabled = true;
+
+            _canEnter = false;
         }
     }
 
@@ -43,7 +45,6 @@ public class SceneSwapper : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.name == "Player")
-            _canEnter = false;
+        _canEnter = false;
     }
 }
