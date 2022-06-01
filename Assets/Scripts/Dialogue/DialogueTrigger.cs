@@ -8,6 +8,7 @@ public class DialogueTrigger : MonoBehaviour
 {
     public NPCConversation Conversation;
     public bool IsFirstConversation = false;
+    public bool NpcIsStatic = false;
 
     private NPC _npc;
     private Player _player;
@@ -29,14 +30,14 @@ public class DialogueTrigger : MonoBehaviour
             _player.GetComponent<HumanMovement>().enabled = false;
             _playerStoppedDueToConversation = true;
 
-            StartCoroutine(nameof(SmoothTurnToEachother));
+            if (!NpcIsStatic) StartCoroutine(nameof(SmoothTurnToEachother));
 
             ConversationManager.Instance.StartConversation(Conversation);
         }
         else if (_playerStoppedDueToConversation && !ConversationManager.Instance.IsConversationActive)
         {
             _player.GetComponent<HumanMovement>().enabled = true;
-            StopCoroutine(nameof(SmoothTurnToEachother));
+            if (!NpcIsStatic) StopCoroutine(nameof(SmoothTurnToEachother));
             _playerStoppedDueToConversation = false;
         }
 
