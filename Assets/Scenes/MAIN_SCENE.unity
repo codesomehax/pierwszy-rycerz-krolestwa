@@ -8044,6 +8044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conversation: {fileID: 1369731515}
+  IsFirstConversation: 0
 --- !u!1 &499385954
 GameObject:
   m_ObjectHideFlags: 0
@@ -14249,14 +14250,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 11
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":98,\"yPos\":368},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Po
-    prostu pragn\u0119 mocy\",\"parentUIDs\":[3],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"IsFirstKnight\",\"BoolValue\":true},{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"ReputationGood\",\"IntValue\":0},{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"ReputationEvil\",\"IntValue\":0},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"KillGoodKingActive\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"KillGoodKingCompleted\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"KillGoodKingFinished\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"ReputationEvil\",\"CheckType\":2,\"RequiredValue\":1000},{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"KillGoodKingActive\",\"CheckType\":0,\"RequiredValue\":false},{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"KillGoodKingCompleted\",\"CheckType\":0,\"RequiredValue\":false},{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"KillGoodKingFinished\",\"CheckType\":0,\"RequiredValue\":false}],\"NodeUID\":3},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":292,\"yPos\":107},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"W\u0142adco!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ja\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0.1,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":106,\"yPos\":235},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Wiedzia\u0142em,
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":92,\"yPos\":386},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Po
+    prostu pragn\u0119 mocy\",\"parentUIDs\":[3],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"IsFirstKnight\",\"BoolValue\":true},{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"ReputationGood\",\"IntValue\":0},{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"ReputationEvil\",\"IntValue\":0},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"KillGoodKingActive\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"KillGoodKingCompleted\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"KillGoodKingFinished\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"ReputationEvil\",\"CheckType\":2,\"RequiredValue\":1000},{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"KillGoodKingActive\",\"CheckType\":0,\"RequiredValue\":false},{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"KillGoodKingCompleted\",\"CheckType\":0,\"RequiredValue\":false},{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"KillGoodKingFinished\",\"CheckType\":0,\"RequiredValue\":false}],\"NodeUID\":3},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"KillGoodKingCompleted\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":7},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":286,\"yPos\":125},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"W\u0142adco!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ja\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0.1,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":100,\"yPos\":253},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Wiedzia\u0142em,
     \u017Ce op\u0142aci si\u0119 rzuca\u0107 zakl\u0119cia na takie \u015Bmieci...
-    zab\u0142\u0105kanych ludzi jak ty\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"W\u0142adca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":92,\"yPos\":479},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Wi\u0119c
-    zabij kr\xF3la\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"W\u0142adca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":349,\"yPos\":266},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Posiadanie
-    takiego s\u0142ugi jest... przydatne\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"W\u0142adca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":592,\"yPos\":183},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"A
-    wi\u0119c zabi\u0142e\u015B Kr\xF3la\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"W\u0142adca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":578,\"yPos\":364},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oto
-    twoja nagroda. Mianuj\u0119 ci\u0119 Pierwszym Demonem\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    zab\u0142\u0105kanych ludzi jak ty\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"W\u0142adca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":86,\"yPos\":497},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Wi\u0119c
+    zabij kr\xF3la\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"W\u0142adca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":349,\"yPos\":250},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"A
+    wi\u0119c zabi\u0142e\u015B Kr\xF3la\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"W\u0142adca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":363,\"yPos\":379},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oto
+    twoja nagroda. Mianuj\u0119 ci\u0119 Pierwszym Demonem\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":599,\"yPos\":144},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Posiadanie
+    takiego s\u0142ugi jest... przydatne\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"W\u0142adca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -16231,6 +16232,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834624903}
   m_Mesh: {fileID: 7267691848531348932, guid: 05d0dcbe2e37f7c4a9ba340de427e5c5, type: 3}
+--- !u!1 &847579010 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8303146636143819215, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+  m_PrefabInstance: {fileID: 1775163187}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &851026749
 GameObject:
   m_ObjectHideFlags: 0
@@ -18021,6 +18027,7 @@ Transform:
   - {fileID: 896306385}
   - {fileID: 203815443}
   - {fileID: 1500089478}
+  - {fileID: 1689876237}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -24162,6 +24169,11 @@ Transform:
   m_Father: {fileID: 1153450996}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1179390381 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1578193216439038675, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+  m_PrefabInstance: {fileID: 1801046808}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1184302970
 GameObject:
   m_ObjectHideFlags: 0
@@ -24302,6 +24314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conversation: {fileID: 743752685}
+  IsFirstConversation: 0
 --- !u!195 &1192261684
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -34505,6 +34518,144 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 414800, guid: 470ada972ce6ab04ea581a4d23092816, type: 3}
   m_PrefabInstance: {fileID: 1687109661}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1689876236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1689876237}
+  - component: {fileID: 1689876241}
+  - component: {fileID: 1689876240}
+  - component: {fileID: 1689876239}
+  - component: {fileID: 1689876238}
+  m_Layer: 0
+  m_Name: FirstConversation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1689876237
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689876236}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -239.94, y: -33.17, z: 653.12866}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 926722807}
+  m_RootOrder: 35
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &1689876238
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689876236}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!95 &1689876239
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689876236}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1e57b9ef34c6dd03793c96b12395352f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1689876240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689876236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38240c9a80c728fdba85fb5a1c5af766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: aaa
+  ID: 20
+  BaseMaxHP: 0
+  BaseAttackDamage: 0
+  BaseDefense: 0
+  AttackMultiplier: 1
+  DefenseMultiplier: 1
+  MaxHpMultiplier: 1
+  WalkSpeed: 0
+  RunSpeed: 0
+  FallSpeed: 0
+  TimeBetweenAttacks: 0
+  Alignment: 0
+  DeathReputationIncrease: 0
+  AggressivenessBorder: -1
+  EnablePatroling: 0
+  PlayerLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  TerrainLayer:
+    serializedVersion: 2
+    m_Bits: 1
+  SightRange: 0
+  PatrolRange: 0
+  AttackRange: 0
+  TalkRange: 10
+  PatrolTimeInterval: 0
+  MaxGold: 0
+  IsRespawnable: 0
+  IdleAnimation: {fileID: 0}
+  WalkingAnimation: {fileID: 0}
+  BasicAttackAnimation: {fileID: 0}
+  RunningAnimation: {fileID: 0}
+  HurtAnimation: {fileID: 0}
+  DeathAnimation: {fileID: 0}
+--- !u!114 &1689876241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689876236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9ccbc12a65953e768183be8b02ba13e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Conversation: {fileID: 1923258305}
+  IsFirstConversation: 1
 --- !u!1 &1695853154
 GameObject:
   m_ObjectHideFlags: 0
@@ -36202,6 +36353,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8303146636143715759, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
   m_PrefabInstance: {fileID: 1775163187}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1775163189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847579010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9ccbc12a65953e768183be8b02ba13e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Conversation: {fileID: 1434584680}
+  IsFirstConversation: 0
 --- !u!1 &1778042315
 GameObject:
   m_ObjectHideFlags: 0
@@ -36602,6 +36767,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2210439428922927209, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
   m_PrefabInstance: {fileID: 1801046808}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1801046810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179390381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9ccbc12a65953e768183be8b02ba13e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Conversation: {fileID: 1971416447}
+  IsFirstConversation: 0
 --- !u!1001 &1811805628
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42264,7 +42443,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2130492046}
-  m_LocalRotation: {x: 0.09853584, y: -0.0051521678, z: 0.00051016273, w: 0.99512005}
+  m_LocalRotation: {x: 0.09853582, y: -0.0051521356, z: 0.00051015953, w: 0.99512005}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
