@@ -27,10 +27,11 @@ public class DisplayNPCHealth : MonoBehaviour
             slider.transform.rotation = npcAtPlayer;
 
             slider.value = CalcualteHealth();
-            if(slider.value <= 0f)
+            if (slider.value <= 0f || slider.value == 1f)
             {
-                Object.Destroy(healthbarUI);
+                healthbarUI.SetActive(false);
             }
+            else healthbarUI.SetActive(true);
         }
 
         
