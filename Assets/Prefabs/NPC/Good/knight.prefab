@@ -695,7 +695,7 @@ MonoBehaviour:
   FallSpeed: 2
   TimeBetweenAttacks: 3
   Alignment: 0
-  AggressivenessBorder: 0
+  AggressivenessBorder: 50
   EnablePatroling: 1
   PlayerLayer:
     serializedVersion: 2
@@ -709,6 +709,7 @@ MonoBehaviour:
   TalkRange: 2
   PatrolTimeInterval: 5
   MaxGold: 10
+  IsRespawnable: 0
   IdleAnimation: {fileID: 7400000, guid: 0a8d4c4e21190b54282e492a97ac517a, type: 2}
   WalkingAnimation: {fileID: 7400000, guid: 23d9bc7ec1db3824baea7127f5cfcb54, type: 2}
   BasicAttackAnimation: {fileID: 7400000, guid: 863eb730fff703446b77a8aa2dab83f4, type: 2}
