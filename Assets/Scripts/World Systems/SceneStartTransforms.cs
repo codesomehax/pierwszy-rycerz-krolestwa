@@ -9,9 +9,9 @@ public class SceneStartTransforms : List<(string from, string to, Vector3 positi
 
     public SceneStartTransforms()
     {
-        Add(("Woods", "GoodCastle2.0", new Vector3(-219.6521f, 281.080627f, 311.82666f)));
+        Add(("Woods", "GoodCastle2.0", new Vector3(-219.6521f, 308f, 311.82666f)));
         Add(("GoodCastle2.0", "Woods", new Vector3(-231.54129f ,300f ,515.950806f)));
-        Add(("Woods", "Evil_Camp", new Vector3(104.738838f, 212.501831f, 495.661804f)));
+        Add(("Woods", "Evil_Camp", new Vector3(104.738838f, 310f, 495.661804f)));
         Add(("Evil_Camp", "Woods", new Vector3(-85.7630005f, 300f, 658.416504f)));
     }
 
