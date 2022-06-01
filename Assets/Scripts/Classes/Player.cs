@@ -20,6 +20,7 @@ public class Player : Entity
 
 
     private int _currentAttackType;
+    private int _nTrainings;
     private Dictionary<Alliance, int> _reputation;
 
 
@@ -44,6 +45,36 @@ public class Player : Entity
         _reputation[alliance] -= reputation;
     }
 
+    public void IncreaseBaseAttack(float attack)
+    {
+        BaseAttackDamage += attack;
+    }
+
+    public void IncreaseBaseDefense(float defense)
+    {
+        BaseDefense += defense;
+    }
+
+    public void IncreaseBaseMaxHP(float maxHP)
+    {
+        BaseMaxHP += maxHP;
+    }
+
+    public void IncreaseAttackMultiplier(float attackMultiplier)
+    {
+        AttackMultiplier += attackMultiplier;
+    }
+
+    public void IncreaseDefenseMultiplier(float defenseMultiplier)
+    {
+        DefenseMultiplier += defenseMultiplier;
+    }
+
+    public void IncreaseMaxHpMultiplier(float maxHpMultiplier)
+    {
+        MaxHpMultiplier += maxHpMultiplier;
+    }
+
     protected override void Awake()
     {
         base.Awake();
@@ -55,6 +86,9 @@ public class Player : Entity
 
         _currentAttackType = 1;
         _animator.SetInteger("AttackType", 1);
+        _nTrainings = 0;
+
+        EventManager.OnNpcDeath += GetLootFromEnemy;
     }
 
     void Update()
@@ -135,6 +169,31 @@ public class Player : Entity
         _animator.SetBool("AttackingRightNow", false);
         _currentAttackType = (_currentAttackType == 1) ? 2 : 1;
         _animator.SetInteger("AttackType", _currentAttackType);
+    }
+
+    private void GetLootFromEnemy(NPC enemy)
+    {
+        _gold += enemy.GetGold();
+        if (enemy.Alignment == Alliance.Good)
+        {
+            _reputation[Alliance.Good] = 0;
+            _reputation[Alliance.Evil] += enemy.DeathReputationIncrease;
+        }
+        else
+        {
+            _reputation[Alliance.Evil] = 0;
+            _reputation[Alliance.Good] += enemy.DeathReputationIncrease;
+        }
+    }
+
+    public int GetNTrainings()
+    {
+        return _nTrainings;
+    }
+
+    public void IncreaseNTraining(int n)
+    {
+        _nTrainings += n;
     }
 }
 

@@ -56,4 +56,14 @@ public class DialogueManager : MonoBehaviour
         ConversationManager.Instance.SetInt("ReputationGood", _player.GetReputation(Alliance.Good));
         ConversationManager.Instance.SetInt("ReputationEvil", _player.GetReputation(Alliance.Evil));
     }
+
+    public void UpdateConversationGold()
+    {
+        ConversationManager.Instance.SetInt("Gold", _player.GetGold());
+    }
+
+    public void UpdateConversationNTrainings()
+    {
+        ConversationManager.Instance.SetInt("NTrainings", _player.GetNTrainings());
+    }
 }

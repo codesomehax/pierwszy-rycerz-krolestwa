@@ -8,7 +8,6 @@ public class Quest : MonoBehaviour
     public string Name;
     public string Description;
     public int GoldReward;
-    public NPC QuestGiver;
     public int ReputationIncrease;
     public Alliance ReputationIncreaseAlliance;
     public int ReputationDecrease;
@@ -54,6 +53,7 @@ public class Quest : MonoBehaviour
 
     public void Finish()
     {
+        _active = false;
         _completed = false;
         _finished = true;
 

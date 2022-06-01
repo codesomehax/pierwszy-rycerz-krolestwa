@@ -22,6 +22,7 @@ using SaveIsEasy;
 public class NPC : Entity, ISaveIsEasyEvents, IRespawnable
 {
     public Alliance Alignment;
+    public int DeathReputationIncrease;
     public float AggressivenessBorder; // aggressive if reputation is lower than this value
     public bool EnablePatroling;
     public LayerMask PlayerLayer;
