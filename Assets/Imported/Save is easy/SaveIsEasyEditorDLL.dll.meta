@@ -19,18 +19,9 @@ PluginImporter:
         Exclude Editor: 0
         Exclude Linux64: 1
         Exclude OSXUniversal: 1
-<<<<<<< Updated upstream
         Exclude WebGL: 1
-=======
-        Exclude WebGL: 0
->>>>>>> Stashed changes
         Exclude Win: 1
         Exclude Win64: 1
-  - first:
-      Any: 
-    second:
-      enabled: 0
-      settings: {}
   - first:
       Editor: Editor
     second:
@@ -63,11 +54,6 @@ PluginImporter:
       enabled: 0
       settings:
         CPU: None
-  - first:
-      WebGL: WebGL
-    second:
-      enabled: 0
-      settings: {}
   - first:
       Windows Store Apps: WindowsStoreApps
     second:
