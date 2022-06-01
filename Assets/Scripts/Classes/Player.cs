@@ -50,8 +50,8 @@ public class Player : Entity
 
         _reputation = new Dictionary<Alliance, int>();
 
-        _reputation[Alliance.Good] = 0;
-        _reputation[Alliance.Evil] = 0;
+        _reputation[Alliance.Good] = 100;
+        _reputation[Alliance.Evil] = 100;
 
         _currentAttackType = 1;
         _animator.SetInteger("AttackType", 1);
