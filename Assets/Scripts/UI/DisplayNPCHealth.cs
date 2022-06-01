@@ -20,15 +20,20 @@ public class DisplayNPCHealth : MonoBehaviour
     void Update()
     {
 
-        Quaternion npcAtPlayer = Quaternion.LookRotation(_player.transform.position - slider.transform.position);
-
-        slider.transform.rotation = npcAtPlayer;
-
-        slider.value = CalcualteHealth();
-        if(slider.value <= 0f)
+        if (healthbarUI.gameObject != null)
         {
-            Object.Destroy(healthbarUI);
+            Quaternion npcAtPlayer = Quaternion.LookRotation(_player.transform.position - slider.transform.position);
+
+            slider.transform.rotation = npcAtPlayer;
+
+            slider.value = CalcualteHealth();
+            if(slider.value <= 0f)
+            {
+                Object.Destroy(healthbarUI);
+            }
         }
+
+        
     }
 
     float CalcualteHealth()

@@ -1159,6 +1159,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonSkeleton_demo Variant (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
 --- !u!64 &62675925
@@ -1613,6 +1633,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7155957360414264293, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
       propertyPath: m_AnchorMax.y
+    - target: {fileID: 8577979138623687517, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: PrefabSetTime
+      value: 1654095157
+      objectReference: {fileID: 0}
+    - target: {fileID: 8577979138623687517, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: Private_prefabId
+      value: 1920966031
+      objectReference: {fileID: 0}
+    - target: {fileID: 8577979138623687517, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8577979138623687517, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8577979138623687517, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8577979138623687517, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8577979138623687517, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1901,6 +1947,26 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 5207229126881399176, guid: 12663cfee3a3b5247a01df1aea7fccdf, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5207229126881399176, guid: 12663cfee3a3b5247a01df1aea7fccdf, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5207229126881399176, guid: 12663cfee3a3b5247a01df1aea7fccdf, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5207229126881399176, guid: 12663cfee3a3b5247a01df1aea7fccdf, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5207229126881399176, guid: 12663cfee3a3b5247a01df1aea7fccdf, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5369350086099039506, guid: 12663cfee3a3b5247a01df1aea7fccdf, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -2096,9 +2162,9 @@ GameObject:
   - component: {fileID: 86443286}
   - component: {fileID: 86443285}
   - component: {fileID: 86443284}
-  - component: {fileID: 86443283}
   - component: {fileID: 86443282}
   - component: {fileID: 86443281}
+  - component: {fileID: 86443289}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -2135,7 +2201,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1917843832}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: FinishQuest
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1242887528}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 9
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
@@ -2159,25 +2237,6 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
---- !u!114 &86443283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 86443279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 5
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
-  Audio: {fileID: 0}
 --- !u!114 &86443284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2192,7 +2251,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1917843832}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: AssignQuest
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1242887528}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 4
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
@@ -2306,6 +2377,25 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   NodeID: 0
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &86443289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86443279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 10
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -3000,6 +3090,73 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fb40f20db42e1b48b1b6a084a628993, type: 3}
+--- !u!1 &137933957
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 137933960}
+  - component: {fileID: 137933958}
+  - component: {fileID: 137933959}
+  m_Layer: 0
+  m_Name: M1Evil
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &137933958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137933957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc54dc6f75bc494084fd4ea773698be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Mission one evil
+  Description: 
+  GoldReward: 200
+  ReputationIncrease: 0
+  ReputationIncreaseAlliance: 0
+  ReputationDecrease: 0
+  ReputationDecreaseAlliance: 1
+--- !u!114 &137933959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137933957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e62795db1866a3c42a5680df0ffc48cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Description: 
+  RequiredProgress: 1
+  Enemy: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+--- !u!4 &137933960
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137933957}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1917843833}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &141450903 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2210439428922927209, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
@@ -5512,6 +5669,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonSkeleton_demo Variant (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: Private_prefabId
+      value: 1858109894
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
 --- !u!4 &314602619 stripped
@@ -6768,6 +6949,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7155957360414264293, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
       propertyPath: m_AnchorMax.y
+    - target: {fileID: 8577979138623687517, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: PrefabSetTime
+      value: 1654095157
+      objectReference: {fileID: 0}
+    - target: {fileID: 8577979138623687517, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: Private_prefabId
+      value: 1186896505
+      objectReference: {fileID: 0}
+    - target: {fileID: 8577979138623687517, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8577979138623687517, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8577979138623687517, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8577979138623687517, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8577979138623687517, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6862,6 +7069,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4437678120379160231, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: Private_prefabId
+      value: 1780553443
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7033,6 +7264,121 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -776667629931541277, guid: 05d0dcbe2e37f7c4a9ba340de427e5c5, type: 3}
+--- !u!1 &408100047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 408100048}
+  - component: {fileID: 408100051}
+  - component: {fileID: 408100050}
+  - component: {fileID: 408100049}
+  m_Layer: 0
+  m_Name: ConversationEventInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &408100048
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408100047}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 261.59103, y: 0, z: -482.7287}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1971416446}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &408100049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408100047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 2
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &408100050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408100047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1917843832}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: FinishQuest
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1704273145}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  NodeID: 1
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &408100051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408100047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1125777237}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: UpdateConversationAccordingToQuestState
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1704273145}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  NodeID: 0
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
 --- !u!1001 &408983968
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7106,6 +7452,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4437678120379160231, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: Private_prefabId
+      value: 157994976
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -8362,6 +8732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conversation: {fileID: 1369731515}
+  IsFirstConversation: 0
 --- !u!1 &499385954
 GameObject:
   m_ObjectHideFlags: 0
@@ -9520,6 +9891,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7155957360414264293, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
       propertyPath: m_AnchorMax.y
+    - target: {fileID: 8577979138623687517, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: PrefabSetTime
+      value: 1654095157
+      objectReference: {fileID: 0}
+    - target: {fileID: 8577979138623687517, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: Private_prefabId
+      value: 1846343343
+      objectReference: {fileID: 0}
+    - target: {fileID: 8577979138623687517, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8577979138623687517, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8577979138623687517, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8577979138623687517, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8577979138623687517, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -10198,6 +10595,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7155957360414264293, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
       propertyPath: m_AnchorMax.y
+    - target: {fileID: 8577979138623687517, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8577979138623687517, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8577979138623687517, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8577979138623687517, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8577979138623687517, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -10842,6 +11257,30 @@ PrefabInstance:
     - target: {fileID: 8303146636143819215, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_Name
       value: DungeonSkeleton_demo Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: Private_prefabId
+      value: 2139984734
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
@@ -13902,6 +14341,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonSkeleton_demo Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: Private_prefabId
+      value: 405173283
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
 --- !u!4 &687007526 stripped
@@ -14352,7 +14815,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 661450988}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: ReceiveReputationBonus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 9
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
@@ -14428,7 +14903,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1125777237}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: UpdateWeHaveTalked
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: CaptainEvil
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 4
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
@@ -14522,23 +15009,23 @@ MonoBehaviour:
         m_MethodName: UpdateConversationAccordingToQuestState
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 137933958}
           m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1125777237}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
+        m_MethodName: UpdateWeHaveTalked
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: CaptainEvil
           m_BoolArgument: 0
         m_CallState: 2
   NodeID: 0
@@ -14648,6 +15135,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonSkeleton_demo Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: Private_prefabId
+      value: 185574948
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
 --- !u!1 &730778212
@@ -14695,15 +15206,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 10
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":134,\"yPos\":409},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Po
-    prostu pragn\u0119 mocy\",\"parentUIDs\":[3],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"IsFirstKnight\",\"BoolValue\":true}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":311,\"yPos\":134},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"W\u0142adco!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ja\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0.1,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":117,\"yPos\":236},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Wiedzia\u0142em,
+  CurrentIDCounter: 11
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":92,\"yPos\":386},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Po
+    prostu pragn\u0119 mocy\",\"parentUIDs\":[3],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"IsFirstKnight\",\"BoolValue\":true},{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"ReputationGood\",\"IntValue\":0},{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"ReputationEvil\",\"IntValue\":0},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"KillGoodKingActive\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"KillGoodKingCompleted\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"KillGoodKingFinished\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"ReputationEvil\",\"CheckType\":2,\"RequiredValue\":1000},{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"KillGoodKingActive\",\"CheckType\":0,\"RequiredValue\":false},{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"KillGoodKingCompleted\",\"CheckType\":0,\"RequiredValue\":false},{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"KillGoodKingFinished\",\"CheckType\":0,\"RequiredValue\":false}],\"NodeUID\":3},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"KillGoodKingCompleted\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":7},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":286,\"yPos\":125},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"W\u0142adco!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ja\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0.1,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":100,\"yPos\":253},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Wiedzia\u0142em,
     \u017Ce op\u0142aci si\u0119 rzuca\u0107 zakl\u0119cia na takie \u015Bmieci...
-    zab\u0142\u0105kanych ludzi jak ty\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"W\u0142adca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":111,\"yPos\":506},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Wi\u0119c
-    zabij kr\xF3la\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"W\u0142adca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":561,\"yPos\":219},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Posiadanie
-    takiego s\u0142ugi jest... przydatne\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"W\u0142adca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":352,\"yPos\":295},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"A
-    wi\u0119c zabi\u0142e\u015B Kr\xF3la\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"W\u0142adca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":358,\"yPos\":453},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oto
-    twoja nagroda. Mianuj\u0119 ci\u0119 Pierwszym Demonem\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    zab\u0142\u0105kanych ludzi jak ty\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"W\u0142adca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":86,\"yPos\":497},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Wi\u0119c
+    zabij kr\xF3la\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"W\u0142adca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":349,\"yPos\":250},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"A
+    wi\u0119c zabi\u0142e\u015B Kr\xF3la\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"W\u0142adca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":363,\"yPos\":379},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oto
+    twoja nagroda. Mianuj\u0119 ci\u0119 Pierwszym Demonem\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":599,\"yPos\":144},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Posiadanie
+    takiego s\u0142ugi jest... przydatne\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"W\u0142adca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -14714,9 +15225,9 @@ MonoBehaviour:
   - {fileID: 1505243701}
   - {fileID: 1505243700}
   - {fileID: 1505243699}
-  - {fileID: 1505243698}
   - {fileID: 1505243697}
   - {fileID: 1505243696}
+  - {fileID: 1505243704}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
@@ -15555,6 +16066,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonSkeleton_demo Variant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: Private_prefabId
+      value: 2007754078
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
 --- !u!4 &758412599 stripped
@@ -15715,6 +16250,30 @@ PrefabInstance:
     - target: {fileID: 8303146636143819215, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_Name
       value: DungeonSkeleton_demo Variant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: Private_prefabId
+      value: 1869819034
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
@@ -16942,6 +17501,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834624903}
   m_Mesh: {fileID: 7267691848531348932, guid: 05d0dcbe2e37f7c4a9ba340de427e5c5, type: 3}
+--- !u!1 &847579010 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8303146636143819215, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+  m_PrefabInstance: {fileID: 1775163187}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &851026749
 GameObject:
   m_ObjectHideFlags: 0
@@ -16988,17 +17552,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 7
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":179,\"yPos\":481},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tak
-    zrobi\u0119\",\"parentUIDs\":[3],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"IsFirstKnight\",\"BoolValue\":true}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"IsFirstKnight\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":5},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":268,\"yPos\":202},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Witaj!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Dow\xF3dca
-    obozu\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":185,\"yPos\":333},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Dzi\u0119kuj\u0119,
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":184,\"yPos\":432},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tak
+    zrobi\u0119\",\"parentUIDs\":[3],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"IsFirstKnight\",\"BoolValue\":true},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"M1GoodActive\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"M1GoodCompleted\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"M1GoodFinished\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"M1GoodFinished\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":3},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"IsFirstKnight\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":5},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":273,\"yPos\":153},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Witaj!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Dow\xF3dca
+    obozu\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":190,\"yPos\":284},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Dzi\u0119kuj\u0119,
     \u017Ce pomog\u0142e\u015B \u017Co\u0142nierzowi. Powiniene\u015B do\u0142\u0105czy\u0107
     do sprawy i razem z nami walczy\u0107 z si\u0142ami z\u0142a!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Dow\xF3dca
-    obozu\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":178,\"yPos\":588},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Dobrze
+    obozu\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":183,\"yPos\":539},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Dobrze
     wi\u0119c... dotknij pos\u0105gu je\u015Bli znudzi Ci si\u0119 las i b\u0119dziesz
     chcia\u0142 odwiedzi\u0107 miasto\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Dow\xF3dca
-    obozu\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":452,\"yPos\":346},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"A
+    obozu\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":457,\"yPos\":297},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"A
     wi\u0119c zosta\u0142e\u015B pierwszym rycerzem kr\xF3lestwa!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Dow\xF3dca
-    obozu\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":557,\"yPos\":226},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Mam
+    obozu\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":562,\"yPos\":177},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Mam
     nadziej\u0119, \u017Ce przys\u0142u\u017Cysz si\u0119 naszej sprawie!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Dow\xF3dca
     obozu\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
@@ -17378,6 +17942,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonSkeleton_demo Variant (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: Private_prefabId
+      value: 730097455
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
 --- !u!4 &868400161 stripped
@@ -17513,16 +18101,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 10
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":124,\"yPos\":297},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oczywi\u015Bcie
-    Panie\",\"parentUIDs\":[3],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"IsFirstKnight\",\"BoolValue\":true}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":301,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"W\u0142adco!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ja\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0.1,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":128,\"yPos\":146},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Witaj!
+  CurrentIDCounter: 11
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":106,\"yPos\":368},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oczywi\u015Bcie
+    Panie\",\"parentUIDs\":[3],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"IsFirstKnight\",\"BoolValue\":true},{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"ReputationGood\",\"IntValue\":0},{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"ReputationEvil\",\"IntValue\":0},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"KillEvilKingActive\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"KillEvilKingCompleted\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"KillEvilKingFinished\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"ReputationGood\",\"CheckType\":2,\"RequiredValue\":1000},{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"KillEvilKingActive\",\"CheckType\":0,\"RequiredValue\":false},{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"KillEvilKingCompleted\",\"CheckType\":0,\"RequiredValue\":false},{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"KillEvilKingFinished\",\"CheckType\":0,\"RequiredValue\":false}],\"NodeUID\":3},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"KillEvilKingCompleted\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":7},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":295,\"yPos\":113},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"W\u0142adco!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ja\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0.1,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":128,\"yPos\":228},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Witaj!
     Udowodni\u0142e\u015B, \u017Ce potrafisz ju\u017C wiele. Nadszed\u0142 czas by\u015B
-    zaatakowa\u0142 ob\xF3z demon\xF3w. Podejmiesz si\u0119 zadania?\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"W\u0142adca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":101,\"yPos\":394},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ja
-    i ca\u0142e kr\xF3lestwo liczymy na ciebie\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"W\u0142adca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":551,\"yPos\":107},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Jestem
+    zaatakowa\u0142 ob\xF3z demon\xF3w. Podejmiesz si\u0119 zadania?\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"W\u0142adca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":95,\"yPos\":486},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ja
+    i ca\u0142e kr\xF3lestwo liczymy na ciebie\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"W\u0142adca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":394,\"yPos\":246},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"A
+    wi\u0119c zabi\u0142e\u015B Demonicznego W\u0142adc\u0119\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"W\u0142adca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":405,\"yPos\":395},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oto
+    twoja nagroda. Mianuj\u0119 ci\u0119 Pierwszym Rycerzem Kr\xF3lestwa\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":590,\"yPos\":137},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Jestem
     ci niezmiernie wdzi\u0119czny za pomoc. Ruszaj by oczy\u015Bci\u0107 nasze ziemie
-    z plugastwa.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"W\u0142adca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":342,\"yPos\":183},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"A
-    wi\u0119c zabi\u0142e\u015B Demonicznego W\u0142adc\u0119\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"W\u0142adca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":349,\"yPos\":341},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oto
-    twoja nagroda. Mianuj\u0119 ci\u0119 Pierwszym Rycerzem Kr\xF3lestwa\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    z plugastwa.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"W\u0142adca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -17533,9 +18121,9 @@ MonoBehaviour:
   - {fileID: 86443286}
   - {fileID: 86443285}
   - {fileID: 86443284}
-  - {fileID: 86443283}
   - {fileID: 86443282}
   - {fileID: 86443281}
+  - {fileID: 86443289}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
@@ -17757,18 +18345,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 7
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":157,\"yPos\":420},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Jeszcze
-    znajdziesz si\u0119 pod moim butem\",\"parentUIDs\":[3],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"IsFirstDemon\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"IsFirstDemon\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":5},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":246,\"yPos\":142},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"...\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Demoniczny
-    Wartownik\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":164,\"yPos\":272},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tfu..
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":212,\"yPos\":300},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Jeszcze
+    znajdziesz si\u0119 pod moim butem\",\"parentUIDs\":[3],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"IsFirstDemon\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"M1EvilActive\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"M1EvilCompleted\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"M1EvilFinished\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"M1EvilFinished\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":3},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"IsFirstDemon\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":5},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":301,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"...\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Demoniczny
+    Wartownik\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":219,\"yPos\":152},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tfu..
     dla takich jak ty nawet takie plugastwo jak ja nie ma szacunku... Mo\u017Ce jednak
     b\u0119dzie z Ciebie jeszcze jaki\u015B po\u017Cytek... Zabijaj ludzi, a zobaczymy
     co z tego b\u0119dzie...\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Demoniczny
-    Wartownik\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":156,\"yPos\":528},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Masz
+    Wartownik\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":211,\"yPos\":408},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Masz
     szcz\u0119\u015Bcie kanalio, \u017Ce nasz W\u0142adca zakaza\u0142 zabijania
     takich jak ty i nakaza\u0142 was werbowa\u0107...\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Demoniczny
-    Wartownik\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":426,\"yPos\":271},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Przeeepraaaszaaam
+    Wartownik\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":481,\"yPos\":151},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Przeeepraaaszaaam
     Panie.. b\u0142aagam ossszcz\u0119d\u017A mniee\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Demoniczny
-    Wartownik\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":529,\"yPos\":153},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Mo\u017Ce
+    Wartownik\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":584,\"yPos\":33},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Mo\u017Ce
     zostaniesz chocia\u017C mi\u0119sem armatnim...\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Demoniczny
     Wartownik\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
@@ -18557,7 +19145,6 @@ GameObject:
   - component: {fileID: 925701532}
   - component: {fileID: 925701535}
   - component: {fileID: 925701534}
-  - component: {fileID: 925701533}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -18580,25 +19167,6 @@ Transform:
   m_Father: {fileID: 1923258304}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &925701533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 925701531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 2
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
-  Audio: {fileID: 0}
 --- !u!114 &925701534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18645,18 +19213,6 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7242764182347112848, guid: f618991e6059dff47894a340d57840ef, type: 3}
-        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-        m_MethodName: UpdateConversationAccordingToQuestState
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1917843832}
         m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
         m_MethodName: AssignQuest
@@ -18669,13 +19225,49 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1917843832}
         m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
+        m_MethodName: AssignQuest
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgument: {fileID: 612363923}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1917843832}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: AssignQuest
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2059022302}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1917843832}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: AssignQuest
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1704273145}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1917843832}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: AssignQuest
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 137933958}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -18748,6 +19340,7 @@ Transform:
   - {fileID: 896306385}
   - {fileID: 203815443}
   - {fileID: 1500089478}
+  - {fileID: 1689876237}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18971,6 +19564,10 @@ MonoBehaviour:
   - {fileID: -517401599140152859, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
   - {fileID: 623081015074530967, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
   - {fileID: -5568418330487667169, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+  - {fileID: 8577979138623687517, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+  - {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+  - {fileID: 5207229126881399176, guid: 12663cfee3a3b5247a01df1aea7fccdf, type: 3}
+  - {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
 --- !u!1001 &944174214
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20563,6 +21160,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonSkeleton_demo Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: Private_prefabId
+      value: 478600085
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
 --- !u!4 &1000136010 stripped
@@ -21139,6 +21760,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: Private_prefabId
+      value: 396938670
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
 --- !u!4 &1059028985 stripped
@@ -21434,6 +22079,92 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4878409979427180, guid: 0d6d579ce1407d1409b3fb7aa078e7b4, type: 3}
   m_PrefabInstance: {fileID: 1082331019}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1083918486
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1772968398}
+    m_Modifications:
+    - target: {fileID: 8303146636143715759, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303146636143715759, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -333.93857
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303146636143715759, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 80.99307
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303146636143715759, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -495.6853
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303146636143715759, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303146636143715759, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303146636143715759, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303146636143715759, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303146636143715759, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303146636143715759, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303146636143715759, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303146636143819215, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: m_Name
+      value: DungeonSkeleton_demo Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: Private_prefabId
+      value: 1090721948
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+--- !u!4 &1083918487 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8303146636143715759, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+  m_PrefabInstance: {fileID: 1083918486}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1088035861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21536,6 +22267,30 @@ PrefabInstance:
     - target: {fileID: 8303146636143819215, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_Name
       value: DungeonSkeleton_demo Variant (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: Private_prefabId
+      value: 1940907773
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
@@ -23585,6 +24340,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonSkeleton_demo Variant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: Private_prefabId
+      value: 1970410225
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
 --- !u!1 &1153450995
@@ -24947,6 +25726,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonSkeleton_demo Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: Private_prefabId
+      value: 282918198
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
 --- !u!4 &1170962801 stripped
@@ -25155,6 +25958,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonSkeleton_demo Variant (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: Private_prefabId
+      value: 972292040
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
 --- !u!1001 &1176319669
@@ -25279,6 +26106,11 @@ Transform:
   m_Father: {fileID: 1153450996}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1179390381 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1578193216439038675, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+  m_PrefabInstance: {fileID: 1801046808}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1184302970
 GameObject:
   m_ObjectHideFlags: 0
@@ -25419,6 +26251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conversation: {fileID: 743752685}
+  IsFirstConversation: 0
 --- !u!195 &1192261684
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -25698,6 +26531,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4437678120379160231, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: Private_prefabId
+      value: 913019724
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -26405,6 +27262,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: Private_prefabId
+      value: 61610107
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
 --- !u!4 &1227268519 stripped
@@ -26510,6 +27391,73 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1232750214}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1242887525
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1242887526}
+  - component: {fileID: 1242887528}
+  - component: {fileID: 1242887527}
+  m_Layer: 0
+  m_Name: KillEvilKing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1242887526
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242887525}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1917843833}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1242887527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242887525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e62795db1866a3c42a5680df0ffc48cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Description: 
+  RequiredProgress: 1
+  Enemy: {fileID: 1823677885538695830, guid: 12663cfee3a3b5247a01df1aea7fccdf, type: 3}
+--- !u!114 &1242887528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242887525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc54dc6f75bc494084fd4ea773698be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: killevilking
+  Description: 
+  GoldReward: 2000
+  ReputationIncrease: 400
+  ReputationIncreaseAlliance: 0
+  ReputationDecrease: 0
+  ReputationDecreaseAlliance: 1
 --- !u!1001 &1243258758
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27023,7 +27971,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 661450988}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: ReceiveReputationBonus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 9
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
@@ -27099,7 +28059,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1125777237}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: SetWeHaveTalked
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: CaptainGood
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 4
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
@@ -27193,23 +28165,23 @@ MonoBehaviour:
         m_MethodName: UpdateConversationAccordingToQuestState
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 1704273145}
           m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1125777237}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
+        m_MethodName: UpdateWeHaveTalked
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: CaptainGood
           m_BoolArgument: 0
         m_CallState: 2
   NodeID: 0
@@ -27318,6 +28290,30 @@ PrefabInstance:
     - target: {fileID: 8303146636143819215, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_Name
       value: DungeonSkeleton_demo Variant (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: Private_prefabId
+      value: 656272737
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
@@ -27886,6 +28882,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonSkeleton_demo Variant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: Private_prefabId
+      value: 1347521669
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
 --- !u!1001 &1307958300
@@ -28345,6 +29365,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonSkeleton_demo Variant (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: Private_prefabId
+      value: 505841278
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
 --- !u!1001 &1316907396
@@ -28449,6 +29493,30 @@ PrefabInstance:
     - target: {fileID: 8303146636143819215, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_Name
       value: DungeonSkeleton_demo Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: Private_prefabId
+      value: 2141704363
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
@@ -28633,6 +29701,30 @@ PrefabInstance:
     - target: {fileID: 8303146636143819215, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_Name
       value: DungeonSkeleton_demo Variant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: Private_prefabId
+      value: 34480995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
@@ -30430,6 +31522,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonSkeleton_demo Variant (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: Private_prefabId
+      value: 780078556
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
 --- !u!1 &1367721807
@@ -30636,6 +31752,30 @@ PrefabInstance:
     - target: {fileID: 8303146636143819215, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_Name
       value: DungeonSkeleton_demo Variant (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: Private_prefabId
+      value: 1469725554
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
@@ -31005,6 +32145,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonSkeleton_demo Variant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: Private_prefabId
+      value: 436015806
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
 --- !u!4 &1381968579 stripped
@@ -31179,6 +32343,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4437678120379160231, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: Private_prefabId
+      value: 394881581
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -31594,7 +32782,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
---- !u!1 &1433273655
+--- !u!1 &1434584678
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -31608,6 +32796,10 @@ GameObject:
   - component: {fileID: 1433273657}
   m_Layer: 5
   m_Name: ATTACK
+  - component: {fileID: 1434584679}
+  - component: {fileID: 1434584680}
+  m_Layer: 0
+  m_Name: M1Evil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31742,6 +32934,42 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433273655}
   m_CullTransparentMesh: 1
+  m_GameObject: {fileID: 1434584678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentIDCounter: 3
+  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"M1EvilActive\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"M1EvilCompleted\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"M1EvilFinished\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"M1GoodFinished\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":1},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":345,\"yPos\":204},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0.1,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":170,\"yPos\":400},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Czy\u017Cby\u015B
+    chcia\u0142 si\u0119 do nas przy\u0142\u0105czy\u0107? Masz, oto twoja nagroda.
+    Je\u015Bli chcesz nam pom\xF3c, to porozmawiaj z naszym wartownikiem w obozie.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Szkielet\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":518,\"yPos\":404},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Na
+    co czekasz? Pom\xF3\u017C mi!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Szkielet\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+  saveVersion: 110
+  DefaultName: 
+  DefaultSprite: {fileID: 0}
+  DefaultFont: {fileID: 0}
+  NodeSerializedDataList:
+  - {fileID: 1754968763}
+  - {fileID: 1754968762}
+  - {fileID: 1754968761}
+  ContinueFont: {fileID: 0}
+  EndConversationFont: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1125777237}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: UpdateConversationAccordingToQuestState
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 137933958}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1435847256 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6660236502610409217, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
@@ -31935,6 +33163,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4437678120379160231, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: Private_prefabId
+      value: 1256166873
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -33362,9 +34614,9 @@ GameObject:
   - component: {fileID: 1505243701}
   - component: {fileID: 1505243700}
   - component: {fileID: 1505243699}
-  - component: {fileID: 1505243698}
   - component: {fileID: 1505243697}
   - component: {fileID: 1505243696}
+  - component: {fileID: 1505243704}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -33401,7 +34653,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1917843832}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: FinishQuest
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1756372688}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 9
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
@@ -33425,25 +34689,6 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
---- !u!114 &1505243698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1505243694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 5
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
-  Audio: {fileID: 0}
 --- !u!114 &1505243699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33458,7 +34703,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1917843832}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: AssignQuest
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1756372688}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 4
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
@@ -33572,6 +34829,25 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   NodeID: 0
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &1505243704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505243694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 10
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -34155,6 +35431,30 @@ PrefabInstance:
     - target: {fileID: 8303146636143819215, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_Name
       value: DungeonSkeleton_demo Variant (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: Private_prefabId
+      value: 335924113
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
@@ -34915,6 +36215,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonSkeleton_demo Variant (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: Private_prefabId
+      value: 788429021
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
 --- !u!4 &1591144344 stripped
@@ -35178,6 +36502,30 @@ PrefabInstance:
     - target: {fileID: 8303146636143819215, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_Name
       value: DungeonSkeleton_demo Variant (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: Private_prefabId
+      value: 663741469
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
@@ -36709,6 +38057,144 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 414800, guid: 470ada972ce6ab04ea581a4d23092816, type: 3}
   m_PrefabInstance: {fileID: 1687109661}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1689876236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1689876237}
+  - component: {fileID: 1689876241}
+  - component: {fileID: 1689876240}
+  - component: {fileID: 1689876239}
+  - component: {fileID: 1689876238}
+  m_Layer: 0
+  m_Name: FirstConversation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1689876237
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689876236}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -239.94, y: -33.17, z: 653.12866}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 926722807}
+  m_RootOrder: 35
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &1689876238
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689876236}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!95 &1689876239
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689876236}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1e57b9ef34c6dd03793c96b12395352f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1689876240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689876236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38240c9a80c728fdba85fb5a1c5af766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: aaa
+  ID: 20
+  BaseMaxHP: 0
+  BaseAttackDamage: 0
+  BaseDefense: 0
+  AttackMultiplier: 1
+  DefenseMultiplier: 1
+  MaxHpMultiplier: 1
+  WalkSpeed: 0
+  RunSpeed: 0
+  FallSpeed: 0
+  TimeBetweenAttacks: 0
+  Alignment: 0
+  DeathReputationIncrease: 0
+  AggressivenessBorder: -1
+  EnablePatroling: 0
+  PlayerLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  TerrainLayer:
+    serializedVersion: 2
+    m_Bits: 1
+  SightRange: 0
+  PatrolRange: 0
+  AttackRange: 0
+  TalkRange: 10
+  PatrolTimeInterval: 0
+  MaxGold: 0
+  IsRespawnable: 0
+  IdleAnimation: {fileID: 0}
+  WalkingAnimation: {fileID: 0}
+  BasicAttackAnimation: {fileID: 0}
+  RunningAnimation: {fileID: 0}
+  HurtAnimation: {fileID: 0}
+  DeathAnimation: {fileID: 0}
+--- !u!114 &1689876241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689876236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9ccbc12a65953e768183be8b02ba13e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Conversation: {fileID: 1923258305}
+  IsFirstConversation: 1
 --- !u!1 &1695853154
 GameObject:
   m_ObjectHideFlags: 0
@@ -37636,17 +39122,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 10
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":212,\"yPos\":302},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Wytn\u0119
-    w pie\u0144 wszystkie napotkane demony\",\"parentUIDs\":[3],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":471,\"yPos\":397},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"By\u0142oby
-    lepiej gdybym mia\u0142 te magiczne przedmioty\",\"parentUIDs\":[7],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"IsFirstKnight\",\"BoolValue\":true}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":301,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Witaj!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":218,\"yPos\":152},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Wi\u0119c
+  CurrentIDCounter: 11
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":47,\"yPos\":395},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Wytn\u0119
+    w pie\u0144 wszystkie napotkane demony\",\"parentUIDs\":[3],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":538,\"yPos\":384},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"By\u0142oby
+    lepiej gdybym mia\u0142 te magiczne przedmioty\",\"parentUIDs\":[7],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"IsFirstKnight\",\"BoolValue\":true},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"WeHaveTalked\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"M1GoodActive\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"M1GoodCompleted\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"M1GoodFinished\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"WeHaveTalked\",\"CheckType\":0,\"RequiredValue\":false},{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"M1GoodFinished\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":3},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"IsFirstKnight\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":5},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"WeHaveTalked\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":205,\"yPos\":86},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Witaj!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":64,\"yPos\":246},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Wi\u0119c
     chcesz do nas do\u0142aczy\u0107? Nie mog\u0119 wybrzydza\u0107, kiedy dodatkowa
-    para r\u0105k chce sieka\u0107 demony..\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":211,\"yPos\":409},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No
+    para r\u0105k chce sieka\u0107 demony..\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":52,\"yPos\":518},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No
     i to jest zapa\u0142! Przyjdz do mnie co ka\u017Cde 100 rangi a\u017C do maksymalnych
     2000 b\u0119d\u0119 w stanie da\u0107 Ci magiczne przedmioty, kt\xF3re Ci\u0119
-    wzmocni\u0105\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":532,\"yPos\":120},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"A
-    wi\u0119c zosta\u0142e\u015B pierwszym rycerzem kr\xF3lestwa!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":471,\"yPos\":288},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Jak
-    si\u0119 sprawy maj\u0105 na froncie?\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":474,\"yPos\":480},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"A
+    wzmocni\u0105\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":294,\"yPos\":230},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"A
+    wi\u0119c zosta\u0142e\u015B pierwszym rycerzem kr\xF3lestwa!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":553,\"yPos\":222},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Jak
+    si\u0119 sprawy maj\u0105 na froncie?\",\"parentUIDs\":[0,5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":527,\"yPos\":506},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"A
     zatem prosze. Oto wszystkie magiczne przedmioty dla kogo\u015B z twoj\u0105 rang\u0105.\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
@@ -37666,7 +39152,19 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1125777237}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: SetWeHaveTalked
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: CaptainGood
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1751854884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37744,6 +39242,121 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fb40f20db42e1b48b1b6a084a628993, type: 3}
+--- !u!1 &1754968759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1754968760}
+  - component: {fileID: 1754968763}
+  - component: {fileID: 1754968762}
+  - component: {fileID: 1754968761}
+  m_Layer: 0
+  m_Name: ConversationEventInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1754968760
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754968759}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 261.59103, y: 0, z: -482.7287}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1434584679}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1754968761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754968759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 2
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &1754968762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754968759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1917843832}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: FinishQuest
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 137933958}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  NodeID: 1
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &1754968763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754968759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1125777237}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: UpdateConversationAccordingToQuestState
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 137933958}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  NodeID: 0
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
 --- !u!1001 &1755053970
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37818,6 +39431,73 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4952169766312098, guid: 8eafcc918e340be40bc7b04cc52d4740, type: 3}
   m_PrefabInstance: {fileID: 1755053970}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1756372685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1756372686}
+  - component: {fileID: 1756372688}
+  - component: {fileID: 1756372687}
+  m_Layer: 0
+  m_Name: KillGoodKing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1756372686
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756372685}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1917843833}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1756372687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756372685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e62795db1866a3c42a5680df0ffc48cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Description: 
+  RequiredProgress: 1
+  Enemy: {fileID: 0}
+--- !u!114 &1756372688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756372685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc54dc6f75bc494084fd4ea773698be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: killgoodking
+  Description: 
+  GoldReward: 2000
+  ReputationIncrease: 400
+  ReputationIncreaseAlliance: 1
+  ReputationDecrease: 0
+  ReputationDecreaseAlliance: 0
 --- !u!1 &1761966516
 GameObject:
   m_ObjectHideFlags: 0
@@ -38225,6 +39905,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonSkeleton_demo Variant (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: Private_prefabId
+      value: 1180220779
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680755144819155341, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
 --- !u!4 &1775163188 stripped
@@ -38232,6 +39936,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8303146636143715759, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
   m_PrefabInstance: {fileID: 1775163187}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1775163189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847579010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9ccbc12a65953e768183be8b02ba13e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Conversation: {fileID: 1434584680}
+  IsFirstConversation: 0
 --- !u!1 &1778042315
 GameObject:
   m_ObjectHideFlags: 0
@@ -38564,6 +40282,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: Private_prefabId
+      value: 2053152512
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
 --- !u!1001 &1801046808
@@ -38696,6 +40438,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2210439428922927209, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
   m_PrefabInstance: {fileID: 1801046808}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1801046810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179390381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9ccbc12a65953e768183be8b02ba13e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Conversation: {fileID: 1971416447}
+  IsFirstConversation: 0
 --- !u!1001 &1811805628
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39220,6 +40976,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4437678120379160231, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: Private_prefabId
+      value: 434395816
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -41525,9 +43305,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 3
-  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":173,\"yPos\":342},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Nienawidz\u0119
-    ludzi\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":452,\"yPos\":342},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Cholerni
-    nieumarli\",\"parentUIDs\":[0],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":318,\"yPos\":211},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hm...
+  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":296,\"yPos\":172},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Komu
+    powinienem pom\xF3c?\",\"parentUIDs\":[0],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":301,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hm...
     Szkielet i \u017Bo\u0142nierz wygl\u0105daj\u0105 jakby mieli walczy\u0107! \",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ja\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
@@ -41536,7 +43315,6 @@ MonoBehaviour:
   NodeSerializedDataList:
   - {fileID: 925701535}
   - {fileID: 925701534}
-  - {fileID: 925701533}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
@@ -42189,6 +43967,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4878409979427180, guid: 0d6d579ce1407d1409b3fb7aa078e7b4, type: 3}
   m_PrefabInstance: {fileID: 1965819849}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1971416445
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1971416446}
+  - component: {fileID: 1971416447}
+  m_Layer: 0
+  m_Name: M1Good
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1971416446
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971416445}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 408100048}
+  m_Father: {fileID: 252167033}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1971416447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971416445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentIDCounter: 3
+  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"M1GoodActive\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"M1GoodCompleted\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"M1GoodFinished\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"M1GoodFinished\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":1},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"M1GoodActive\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":350,\"yPos\":210},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0.1,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":175,\"yPos\":407},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Dzi\u0119kuj\u0119
+    za pomoc! Oto twoja nagroda. Je\u015Bli chcesz nam pom\xF3c, zg\u0142o\u015B
+    si\u0119 do naszego kapitana w obozie.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u017Bo\u0142nierz\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":523,\"yPos\":410},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Na
+    co czekasz? Pom\xF3\u017C mi!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u017Bo\u0142nierz\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+  saveVersion: 110
+  DefaultName: 
+  DefaultSprite: {fileID: 0}
+  DefaultFont: {fileID: 0}
+  NodeSerializedDataList:
+  - {fileID: 408100051}
+  - {fileID: 408100050}
+  - {fileID: 408100049}
+  ContinueFont: {fileID: 0}
+  EndConversationFont: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1125777237}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: UpdateConversationAccordingToQuestState
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1704273145}
+          m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1974363046
 GameObject:
   m_ObjectHideFlags: 0
@@ -42714,25 +44567,13 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7242764182347112848, guid: f618991e6059dff47894a340d57840ef, type: 3}
+      - m_Target: {fileID: 1125777237}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: UpdateConversationAccordingToQuestState
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 1704273145}
           m_ObjectArgumentAssemblyTypeName: Quest, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -42881,15 +44722,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 10
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":212,\"yPos\":302},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Chc\u0119
-    by\u0107 pot\u0119\u017Cny niczym najmocniejszy demon\",\"parentUIDs\":[3],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":471,\"yPos\":397},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Po
-    prostu zr\xF3b co do ciebie nale\u017Cy\",\"parentUIDs\":[7],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"IsFirstKnight\",\"BoolValue\":true}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":301,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"....\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":218,\"yPos\":152},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Kolejna
-    splugawiona duszyczka do\u0142\u0105cza do mordowania niewinych... Dobrze!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":211,\"yPos\":409},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Poka\u017C
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":63,\"yPos\":336},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Chc\u0119
+    by\u0107 pot\u0119\u017Cny niczym najmocniejszy demon\",\"parentUIDs\":[3],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":563,\"yPos\":369},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Po
+    prostu zr\xF3b co do ciebie nale\u017Cy\",\"parentUIDs\":[7],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"IsFirstDemon\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"WeHaveTalked\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"M1EvilActive\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"M1EvilCompleted\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"M1EvilFinished\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"WeHaveTalked\",\"CheckType\":0,\"RequiredValue\":false},{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"M1EvilFinished\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":3},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"IsFirstDemon\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":5},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"WeHaveTalked\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":301,\"yPos\":63},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"....\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":56,\"yPos\":210},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Kolejna
+    splugawiona duszyczka do\u0142\u0105cza do mordowania niewinych... Dobrze!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":61,\"yPos\":476},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Poka\u017C
     \u017Ce na co\u015B ci\u0119 sta\u0107 a u\u017Cyje demonicznej magi by ci\u0119
     wzmocni\u0107. Przyjdz do mnie co ka\u017Cde 100 rangi a\u017C do maksymalnych
-    2000.\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":504,\"yPos\":128},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No
-    prosz\u0119 Pierwszy Demon.. zobaczymy jak d\u0142ugo\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":471,\"yPos\":288},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Zabi\u0142e\u015B
-    jaki\u015B ludzi?\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":472,\"yPos\":480},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Zakl\u0119cia
+    2000.\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":320,\"yPos\":200},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No
+    prosz\u0119 Pierwszy Demon.. zobaczymy jak d\u0142ugo\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":557,\"yPos\":202},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Zabi\u0142e\u015B
+    jakich\u015B ludzi?\",\"parentUIDs\":[0,5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":569,\"yPos\":498},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Zakl\u0119cia
     zosta\u0142y rzucone\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kapitan\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
@@ -43040,6 +44881,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4437678120379160231, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -44528,6 +46389,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4437678120379160231, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: Private_prefabId
+      value: 2069417987
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.AreValidSavedHashs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.ModificationVersion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetFieldsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetObjectsEnabled.m_version
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447681052059212264, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: FieldsEnable.HashSetComponentsEnabled.m_version
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

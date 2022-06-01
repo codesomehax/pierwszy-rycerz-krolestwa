@@ -700,6 +700,7 @@ MonoBehaviour:
   FallSpeed: 2
   TimeBetweenAttacks: 3
   Alignment: 0
+  DeathReputationIncrease: 0
   AggressivenessBorder: 50
   EnablePatroling: 1
   PlayerLayer:
@@ -764,7 +765,6 @@ MonoBehaviour:
     - Transform/position
     - NPC/_currentHP
     - NPC/_isAlive
-    - NPC/_gold
     - NPC/enabled
     - CapsuleCollider/enabled
     ModificationVersion: 23
@@ -772,7 +772,7 @@ MonoBehaviour:
     HashFieldsEnabled: []
     ObjectsEnabled: 
     HashSetFieldsEnabled:
-      m_buckets: 0000000000000000000000000000000005000000000000000000000000000000010000000800000007000000060000000400000000000000000000000900000000000000
+      m_buckets: 0000000000000000000000000000000005000000000000000000000000000000010000000700000003000000060000000400000000000000000000000800000000000000
       m_slots:
       - hashCode: 407537608
         next: -1
@@ -804,11 +804,6 @@ MonoBehaviour:
         value:
           HashCodePath: 66463299
           HashCodeMember: 1620639652
-      - hashCode: 1174077521
-        next: 2
-        value:
-          HashCodePath: 66463299
-          HashCodeMember: -841415567
       - hashCode: 2030112775
         next: 1
         value:
@@ -859,8 +854,13 @@ MonoBehaviour:
         value:
           HashCodePath: 0
           HashCodeMember: 0
-      m_count: 9
-      m_lastIndex: 9
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      m_count: 8
+      m_lastIndex: 8
       m_freeList: -1
       m_version: 198
     HashSetObjectsEnabled:

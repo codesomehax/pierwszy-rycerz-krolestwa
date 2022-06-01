@@ -12,6 +12,12 @@ public class DialogueManager : MonoBehaviour
     private void Awake()
     {
         _player = FindObjectOfType<Player>();
+
+        // PlayerPrefs setup
+        PlayerPrefs.SetInt("CaptainGood", 0);
+        PlayerPrefs.SetInt("CaptainEvil", 0);
+
+
     }
 
 
@@ -65,5 +71,18 @@ public class DialogueManager : MonoBehaviour
     public void UpdateConversationNTrainings()
     {
         ConversationManager.Instance.SetInt("NTrainings", _player.GetNTrainings());
+    }
+
+    public void UpdateWeHaveTalked(string npcName)
+    {
+        if (PlayerPrefs.GetInt(npcName) == 1)
+        {
+            ConversationManager.Instance.SetBool("WeHaveTalked", true);
+        }
+    }
+
+    public void SetWeHaveTalked(string npcName)
+    {
+        PlayerPrefs.SetInt(npcName, 1);
     }
 }
