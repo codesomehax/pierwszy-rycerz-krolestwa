@@ -19,6 +19,13 @@ public class KillGoal : Goal
     // only called when the quest containing this goal gets activated too
     public override void ActivateGoal()
     {
+        _currentProgress = 0;
         EventManager.OnNpcDeath += TryUpdateProgress;
+    }
+
+    public override void Complete()
+    {
+        base.Complete();
+        EventManager.OnNpcDeath -= TryUpdateProgress;
     }
 }

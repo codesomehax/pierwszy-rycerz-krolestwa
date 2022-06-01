@@ -648,6 +648,184 @@ CapsuleCollider:
   m_Height: 2.3
   m_Direction: 1
   m_Center: {x: 0, y: 1.25, z: 0}
+--- !u!114 &-2140281558905961298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8303146636143819215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -499960783, guid: c3ab396f3f53d1c4ebc7bae03391b186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FieldsEnable:
+    Version: 2
+    PathsEnabled:
+    - Transform/position/x
+    - Transform/position/y
+    - Transform/position/z
+    - Transform/position
+    - CapsuleCollider/enabled
+    - NPC/_currentHP
+    - NPC/_isAlive
+    - NPC/enabled
+    ModificationVersion: 6
+    ComponentsEnabled: []
+    HashFieldsEnabled: []
+    ObjectsEnabled: 
+    HashSetFieldsEnabled:
+      m_buckets: 0000000000000000000000000000000006000000000000000000000000000000010000000800000003000000070000000400000000000000000000000500000000000000
+      m_slots:
+      - hashCode: 407537608
+        next: -1
+        value:
+          HashCodePath: -559544797
+          HashCodeMember: -2094178328
+      - hashCode: 407981819
+        next: -1
+        value:
+          HashCodePath: -559544797
+          HashCodeMember: -2093734117
+      - hashCode: 408426030
+        next: -1
+        value:
+          HashCodePath: -559544797
+          HashCodeMember: -2093289906
+      - hashCode: 1587938851
+        next: -1
+        value:
+          HashCodePath: 289311300
+          HashCodeMember: -789838941
+      - hashCode: 250648967
+        next: -1
+        value:
+          HashCodePath: 96961247
+          HashCodeMember: 14619687
+      - hashCode: 715995294
+        next: -1
+        value:
+          HashCodePath: 66463299
+          HashCodeMember: 847985854
+      - hashCode: 1488649092
+        next: -1
+        value:
+          HashCodePath: 66463299
+          HashCodeMember: 1620639652
+      - hashCode: 2030112775
+        next: 1
+        value:
+          HashCodePath: 66463299
+          HashCodeMember: 14619687
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      m_count: 8
+      m_lastIndex: 8
+      m_freeList: -1
+      m_version: 32
+    HashSetObjectsEnabled:
+      m_buckets: 04000000000000000200000000000000000000000300000000000000
+      m_slots:
+      - hashCode: 289311300
+        next: -1
+        value: 289311300
+      - hashCode: 1587938851
+        next: -1
+        value: -559544797
+      - hashCode: 96961247
+        next: 0
+        value: 96961247
+      - hashCode: 66463299
+        next: -1
+        value: 66463299
+      - hashCode: 0
+        next: 0
+        value: 0
+      - hashCode: 0
+        next: 0
+        value: 0
+      - hashCode: 0
+        next: 0
+        value: 0
+      m_count: 4
+      m_lastIndex: 4
+      m_freeList: -1
+      m_version: 21
+    HashSetComponentsEnabled:
+      m_buckets: 030000000200000000000000
+      m_slots:
+      - hashCode: 1321165359
+        next: -1
+        value: UnityEngine.Transform
+      - hashCode: 1341135154
+        next: -1
+        value: UnityEngine.CapsuleCollider
+      - hashCode: 66463299
+        next: 0
+        value: NPC
+      m_count: 3
+      m_lastIndex: 3
+      m_freeList: -1
+      m_version: 17
+    AreValidSavedHashs: 1
+  Position: 0
+  Rotation: 0
+  Scale: 0
+  Name: 0
+  Tag: 0
+  Active: 0
+  Static: 0
+  Layer: 0
+  GAMEOBJECT_STATIC_ID: 0
+  GAMEOBJECT_PATH: 
+  Private_prefabId: 156707609
+  PrefabSetTime: 1654109170
+  CreateInRuntime: 1
+  onLoad: 0
 --- !u!114 &549982721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -731,172 +909,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthbarUI: {fileID: 4651504864886332934}
   slider: {fileID: 365277301178031734}
-  m_Script: {fileID: -499960783, guid: c3ab396f3f53d1c4ebc7bae03391b186, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FieldsEnable:
-    Version: 2
-    PathsEnabled:
-    - Transform/position/x
-    - Transform/position/y
-    - Transform/position/z
-    - Transform/position
-    - CapsuleCollider/enabled
-    - NPC/_isAlive
-    - NPC/_currentHP
-    - NPC/enabled
-    ModificationVersion: 5
-    ComponentsEnabled: []
-    HashFieldsEnabled: []
-    ObjectsEnabled: 
-    HashSetFieldsEnabled:
-      m_buckets: 0000000000000000000000000000000007000000000000000000000000000000010000000800000003000000060000000400000000000000000000000500000000000000
-      m_slots:
-      - hashCode: 407537608
-        next: -1
-        value:
-          HashCodePath: -559544797
-          HashCodeMember: -2094178328
-      - hashCode: 407981819
-        next: -1
-        value:
-          HashCodePath: -559544797
-          HashCodeMember: -2093734117
-      - hashCode: 408426030
-        next: -1
-        value:
-          HashCodePath: -559544797
-          HashCodeMember: -2093289906
-      - hashCode: 1587938851
-        next: -1
-        value:
-          HashCodePath: 289311300
-          HashCodeMember: -789838941
-      - hashCode: 250648967
-        next: -1
-        value:
-          HashCodePath: 96961247
-          HashCodeMember: 14619687
-      - hashCode: 1488649092
-        next: -1
-        value:
-          HashCodePath: 66463299
-          HashCodeMember: 1620639652
-      - hashCode: 715995294
-        next: -1
-        value:
-          HashCodePath: 66463299
-          HashCodeMember: 847985854
-      - hashCode: 2030112775
-        next: 1
-        value:
-          HashCodePath: 66463299
-          HashCodeMember: 14619687
-      - hashCode: 0
-        next: 0
-        value:
-          HashCodePath: 0
-          HashCodeMember: 0
-      - hashCode: 0
-        next: 0
-        value:
-          HashCodePath: 0
-          HashCodeMember: 0
-      - hashCode: 0
-        next: 0
-        value:
-          HashCodePath: 0
-          HashCodeMember: 0
-      - hashCode: 0
-        next: 0
-        value:
-          HashCodePath: 0
-          HashCodeMember: 0
-      - hashCode: 0
-        next: 0
-        value:
-          HashCodePath: 0
-          HashCodeMember: 0
-      - hashCode: 0
-        next: 0
-        value:
-          HashCodePath: 0
-          HashCodeMember: 0
-      - hashCode: 0
-        next: 0
-        value:
-          HashCodePath: 0
-          HashCodeMember: 0
-      - hashCode: 0
-        next: 0
-        value:
-          HashCodePath: 0
-          HashCodeMember: 0
-      - hashCode: 0
-        next: 0
-        value:
-          HashCodePath: 0
-          HashCodeMember: 0
-      m_count: 8
-      m_lastIndex: 8
-      m_freeList: -1
-      m_version: 31
-    HashSetObjectsEnabled:
-      m_buckets: 04000000000000000200000000000000000000000300000000000000
-      m_slots:
-      - hashCode: 289311300
-        next: -1
-        value: 289311300
-      - hashCode: 1587938851
-        next: -1
-        value: -559544797
-      - hashCode: 96961247
-        next: 0
-        value: 96961247
-      - hashCode: 66463299
-        next: -1
-        value: 66463299
-      - hashCode: 0
-        next: 0
-        value: 0
-      - hashCode: 0
-        next: 0
-        value: 0
-      - hashCode: 0
-        next: 0
-        value: 0
-      m_count: 4
-      m_lastIndex: 4
-      m_freeList: -1
-      m_version: 20
-    HashSetComponentsEnabled:
-      m_buckets: 030000000200000000000000
-      m_slots:
-      - hashCode: 1321165359
-        next: -1
-        value: UnityEngine.Transform
-      - hashCode: 1341135154
-        next: -1
-        value: UnityEngine.CapsuleCollider
-      - hashCode: 66463299
-        next: 0
-        value: NPC
-      m_count: 3
-      m_lastIndex: 3
-      m_freeList: -1
-      m_version: 16
-    AreValidSavedHashs: 1
-  Position: 0
-  Rotation: 0
-  Scale: 0
-  Name: 0
-  Tag: 0
-  Active: 0
-  Static: 0
-  Layer: 0
-  GAMEOBJECT_STATIC_ID: 0
-  GAMEOBJECT_PATH: 
-  Private_prefabId: 2026326056
-  PrefabSetTime: 1654095237
-  CreateInRuntime: 1
-  onLoad: 0

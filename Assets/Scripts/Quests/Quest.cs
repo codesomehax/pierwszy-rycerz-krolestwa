@@ -36,6 +36,8 @@ public class Quest : MonoBehaviour
     {
         EventManager.OnGoalCompleted += EvaluateIsCompleted;
         _active = true;
+        _completed = false;
+        _finished = false;
         foreach(Goal goal in GetComponents<Goal>())
         {
             Goals.Add(goal);
@@ -47,6 +49,7 @@ public class Quest : MonoBehaviour
     {
         _completed = true;
         _active = false;
+        _finished = false;
         EventManager.OnGoalCompleted -= EvaluateIsCompleted;
         EventManager.StartEventOnQuestCompleted(this);
     }

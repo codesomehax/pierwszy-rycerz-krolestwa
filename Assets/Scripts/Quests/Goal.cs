@@ -19,7 +19,7 @@ public abstract class Goal : MonoBehaviour
         if (_currentProgress >= RequiredProgress) Complete();
     }
 
-    public void Complete()
+    public virtual void Complete()
     {
         _completed = true;
         EventManager.StartEventOnGoalCompleted(); // inform the containing quest that it should evaluate whether it's completed or not now

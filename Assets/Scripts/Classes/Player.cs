@@ -207,10 +207,14 @@ public class Player : Entity
 
             if (nBonusesDueToReputation > 20) nBonusesDueToReputation = 20;
 
-            _reputationBonusesReceived = nBonusesDueToReputation - _reputationBonusesReceived;
+            int ReputationBonusesToReceive = nBonusesDueToReputation - _reputationBonusesReceived;
 
-            AttackMultiplier += 0.05f * _reputationBonusesReceived;
-            BaseDefense += 5f * _reputationBonusesReceived;
+            if (ReputationBonusesToReceive < 0) ReputationBonusesToReceive = 0;
+
+            AttackMultiplier += 0.05f * ReputationBonusesToReceive;
+            BaseDefense += 5f * ReputationBonusesToReceive;
+
+            _reputationBonusesReceived += ReputationBonusesToReceive;
 
             alliance = Alliance.Evil;
         }

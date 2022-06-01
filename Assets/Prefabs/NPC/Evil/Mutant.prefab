@@ -1042,6 +1042,7 @@ GameObject:
   - component: {fileID: 4188195646879940993}
   - component: {fileID: 4188195646879940992}
   - component: {fileID: 7447681052059212264}
+  - component: {fileID: 3699369860471499339}
   m_Layer: 7
   m_Name: Mutant
   m_TagString: Untagged
@@ -1184,6 +1185,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthbarUI: {fileID: 771790682220598637}
   slider: {fileID: 1946118656736145935}
+--- !u!114 &3699369860471499339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3953628384399543325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: -499960783, guid: c3ab396f3f53d1c4ebc7bae03391b186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -1195,15 +1205,15 @@ MonoBehaviour:
     - Transform/position/z
     - Transform/position
     - CapsuleCollider/enabled
-    - NPC/_isAlive
     - NPC/_currentHP
+    - NPC/_isAlive
     - NPC/enabled
     ModificationVersion: 5
     ComponentsEnabled: []
     HashFieldsEnabled: []
     ObjectsEnabled: 
     HashSetFieldsEnabled:
-      m_buckets: 0000000000000000000000000000000007000000000000000000000000000000010000000800000003000000060000000400000000000000000000000500000000000000
+      m_buckets: 0000000000000000000000000000000006000000000000000000000000000000010000000800000003000000070000000400000000000000000000000500000000000000
       m_slots:
       - hashCode: 407537608
         next: -1
@@ -1230,16 +1240,16 @@ MonoBehaviour:
         value:
           HashCodePath: 96961247
           HashCodeMember: 14619687
-      - hashCode: 1488649092
-        next: -1
-        value:
-          HashCodePath: 66463299
-          HashCodeMember: 1620639652
       - hashCode: 715995294
         next: -1
         value:
           HashCodePath: 66463299
           HashCodeMember: 847985854
+      - hashCode: 1488649092
+        next: -1
+        value:
+          HashCodePath: 66463299
+          HashCodeMember: 1620639652
       - hashCode: 2030112775
         next: 1
         value:
@@ -1349,8 +1359,8 @@ MonoBehaviour:
   Layer: 0
   GAMEOBJECT_STATIC_ID: 0
   GAMEOBJECT_PATH: 
-  Private_prefabId: 1182369263
-  PrefabSetTime: 1654095291
+  Private_prefabId: 112650720
+  PrefabSetTime: 1654109243
   CreateInRuntime: 1
   onLoad: 0
 --- !u!1 &4024251408825915212

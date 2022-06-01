@@ -9,6 +9,8 @@ using SaveIsEasy;
 
 public class GameMenu : MonoBehaviour
 {
+    public static bool StartFirstConversation = false;
+
     private void Awake()
     {
         string[] fileNames = Directory.GetFiles(Application.persistentDataPath);
@@ -44,6 +46,8 @@ public class GameMenu : MonoBehaviour
         PauseController.gameIsPaused = false;
 
         Time.timeScale = 1f;
+
+        StartFirstConversation = true;
 
         SceneManager.LoadScene("MAIN_SCENE", LoadSceneMode.Single);
     }

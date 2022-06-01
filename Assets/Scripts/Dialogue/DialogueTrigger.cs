@@ -13,19 +13,21 @@ public class DialogueTrigger : MonoBehaviour
     private NPC _npc;
     private Player _player;
     private bool _playerStoppedDueToConversation;
+    private bool _weHaveTalked;
 
     private void Awake()
     {
         _npc = GetComponent<NPC>();
         _player = FindObjectOfType<Player>();
         _playerStoppedDueToConversation = false;
+        _weHaveTalked = false;
     }
 
     private void Update()
     {
         bool isInRange = Physics.CheckSphere(transform.position, _npc.TalkRange, _npc.PlayerLayer);
 
-        if ((Input.GetKeyDown(KeyCode.F) && isInRange && !ConversationManager.Instance.IsConversationActive && !_npc.IsAggressiveTowardsPlayer()) || IsFirstConversation)
+        if ((Input.GetKeyDown(KeyCode.F) && isInRange && !ConversationManager.Instance.IsConversationActive && !_npc.IsAggressiveTowardsPlayer()) || IsFirstConversation && GameMenu.StartFirstConversation)
         {
             _player.GetComponent<HumanMovement>().enabled = false;
             _playerStoppedDueToConversation = true;
@@ -33,6 +35,12 @@ public class DialogueTrigger : MonoBehaviour
             if (!NpcIsStatic) StartCoroutine(nameof(SmoothTurnToEachother));
 
             ConversationManager.Instance.StartConversation(Conversation);
+
+            if (IsFirstConversation)
+            {
+                GameMenu.StartFirstConversation = false;
+                Destroy(this.gameObject);
+            }
         }
         else if (_playerStoppedDueToConversation && !ConversationManager.Instance.IsConversationActive)
         {
@@ -40,8 +48,6 @@ public class DialogueTrigger : MonoBehaviour
             if (!NpcIsStatic) StopCoroutine(nameof(SmoothTurnToEachother));
             _playerStoppedDueToConversation = false;
         }
-
-        if (IsFirstConversation) Destroy(gameObject);
     }
 
     private IEnumerator SmoothTurnToEachother()
@@ -56,4 +62,16 @@ public class DialogueTrigger : MonoBehaviour
             yield return null;
         }
     }
+
+    public void SetWeHaveTalked()
+    {
+        _weHaveTalked = true;
+    }
+
+    public void UpdateConversationWeHaveTalked()
+    {
+        ConversationManager.Instance.SetBool("WeHaveTalked", _weHaveTalked);
+    }
+
+
 }
