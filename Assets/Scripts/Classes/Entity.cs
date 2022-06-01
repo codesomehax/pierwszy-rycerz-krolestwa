@@ -8,9 +8,33 @@ using UnityEngine;
 */
 public class Entity : InteractableObject
 {
-    public float MaxHP;
-    public float AttackDamage;
-    public float Defense;
+    public float MaxHP
+    {
+        get
+        {
+            return Mathf.Floor(BaseMaxHP * MaxHpMultiplier);
+        }
+    }
+    public float AttackDamage
+    {
+        get
+        {
+            return Mathf.Floor(BaseAttackDamage * AttackMultiplier);
+        }
+    }
+    public float Defense
+    {
+        get
+        {
+            return Mathf.Floor(BaseDefense * DefenseMultiplier);
+        }
+    }
+    public float BaseMaxHP;
+    public float BaseAttackDamage;
+    public float BaseDefense;
+    public float AttackMultiplier = 1f;
+    public float DefenseMultiplier = 1f;
+    public float MaxHpMultiplier = 1f;
     public float WalkSpeed;
     public float RunSpeed;
     public float FallSpeed;
