@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -20,7 +19,7 @@ using SaveIsEasy;
 *   - search for the NPC animator and add a new AnimationState (wherever) with a new, EMPTY (no animation) AnimationClip called for example Talking
 *   NOTE: the name of overrides["Talking"] and the AnimationClip name HAVE TO match
 */
-public class NPC : Entity, ISaveIsEasyEvents
+public class NPC : Entity, ISaveIsEasyEvents, IRespawnable
 {
     public Alliance Alignment;
     public float AggressivenessBorder; // aggressive if reputation is lower than this value
@@ -33,6 +32,7 @@ public class NPC : Entity, ISaveIsEasyEvents
     public float TalkRange;
     public float PatrolTimeInterval;
     public int MaxGold;
+    public bool IsRespawnable;
 
 
 
@@ -73,7 +73,6 @@ public class NPC : Entity, ISaveIsEasyEvents
     private Vector3 _awakePosition;
 
 
-
     public bool IsAggressiveTowardsPlayer()
     {
         return _player.GetReputation(Alignment) < AggressivenessBorder;
@@ -109,6 +108,28 @@ public class NPC : Entity, ISaveIsEasyEvents
             t.enabled = false;
         }
         EventManager.StartEventOnNpcDeath(this);
+    }
+
+    public void Respawn()
+    {
+        if (IsRespawnable && !_isAlive)
+        {
+            _isAlive = true;
+            _currentHP = MaxHP;
+            _animator.SetBool("IsAlive", true);
+            _animator.Play("Movement");
+            foreach(Collider collider in GetComponents<Collider>())
+            {
+                collider.enabled = true;
+            }
+            this.enabled = true;
+
+            DialogueTrigger t;
+            if (TryGetComponent<DialogueTrigger>(out t))
+            {
+                t.enabled = true;
+            }
+        }
     }
 
     protected override void Awake()
@@ -282,7 +303,6 @@ public class NPC : Entity, ISaveIsEasyEvents
     {
 
     }
-
 }
 
 

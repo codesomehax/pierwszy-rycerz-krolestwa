@@ -1,8 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using SaveIsEasy;
+using System.Linq;
 
 public class SceneSwapper : MonoBehaviour
 {
@@ -34,6 +33,13 @@ public class SceneSwapper : MonoBehaviour
             _player.GetComponent<CharacterController>().enabled = true;
 
             _canEnter = false;
+
+            IRespawnable[] respawnables = FindObjectsOfType<MonoBehaviour>().OfType<IRespawnable>().ToArray<IRespawnable>();
+
+            foreach (IRespawnable respawnable in respawnables)
+            {
+                respawnable.Respawn();
+            }
         }
     }
 
