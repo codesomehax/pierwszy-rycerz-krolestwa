@@ -439,7 +439,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7761194, y: 1}
+    m_SensorSize: {x: 1.7784091, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1064,6 +1064,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 203815443}
     m_Modifications:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -1078,6 +1082,10 @@ PrefabInstance:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 989744028969505082, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1272,6 +1280,10 @@ PrefabInstance:
       value: knight (3)
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -1286,6 +1298,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1564,6 +1580,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5183023806543578262, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: MaxGold
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 5183023806543578262, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
       propertyPath: BaseMaxHP
       value: 300
       objectReference: {fileID: 0}
@@ -1574,6 +1594,10 @@ PrefabInstance:
     - target: {fileID: 5183023806543578262, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
       propertyPath: BaseAttackDamage
       value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 5183023806543578262, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 5416886289437404860, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
       propertyPath: m_Name
@@ -1686,12 +1710,32 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1823677885538695830, guid: 12663cfee3a3b5247a01df1aea7fccdf, type: 3}
+      propertyPath: MaxGold
+      value: 20000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1823677885538695830, guid: 12663cfee3a3b5247a01df1aea7fccdf, type: 3}
+      propertyPath: BaseMaxHP
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1823677885538695830, guid: 12663cfee3a3b5247a01df1aea7fccdf, type: 3}
+      propertyPath: BaseDefense
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1823677885538695830, guid: 12663cfee3a3b5247a01df1aea7fccdf, type: 3}
       propertyPath: EnablePatroling
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1823677885538695830, guid: 12663cfee3a3b5247a01df1aea7fccdf, type: 3}
+      propertyPath: BaseAttackDamage
+      value: 170
+      objectReference: {fileID: 0}
+    - target: {fileID: 1823677885538695830, guid: 12663cfee3a3b5247a01df1aea7fccdf, type: 3}
       propertyPath: AggressivenessBorder
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1823677885538695830, guid: 12663cfee3a3b5247a01df1aea7fccdf, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 1929308365605988234, guid: 12663cfee3a3b5247a01df1aea7fccdf, type: 3}
       propertyPath: m_Layer
@@ -2785,6 +2829,10 @@ PrefabInstance:
       value: Training Knight
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -2799,6 +2847,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -3212,7 +3264,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6773418975627072, guid: f618991e6059dff47894a340d57840ef, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 6773418975627072, guid: f618991e6059dff47894a340d57840ef, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3340,6 +3392,10 @@ PrefabInstance:
       value: knight (2)
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -3354,6 +3410,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -3803,6 +3863,10 @@ PrefabInstance:
       value: Training Knight 2
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -3817,6 +3881,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -4448,7 +4516,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7761194, y: 1}
+    m_SensorSize: {x: 1.7784091, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -4805,6 +4873,10 @@ PrefabInstance:
       value: knight (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -4819,6 +4891,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -5007,6 +5083,10 @@ PrefabInstance:
       value: Paladin (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: MaxGold
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: BaseMaxHP
       value: 200
       objectReference: {fileID: 0}
@@ -5021,6 +5101,14 @@ PrefabInstance:
     - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: BaseAttackDamage
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: AggressivenessBorder
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6660236502610409217, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: m_RootOrder
@@ -5232,6 +5320,10 @@ PrefabInstance:
       value: knight
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -5246,6 +5338,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -5321,6 +5417,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 926722807}
     m_Modifications:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -5335,6 +5435,10 @@ PrefabInstance:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 989744028969505082, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -5476,6 +5580,10 @@ PrefabInstance:
       value: Commander Good
       objectReference: {fileID: 0}
     - target: {fileID: 7528306022362976452, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
+      propertyPath: MaxGold
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528306022362976452, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
       propertyPath: BaseMaxHP
       value: 300
       objectReference: {fileID: 0}
@@ -5490,6 +5598,10 @@ PrefabInstance:
     - target: {fileID: 7528306022362976452, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
       propertyPath: BaseAttackDamage
       value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528306022362976452, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 8066882675608740125, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
       propertyPath: m_RootOrder
@@ -5911,6 +6023,10 @@ PrefabInstance:
       value: Paladin (2)
       objectReference: {fileID: 0}
     - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: MaxGold
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: BaseMaxHP
       value: 200
       objectReference: {fileID: 0}
@@ -5925,6 +6041,14 @@ PrefabInstance:
     - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: BaseAttackDamage
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: AggressivenessBorder
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6660236502610409217, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: m_RootOrder
@@ -6156,6 +6280,10 @@ PrefabInstance:
       value: knight (4)
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -6170,6 +6298,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -6603,6 +6735,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5183023806543578262, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: MaxGold
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 5183023806543578262, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
       propertyPath: BaseMaxHP
       value: 300
       objectReference: {fileID: 0}
@@ -6613,6 +6749,10 @@ PrefabInstance:
     - target: {fileID: 5183023806543578262, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
       propertyPath: BaseAttackDamage
       value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 5183023806543578262, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 5416886289437404860, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
       propertyPath: m_Name
@@ -6657,6 +6797,10 @@ PrefabInstance:
       value: Mutant
       objectReference: {fileID: 0}
     - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: MaxGold
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: BaseMaxHP
       value: 200
       objectReference: {fileID: 0}
@@ -6667,6 +6811,14 @@ PrefabInstance:
     - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: BaseAttackDamage
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: AggressivenessBorder
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4437678120379160231, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: m_RootOrder
@@ -7950,7 +8102,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1772968398}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &494182795
 MonoBehaviour:
@@ -8884,6 +9036,10 @@ PrefabInstance:
       value: Talking Knight 3
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -8898,6 +9054,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -9327,6 +9487,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5183023806543578262, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: MaxGold
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 5183023806543578262, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
       propertyPath: BaseMaxHP
       value: 300
       objectReference: {fileID: 0}
@@ -9337,6 +9501,10 @@ PrefabInstance:
     - target: {fileID: 5183023806543578262, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
       propertyPath: BaseAttackDamage
       value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 5183023806543578262, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 5416886289437404860, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
       propertyPath: m_Name
@@ -9997,6 +10165,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5183023806543578262, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: MaxGold
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 5183023806543578262, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
       propertyPath: BaseMaxHP
       value: 300
       objectReference: {fileID: 0}
@@ -10007,6 +10179,10 @@ PrefabInstance:
     - target: {fileID: 5183023806543578262, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
       propertyPath: BaseAttackDamage
       value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 5183023806543578262, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 5416886289437404860, guid: e55330ada9a8d104b82d3e3073a7ea0d, type: 3}
       propertyPath: m_Name
@@ -10572,6 +10748,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 203815443}
     m_Modifications:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -10586,6 +10766,10 @@ PrefabInstance:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 989744028969505082, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -13623,6 +13807,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 926722807}
     m_Modifications:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -13637,6 +13825,10 @@ PrefabInstance:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 989744028969505082, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -14361,6 +14553,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 203815443}
     m_Modifications:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -14375,6 +14571,10 @@ PrefabInstance:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 989744028969505082, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -15260,6 +15460,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 926722807}
     m_Modifications:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -15274,6 +15478,10 @@ PrefabInstance:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 989744028969505082, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -15413,6 +15621,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 926722807}
     m_Modifications:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -15427,6 +15639,10 @@ PrefabInstance:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 989744028969505082, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -15681,6 +15897,10 @@ PrefabInstance:
       value: Food Guard Paladin 2
       objectReference: {fileID: 0}
     - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: MaxGold
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: BaseMaxHP
       value: 200
       objectReference: {fileID: 0}
@@ -15694,7 +15914,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: AggressivenessBorder
-      value: 0
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6660236502610409217, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: m_RootOrder
@@ -15964,6 +16188,10 @@ PrefabInstance:
       value: knight (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -15978,6 +16206,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -16076,17 +16308,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 798246937}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1367721808}
-  m_RootOrder: 5
+  m_Father: {fileID: 1376207103}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 110, y: -225}
+  m_AnchoredPosition: {x: 105.00001, y: -225}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &798246939
@@ -17051,6 +17283,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 410129391}
     m_Modifications:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -17065,6 +17301,10 @@ PrefabInstance:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 989744028969505082, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -18195,7 +18435,7 @@ Transform:
   - {fileID: 500736920}
   - {fileID: 527520761}
   m_Father: {fileID: 1772968398}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &905816926
 MonoBehaviour:
@@ -18918,6 +19158,10 @@ PrefabInstance:
       value: Paladin (3)
       objectReference: {fileID: 0}
     - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: MaxGold
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: BaseMaxHP
       value: 200
       objectReference: {fileID: 0}
@@ -18932,6 +19176,14 @@ PrefabInstance:
     - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: BaseAttackDamage
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: AggressivenessBorder
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6660236502610409217, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: m_RootOrder
@@ -19845,6 +20097,10 @@ PrefabInstance:
       value: knight (5)
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -19859,6 +20115,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -19962,6 +20222,10 @@ PrefabInstance:
       value: Commander Good 2
       objectReference: {fileID: 0}
     - target: {fileID: 7528306022362976452, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
+      propertyPath: MaxGold
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528306022362976452, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
       propertyPath: BaseMaxHP
       value: 300
       objectReference: {fileID: 0}
@@ -19976,6 +20240,10 @@ PrefabInstance:
     - target: {fileID: 7528306022362976452, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
       propertyPath: AggressivenessBorder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528306022362976452, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 8066882675608740125, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
       propertyPath: m_RootOrder
@@ -20200,6 +20468,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 410129391}
     m_Modifications:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -20214,6 +20486,10 @@ PrefabInstance:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 989744028969505082, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -20322,6 +20598,10 @@ PrefabInstance:
       value: knight (9)
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -20336,6 +20616,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -20780,6 +21064,10 @@ PrefabInstance:
       value: Mutant (3)
       objectReference: {fileID: 0}
     - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: MaxGold
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: BaseMaxHP
       value: 200
       objectReference: {fileID: 0}
@@ -20798,6 +21086,14 @@ PrefabInstance:
     - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: BaseAttackDamage
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: AggressivenessBorder
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4437678120379160231, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: m_RootOrder
@@ -21138,92 +21434,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4878409979427180, guid: 0d6d579ce1407d1409b3fb7aa078e7b4, type: 3}
   m_PrefabInstance: {fileID: 1082331019}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1083918486
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1772968398}
-    m_Modifications:
-    - target: {fileID: 989744028969505082, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2941432172061629643, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2941432172061629643, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2941432172061629643, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3537216832123920870, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5930017347835991214, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8303146636143715759, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
-      propertyPath: m_RootOrder
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 8303146636143715759, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -333.93857
-      objectReference: {fileID: 0}
-    - target: {fileID: 8303146636143715759, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 80.99307
-      objectReference: {fileID: 0}
-    - target: {fileID: 8303146636143715759, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -495.6853
-      objectReference: {fileID: 0}
-    - target: {fileID: 8303146636143715759, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8303146636143715759, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8303146636143715759, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8303146636143715759, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8303146636143715759, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8303146636143715759, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8303146636143715759, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8303146636143819215, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
-      propertyPath: m_Name
-      value: DungeonSkeleton_demo Variant
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
---- !u!4 &1083918487 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8303146636143715759, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
-  m_PrefabInstance: {fileID: 1083918486}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1088035861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21231,6 +21441,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 203815443}
     m_Modifications:
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
@@ -21246,6 +21460,10 @@ PrefabInstance:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 989744028969505082, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -22269,6 +22487,10 @@ PrefabInstance:
       value: knight (5)
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -22279,6 +22501,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -22458,6 +22684,10 @@ PrefabInstance:
       value: knight (6)
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -22472,6 +22702,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -22572,6 +22806,10 @@ PrefabInstance:
       value: Food Guard Paladin
       objectReference: {fileID: 0}
     - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: MaxGold
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: BaseMaxHP
       value: 200
       objectReference: {fileID: 0}
@@ -22585,7 +22823,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: AggressivenessBorder
-      value: 0
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6660236502610409217, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: m_RootOrder
@@ -23248,6 +23490,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 203815443}
     m_Modifications:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -23262,6 +23508,10 @@ PrefabInstance:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 989744028969505082, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -23537,6 +23787,10 @@ PrefabInstance:
       value: Commander Good Giving Killing Quests
       objectReference: {fileID: 0}
     - target: {fileID: 7528306022362976452, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
+      propertyPath: MaxGold
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528306022362976452, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
       propertyPath: BaseMaxHP
       value: 300
       objectReference: {fileID: 0}
@@ -23551,6 +23805,10 @@ PrefabInstance:
     - target: {fileID: 7528306022362976452, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
       propertyPath: AggressivenessBorder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528306022362976452, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 8066882675608740125, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
       propertyPath: m_RootOrder
@@ -23639,6 +23897,10 @@ PrefabInstance:
       value: knight (8)
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -23653,6 +23915,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -24586,6 +24852,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 410129391}
     m_Modifications:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -24600,6 +24870,10 @@ PrefabInstance:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 989744028969505082, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -24786,6 +25060,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 203815443}
     m_Modifications:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -24800,6 +25078,10 @@ PrefabInstance:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 989744028969505082, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -25075,7 +25357,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1772968398}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1192261682
 MonoBehaviour:
@@ -25351,6 +25633,10 @@ PrefabInstance:
       value: Mutant (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: MaxGold
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: BaseMaxHP
       value: 200
       objectReference: {fileID: 0}
@@ -25361,6 +25647,14 @@ PrefabInstance:
     - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: BaseAttackDamage
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: AggressivenessBorder
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4437678120379160231, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: m_RootOrder
@@ -26044,6 +26338,10 @@ PrefabInstance:
       value: Mutant (4)
       objectReference: {fileID: 0}
     - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: MaxGold
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: BaseMaxHP
       value: 200
       objectReference: {fileID: 0}
@@ -26054,6 +26352,14 @@ PrefabInstance:
     - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: BaseAttackDamage
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: AggressivenessBorder
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4437678120379160231, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: m_RootOrder
@@ -26918,6 +27224,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 203815443}
     m_Modifications:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -26932,6 +27242,10 @@ PrefabInstance:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 989744028969505082, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -27035,6 +27349,10 @@ PrefabInstance:
       value: knight (8)
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -27049,6 +27367,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -27364,6 +27686,103 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4841025634038322, guid: 59bad08da3a1bfb41bc72857ad4e2848, type: 3}
   m_PrefabInstance: {fileID: 1299773870}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1306118783
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1772968398}
+    m_Modifications:
+    - target: {fileID: 3018312595666435186, guid: 55ed3f3c7904efa48b10050a08887062, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018312595666435186, guid: 55ed3f3c7904efa48b10050a08887062, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018312595666435186, guid: 55ed3f3c7904efa48b10050a08887062, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257695528074951591, guid: 55ed3f3c7904efa48b10050a08887062, type: 3}
+      propertyPath: m_Name
+      value: KING
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528306022362976452, guid: 55ed3f3c7904efa48b10050a08887062, type: 3}
+      propertyPath: MaxGold
+      value: 20000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528306022362976452, guid: 55ed3f3c7904efa48b10050a08887062, type: 3}
+      propertyPath: BaseMaxHP
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528306022362976452, guid: 55ed3f3c7904efa48b10050a08887062, type: 3}
+      propertyPath: BaseDefense
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528306022362976452, guid: 55ed3f3c7904efa48b10050a08887062, type: 3}
+      propertyPath: BaseAttackDamage
+      value: 170
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528306022362976452, guid: 55ed3f3c7904efa48b10050a08887062, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066882675608740125, guid: 55ed3f3c7904efa48b10050a08887062, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066882675608740125, guid: 55ed3f3c7904efa48b10050a08887062, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.3999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066882675608740125, guid: 55ed3f3c7904efa48b10050a08887062, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.3999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066882675608740125, guid: 55ed3f3c7904efa48b10050a08887062, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -280.5443
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066882675608740125, guid: 55ed3f3c7904efa48b10050a08887062, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 81.92711
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066882675608740125, guid: 55ed3f3c7904efa48b10050a08887062, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -470.0688
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066882675608740125, guid: 55ed3f3c7904efa48b10050a08887062, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066882675608740125, guid: 55ed3f3c7904efa48b10050a08887062, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066882675608740125, guid: 55ed3f3c7904efa48b10050a08887062, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066882675608740125, guid: 55ed3f3c7904efa48b10050a08887062, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066882675608740125, guid: 55ed3f3c7904efa48b10050a08887062, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066882675608740125, guid: 55ed3f3c7904efa48b10050a08887062, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066882675608740125, guid: 55ed3f3c7904efa48b10050a08887062, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 55ed3f3c7904efa48b10050a08887062, type: 3}
 --- !u!1001 &1306237210
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27371,6 +27790,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 203815443}
     m_Modifications:
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
@@ -27386,6 +27809,10 @@ PrefabInstance:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 989744028969505082, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -27489,6 +27916,10 @@ PrefabInstance:
       value: knight (10)
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -27503,6 +27934,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -27815,6 +28250,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 203815443}
     m_Modifications:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -27829,6 +28268,10 @@ PrefabInstance:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 989744028969505082, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -27912,6 +28355,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 926722807}
     m_Modifications:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -27926,6 +28373,10 @@ PrefabInstance:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 989744028969505082, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -28088,6 +28539,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 410129391}
     m_Modifications:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -28102,6 +28557,10 @@ PrefabInstance:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 989744028969505082, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -29652,6 +30111,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4668002515956546, guid: 33559b2c842261d4bae8143ee6e8a8b9, type: 3}
   m_PrefabInstance: {fileID: 1333390019}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1334435675 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8066882675608740125, guid: 55ed3f3c7904efa48b10050a08887062, type: 3}
+  m_PrefabInstance: {fileID: 1306118783}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1336293021
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29871,6 +30335,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 203815443}
     m_Modifications:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -29885,6 +30353,10 @@ PrefabInstance:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 989744028969505082, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -29992,12 +30464,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1997756664}
-  - {fileID: 2045838817}
-  - {fileID: 1948798973}
-  - {fileID: 1433273656}
-  - {fileID: 1632202906}
-  - {fileID: 798246938}
-  - {fileID: 1822011330}
+  - {fileID: 1376207103}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -30075,6 +30542,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 203815443}
     m_Modifications:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -30089,6 +30560,10 @@ PrefabInstance:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 989744028969505082, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -30345,6 +30820,88 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2143927628222524333, guid: c71d0a6c20524964ea8ae6db02b13d2d, type: 3}
   m_PrefabInstance: {fileID: 1373025118}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1376207102
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1376207103}
+  - component: {fileID: 1376207105}
+  - component: {fileID: 1376207104}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1376207103
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376207102}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2045838817}
+  - {fileID: 1948798973}
+  - {fileID: 1433273656}
+  - {fileID: 1632202906}
+  - {fileID: 798246938}
+  - {fileID: 1822011330}
+  m_Father: {fileID: 1367721808}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 80, y: -180}
+  m_SizeDelta: {x: 150, y: 360}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1376207104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376207102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6039216}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1376207105
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376207102}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1381968578
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30352,6 +30909,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 410129391}
     m_Modifications:
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
@@ -30367,6 +30928,10 @@ PrefabInstance:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 989744028969505082, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -30549,6 +31114,10 @@ PrefabInstance:
       value: Mutant
       objectReference: {fileID: 0}
     - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: MaxGold
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: BaseMaxHP
       value: 200
       objectReference: {fileID: 0}
@@ -30559,6 +31128,14 @@ PrefabInstance:
     - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: BaseAttackDamage
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: AggressivenessBorder
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4437678120379160231, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: m_RootOrder
@@ -30928,6 +31505,10 @@ PrefabInstance:
       value: knight (4)
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -30942,6 +31523,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -31035,17 +31620,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433273655}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1367721808}
-  m_RootOrder: 3
+  m_Father: {fileID: 1376207103}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 110, y: -125}
+  m_AnchoredPosition: {x: 105.00001, y: -125}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1433273657
@@ -31277,6 +31862,10 @@ PrefabInstance:
       value: Mutant (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: MaxGold
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: BaseMaxHP
       value: 200
       objectReference: {fileID: 0}
@@ -31295,6 +31884,14 @@ PrefabInstance:
     - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: BaseAttackDamage
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: AggressivenessBorder
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4437678120379160231, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: m_RootOrder
@@ -31580,6 +32177,10 @@ PrefabInstance:
       value: knight (7)
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -31594,6 +32195,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -31973,6 +32578,10 @@ PrefabInstance:
       value: Paladin
       objectReference: {fileID: 0}
     - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: MaxGold
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: BaseMaxHP
       value: 200
       objectReference: {fileID: 0}
@@ -31987,6 +32596,14 @@ PrefabInstance:
     - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: BaseAttackDamage
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: AggressivenessBorder
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6660236502610409217, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: m_RootOrder
@@ -32062,6 +32679,10 @@ PrefabInstance:
       value: knight (10)
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -32076,6 +32697,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -33163,6 +33788,10 @@ PrefabInstance:
       value: knight (11)
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -33177,6 +33806,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -33331,6 +33964,10 @@ PrefabInstance:
       value: knight (6)
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -33345,6 +33982,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -33420,6 +34061,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 203815443}
     m_Modifications:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -33434,6 +34079,10 @@ PrefabInstance:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 989744028969505082, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -33738,7 +34387,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7761194, y: 1}
+    m_SensorSize: {x: 1.7784091, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -34012,6 +34661,10 @@ PrefabInstance:
       value: Talking Knight 2
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -34026,6 +34679,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -34163,6 +34820,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 410129391}
     m_Modifications:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -34177,6 +34838,10 @@ PrefabInstance:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 989744028969505082, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -34419,6 +35084,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 203815443}
     m_Modifications:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -34433,6 +35102,10 @@ PrefabInstance:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 989744028969505082, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -34536,6 +35209,10 @@ PrefabInstance:
       value: knight (7)
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -34550,6 +35227,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -35004,17 +35685,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1632202905}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1367721808}
-  m_RootOrder: 4
+  m_Father: {fileID: 1376207103}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 110, y: -175}
+  m_AnchoredPosition: {x: 105.00001, y: -175}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1632202907
@@ -35469,6 +36150,10 @@ PrefabInstance:
       value: Paladin (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: MaxGold
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: BaseMaxHP
       value: 200
       objectReference: {fileID: 0}
@@ -35479,6 +36164,14 @@ PrefabInstance:
     - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: BaseAttackDamage
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: AggressivenessBorder
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6660236502610409217, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: m_RootOrder
@@ -35567,6 +36260,10 @@ PrefabInstance:
       value: Talking Knight 4
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -35581,6 +36278,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -37346,11 +38047,11 @@ Transform:
   - {fileID: 1579660807}
   - {fileID: 988800935}
   - {fileID: 1910916739}
-  - {fileID: 1083918487}
   - {fileID: 905816925}
   - {fileID: 162597419}
   - {fileID: 494182794}
   - {fileID: 1192261681}
+  - {fileID: 1334435675}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -37429,6 +38130,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 926722807}
     m_Modifications:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -37443,6 +38148,10 @@ PrefabInstance:
     - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 549982721, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 989744028969505082, guid: da8d47b32cde1048198d3f5d8d7943f3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -37780,6 +38489,10 @@ PrefabInstance:
       value: Mutant (2)
       objectReference: {fileID: 0}
     - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: MaxGold
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: BaseMaxHP
       value: 200
       objectReference: {fileID: 0}
@@ -37798,6 +38511,14 @@ PrefabInstance:
     - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: BaseAttackDamage
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: AggressivenessBorder
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4437678120379160231, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: m_RootOrder
@@ -37873,6 +38594,10 @@ PrefabInstance:
       value: knight
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -37887,6 +38612,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -37995,6 +38724,10 @@ PrefabInstance:
       value: knight (3)
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -38009,6 +38742,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -38276,17 +39013,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1822011329}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1367721808}
-  m_RootOrder: 6
+  m_Father: {fileID: 1376207103}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 110, y: -325}
+  m_AnchoredPosition: {x: 105.00001, y: -325}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1822011331
@@ -38418,6 +39155,10 @@ PrefabInstance:
       value: Mutant (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: MaxGold
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: BaseMaxHP
       value: 200
       objectReference: {fileID: 0}
@@ -38428,6 +39169,14 @@ PrefabInstance:
     - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: BaseAttackDamage
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: AggressivenessBorder
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4437678120379160231, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: m_RootOrder
@@ -38678,6 +39427,10 @@ PrefabInstance:
       value: knight (2)
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -38692,6 +39445,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -38787,6 +39544,10 @@ PrefabInstance:
       value: 'Trainer Paladin '
       objectReference: {fileID: 0}
     - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: MaxGold
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: BaseMaxHP
       value: 200
       objectReference: {fileID: 0}
@@ -38800,7 +39561,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: AggressivenessBorder
-      value: 0
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6660236502610409217, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: m_RootOrder
@@ -40083,6 +40848,10 @@ PrefabInstance:
       value: Commander Good Giving Quests
       objectReference: {fileID: 0}
     - target: {fileID: 7528306022362976452, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
+      propertyPath: MaxGold
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528306022362976452, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
       propertyPath: BaseMaxHP
       value: 300
       objectReference: {fileID: 0}
@@ -40097,6 +40866,10 @@ PrefabInstance:
     - target: {fileID: 7528306022362976452, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
       propertyPath: AggressivenessBorder
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528306022362976452, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 8066882675608740125, guid: f9d6b66de6985c940b6ec6786923b755, type: 3}
       propertyPath: m_RootOrder
@@ -40357,6 +41130,10 @@ PrefabInstance:
       value: Talking Knight
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -40371,6 +41148,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -40923,17 +41704,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1948798972}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1367721808}
-  m_RootOrder: 2
+  m_Father: {fileID: 1376207103}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 110, y: -75}
+  m_AnchoredPosition: {x: 105.00001, y: -75}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1948798974
@@ -40977,8 +41758,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4289769648
-  m_fontColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
+    rgba: 4280544796
+  m_fontColor: {r: 0.110137045, g: 0.9339623, b: 0.13552529, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -42194,6 +42975,10 @@ PrefabInstance:
       value: Mutant (2)
       objectReference: {fileID: 0}
     - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: MaxGold
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: BaseMaxHP
       value: 200
       objectReference: {fileID: 0}
@@ -42204,6 +42989,14 @@ PrefabInstance:
     - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: BaseAttackDamage
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: AggressivenessBorder
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4437678120379160231, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: m_RootOrder
@@ -42536,6 +43329,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: MaxGold
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: BaseMaxHP
       value: 200
       objectReference: {fileID: 0}
@@ -42546,6 +43343,14 @@ PrefabInstance:
     - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: BaseAttackDamage
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: AggressivenessBorder
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622350505546503656, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6660236502610409217, guid: 4ae9567ab296cba4da998e2390a96212, type: 3}
       propertyPath: m_RootOrder
@@ -42736,17 +43541,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2045838816}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1367721808}
-  m_RootOrder: 1
+  m_Father: {fileID: 1376207103}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 110, y: -25}
+  m_AnchoredPosition: {x: 105.00001, y: -25}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2045838818
@@ -43419,6 +44224,10 @@ PrefabInstance:
       value: knight (9)
       objectReference: {fileID: 0}
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: MaxGold
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseMaxHP
       value: 100
       objectReference: {fileID: 0}
@@ -43433,6 +44242,10 @@ PrefabInstance:
     - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: BaseAttackDamage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812619203441142435, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1858255160873534417, guid: fad2a7842c38fdf4ca5df0a5cfc5fcc3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -43642,6 +44455,10 @@ PrefabInstance:
       value: Mutant
       objectReference: {fileID: 0}
     - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: MaxGold
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: BaseMaxHP
       value: 200
       objectReference: {fileID: 0}
@@ -43660,6 +44477,14 @@ PrefabInstance:
     - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: BaseAttackDamage
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: AggressivenessBorder
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188195646879940992, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
+      propertyPath: DeathReputationIncrease
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4437678120379160231, guid: cc443b287363d294689ba5f51ac7a173, type: 3}
       propertyPath: m_RootOrder
@@ -44254,7 +45079,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2130492046}
-  m_LocalRotation: {x: 0.09853585, y: -0.0051521715, z: 0.0005101631, w: 0.99512005}
+  m_LocalRotation: {x: 0.09853581, y: -0.005152126, z: 0.0005101585, w: 0.99512005}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -44299,7 +45124,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7761194, y: 1}
+    m_SensorSize: {x: 1.7784091, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
