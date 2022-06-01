@@ -34,6 +34,8 @@ public class SceneSwapper : MonoBehaviour
 
             _canEnter = false;
 
+            FindObjectOfType<SkyboxChanger>().ChangeSkybox(GotoSceneName);
+
             IRespawnable[] respawnables = FindObjectsOfType<MonoBehaviour>().OfType<IRespawnable>().ToArray<IRespawnable>();
 
             foreach (IRespawnable respawnable in respawnables)
