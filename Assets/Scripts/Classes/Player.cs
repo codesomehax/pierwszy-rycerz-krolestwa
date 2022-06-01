@@ -19,6 +19,7 @@ public class Player : Entity
     public static Player PlayerInstance;
 
 
+    private int _reputationBonusesReceived;
     private int _currentAttackType;
     private int _nTrainings;
     private Dictionary<Alliance, int> _reputation;
@@ -87,6 +88,7 @@ public class Player : Entity
         _currentAttackType = 1;
         _animator.SetInteger("AttackType", 1);
         _nTrainings = 0;
+        _reputationBonusesReceived = 0;
 
         EventManager.OnNpcDeath += GetLootFromEnemy;
     }
@@ -194,6 +196,24 @@ public class Player : Entity
     public void IncreaseNTraining(int n)
     {
         _nTrainings += n;
+    }
+
+    public void ReceiveReputationBonus()
+    {
+        Alliance alliance = Alliance.Good;
+        for (int i = 0; i < 2; i++)
+        {
+            int nBonusesDueToReputation = _reputation[alliance] / 100;
+
+            if (nBonusesDueToReputation > 20) nBonusesDueToReputation = 20;
+
+            _reputationBonusesReceived = nBonusesDueToReputation - _reputationBonusesReceived;
+
+            AttackMultiplier += 0.05f * _reputationBonusesReceived;
+            BaseDefense += 5f * _reputationBonusesReceived;
+
+            alliance = Alliance.Evil;
+        }
     }
 }
 

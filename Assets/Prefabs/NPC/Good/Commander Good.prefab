@@ -3330,14 +3330,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Commander
   ID: 4
-  MaxHP: 300
-  AttackDamage: 50
-  Defense: 30
+  BaseMaxHP: 0
+  BaseAttackDamage: 0
+  BaseDefense: 0
+  AttackMultiplier: 1
+  DefenseMultiplier: 1
+  MaxHpMultiplier: 1
   WalkSpeed: 3
   RunSpeed: 3
   FallSpeed: 2
   TimeBetweenAttacks: 3
   Alignment: 0
+  DeathReputationIncrease: 0
   AggressivenessBorder: 50
   EnablePatroling: 0
   PlayerLayer:
@@ -3352,6 +3356,7 @@ MonoBehaviour:
   TalkRange: 2
   PatrolTimeInterval: 5
   MaxGold: 100
+  IsRespawnable: 0
   IdleAnimation: {fileID: 7400000, guid: 0a8d4c4e21190b54282e492a97ac517a, type: 2}
   WalkingAnimation: {fileID: 7400000, guid: 23d9bc7ec1db3824baea7127f5cfcb54, type: 2}
   BasicAttackAnimation: {fileID: 7400000, guid: 863eb730fff703446b77a8aa2dab83f4, type: 2}
@@ -3401,15 +3406,14 @@ MonoBehaviour:
     - Transform/position
     - CapsuleCollider/enabled
     - NPC/_isAlive
-    - NPC/_gold
     - NPC/_currentHP
     - NPC/enabled
-    ModificationVersion: 21
+    ModificationVersion: 23
     ComponentsEnabled: []
     HashFieldsEnabled: []
     ObjectsEnabled: 
     HashSetFieldsEnabled:
-      m_buckets: 0000000000000000000000000000000008000000000000000000000000000000010000000900000007000000060000000400000000000000000000000500000000000000
+      m_buckets: 0000000000000000000000000000000007000000000000000000000000000000010000000800000003000000060000000400000000000000000000000500000000000000
       m_slots:
       - hashCode: 407537608
         next: -1
@@ -3441,11 +3445,6 @@ MonoBehaviour:
         value:
           HashCodePath: 66463299
           HashCodeMember: 1620639652
-      - hashCode: 1174077521
-        next: 2
-        value:
-          HashCodePath: 66463299
-          HashCodeMember: -841415567
       - hashCode: 715995294
         next: -1
         value:
@@ -3496,10 +3495,15 @@ MonoBehaviour:
         value:
           HashCodePath: 0
           HashCodeMember: 0
-      m_count: 9
-      m_lastIndex: 9
+      - hashCode: 0
+        next: 0
+        value:
+          HashCodePath: 0
+          HashCodeMember: 0
+      m_count: 8
+      m_lastIndex: 8
       m_freeList: -1
-      m_version: 201
+      m_version: 220
     HashSetObjectsEnabled:
       m_buckets: 04000000000000000200000000000000000000000300000000000000
       m_slots:
@@ -3527,7 +3531,7 @@ MonoBehaviour:
       m_count: 4
       m_lastIndex: 4
       m_freeList: -1
-      m_version: 110
+      m_version: 120
     HashSetComponentsEnabled:
       m_buckets: 03000000000000000200000001000000000000000000000000000000
       m_slots:
@@ -3555,7 +3559,7 @@ MonoBehaviour:
       m_count: 3
       m_lastIndex: 3
       m_freeList: -1
-      m_version: 90
+      m_version: 98
     AreValidSavedHashs: 1
   Position: 0
   Rotation: 0
