@@ -1,6 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using SaveIsEasy;
 
 [System.Serializable]
 public class KillGoal : Goal
@@ -19,7 +17,7 @@ public class KillGoal : Goal
     // only called when the quest containing this goal gets activated too
     public override void ActivateGoal()
     {
-        _currentProgress = 0;
+        if (_currentProgress == RequiredProgress) _currentProgress = 0;
         EventManager.OnNpcDeath += TryUpdateProgress;
     }
 

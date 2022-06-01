@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using SaveIsEasy;
 
-public class Quest : MonoBehaviour
+public class Quest : MonoBehaviour, ISaveIsEasyEvents
 {
     public string Name;
     public string Description;
@@ -90,5 +91,18 @@ public class Quest : MonoBehaviour
     public bool IsFinished()
     {
         return _finished;
+    }
+
+    public void OnLoad()
+    {
+        if (_active)
+        {
+            ActivateQuest();
+        }
+    }
+
+    public void OnSave()
+    {
+        
     }
 }
